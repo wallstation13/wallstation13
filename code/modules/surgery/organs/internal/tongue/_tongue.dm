@@ -597,6 +597,13 @@ GLOBAL_LIST_INIT(english_to_zombie, list())
 	disliked_foodtypes = GROSS | CLOTH | RAW
 	organ_traits = list(TRAIT_WOUND_LICKER)
 
+/obj/item/organ/internal/tongue/bunny
+	name = "rabbit tongue"
+	desc = "A fleshy muscle mostly used for tasting carrots."
+	say_mod = "squeaks"
+	liked_foodtypes = VEGETABLES | CARROT | GRAIN
+	disliked_foodtypes = GROSS | CLOTH | RAW | MEAT | SEAFOOD | BUGS | GORE
+
 /obj/item/organ/internal/tongue/jelly
 	name = "jelly tongue"
 	desc = "Ah... That's not the sound I expected it to make. Sounds like a Space Autumn Bird."

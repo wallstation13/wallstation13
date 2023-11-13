@@ -98,10 +98,8 @@
 	addtimer(CALLBACK(src, PROC_REF(end_infuse), fail_explanation, fail_title), INFUSING_TIME)
 	update_appearance()
 
-/obj/machinery/dna_infuser/proc/end_infuse(fail_explanation, fail_title)
-	var/mob/living/carbon/human/human_occupant = occupant
-	if(human_occupant.infuse_organ(infusing_into))
-		check_tier_progression(human_occupant)
+/obj/machinery/dna_infuser/proc/end_infuse(fail_reason, fail_title)
+	if(infuse_organ(occupant) || infuse_limb(occupant))
 		to_chat(occupant, span_danger("You feel yourself becoming more... [infusing_into.infusion_desc]?"))
 	infusing = FALSE
 	infusing_into = null
@@ -116,6 +114,73 @@
 		printed_paper.update_appearance()
 	toggle_open()
 	update_appearance()
+
+/// Attempt to replace/add-to the occupant's organs with "mutated" equivalents.
+/// Returns TRUE on success, FALSE on failure.
+/// Requires the target mob to have an existing organic organ to "mutate".
+// TODO: In the future, this should have more logic:
+// - Replace non-mutant organs before mutant ones.
+/obj/machinery/dna_infuser/proc/infuse_organ(mob/living/carbon/human/target)
+	if(!ishuman(target))
+		return FALSE
+	var/obj/item/organ/new_organ = pick_organ(target)
+	if(!new_organ)
+		return FALSE
+	// Valid organ successfully picked.
+	new_organ = new new_organ()
+	new_organ.replace_into(target)
+	check_tier_progression(target)
+	return TRUE
+
+/obj/machinery/dna_infuser/proc/infuse_limb(mob/living/carbon/human/target)
+	if(!ishuman(target))
+		return FALSE
+	var/obj/item/bodypart/new_limb = pick_limb(target)
+	if(!new_limb)
+		return FALSE
+	new_limb = new new_limb()
+	target.del_and_replace_bodypart(new_limb, special = TRUE)
+	check_tier_progression(target)
+	return TRUE
+
+/obj/machinery/dna_infuser/proc/pick_limb(mob/living/carbon/human/target)
+	if(!infusing_into)
+		return FALSE
+	var/list/obj/item/organ/potential_new_limbs = infusing_into.output_limbs.Copy()
+	for(var/obj/item/bodypart/new_limb as anything in infusing_into.output_limbs)
+		var/obj/item/bodypart/old_limb = target.get_bodypart(initial(new_limb.body_zone))
+		if(old_limb)
+			if((old_limb.type != new_limb) && !IS_ROBOTIC_LIMB(old_limb))
+				continue
+		potential_new_limbs -= new_limb
+	if(length(potential_new_limbs))
+		return pick(potential_new_limbs)
+	return FALSE
+
+/// Picks a random mutated organ from the infuser entry which is also compatible with the target mob.
+/// Tries to return a typepath of a valid mutant organ if all of the following criteria are true:
+/// 1. Target must have a pre-existing organ in the same organ slot as the new organ;
+///   - or the new organ must be external.
+/// 2. Target's pre-existing organ must be organic / not robotic.
+/// 3. Target must not have the same/identical organ.
+/obj/machinery/dna_infuser/proc/pick_organ(mob/living/carbon/human/target)
+	if(!infusing_into)
+		return FALSE
+	var/list/obj/item/organ/potential_new_organs = infusing_into.output_organs.Copy()
+	// Remove organ typepaths from the list if they're incompatible with target.
+	for(var/obj/item/organ/new_organ as anything in infusing_into.output_organs)
+		var/obj/item/organ/old_organ = target.get_organ_slot(initial(new_organ.slot))
+		if(old_organ)
+			if((old_organ.type != new_organ) && !IS_ROBOTIC_ORGAN(old_organ))
+				continue // Old organ can be mutated!
+		else if(ispath(new_organ, /obj/item/organ/external))
+			continue // External organ can be grown!
+		// Internal organ is either missing, or is non-organic.
+		potential_new_organs -= new_organ
+	// Pick a random organ from the filtered list.
+	if(length(potential_new_organs))
+		return pick(potential_new_organs)
+	return FALSE
 
 /// checks to see if the machine should progress a new tier.
 /obj/machinery/dna_infuser/proc/check_tier_progression(mob/living/carbon/human/target)
