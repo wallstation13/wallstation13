@@ -159,6 +159,13 @@
 		ear_owner.dna.species.mutant_bodyparts -= "ears"
 		ear_owner.update_body()
 
+/obj/item/organ/internal/ears/cat/bunny
+	variant = "Bunny (Large)"
+
+/obj/item/organ/internal/ears/cat/bunny/random/Initialize(mapload)
+	. = ..()
+	variant = pick(list("Bunny (Large)", "Rabbit (Large)", "Bunny", "Rabbit"))
+
 /obj/item/organ/internal/ears/penguin
 	name = "penguin ears"
 	desc = "The source of a penguin's happy feet."

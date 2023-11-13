@@ -1782,6 +1782,18 @@
 	icon_state = "default"
 	color_src = HAIR_COLOR
 
+/datum/sprite_accessory/tails/human/bunny
+	name = "Bunny"
+	icon = 'icons/mob/human/cat_features.dmi'
+	icon_state = "rabbit"
+	color_src = HAIR_COLOR
+
+/datum/sprite_accessory/tails/human/bunny_alt
+	name = "Bunny 2"
+	icon = 'icons/mob/human/cat_features.dmi'
+	icon_state = "rabbit_alt"
+	color_src = HAIR_COLOR
+
 /datum/sprite_accessory/tails/monkey
 
 /datum/sprite_accessory/tails/monkey/none
@@ -1912,6 +1924,32 @@
 /datum/sprite_accessory/ears/cat/round
 	name = "Round"
 	icon_state = "round"
+
+/datum/sprite_accessory/ears/bunny
+	name = "Bunny"
+	icon_state = "bunny"
+	color_src = HAIR_COLOR
+
+/datum/sprite_accessory/ears/rabbit
+	name = "Rabbit"
+	icon_state = "rabbit"
+	color_src = HAIR_COLOR
+
+/datum/sprite_accessory/ears/bunny_large
+	name = "Bunny (Large)"
+	icon = 'icons/mob/human/bunny_features_32x48.dmi'
+	icon_state = "bunny_large"
+	dimension_x = 32
+	dimension_y = 48
+	color_src = HAIR_COLOR
+
+/datum/sprite_accessory/ears/rabbit_large
+	name = "Rabbit (Large)"
+	icon = 'icons/mob/human/bunny_features_32x48.dmi'
+	icon_state = "rabbit_large"
+	dimension_x = 32
+	dimension_y = 48
+	color_src = HAIR_COLOR
 
 /datum/sprite_accessory/ears/fox
 	icon = 'icons/mob/human/fox_features.dmi'

@@ -19,6 +19,14 @@
 	var/original_owner //Yay, snowflake code!
 	///The overlay for tail spines, if any
 	var/datum/bodypart_overlay/mutant/tail_spines/tail_spines_overlay
+	///Do we have a specific sprite we should pull?
+	var/sprite_to_use
+
+/obj/item/organ/external/tail/Initialize(mapload, accessory_type)
+	. = ..()
+	if(sprite_to_use)
+		var/datum/bodypart_overlay/mutant/tail/accessory = bodypart_overlay
+		accessory.sprite_datum = accessory.fetch_sprite_datum_from_name(sprite_to_use)
 
 /obj/item/organ/external/tail/Insert(mob/living/carbon/receiver, special, movement_flags)
 	. = ..()
@@ -157,6 +165,11 @@
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/cat
 
 	wag_flags = WAG_ABLE
+
+	sprite_to_use = "Cat"
+
+/obj/item/organ/external/tail/cat/bunny
+	sprite_to_use = "Bunny"
 
 /datum/bodypart_overlay/mutant/tail/get_global_feature_list()
 	return SSaccessories.tails_list_human
