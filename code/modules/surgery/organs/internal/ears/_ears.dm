@@ -163,12 +163,16 @@
 	variant = "Bunny (Large)"
 	damage_multiplier = 2
 	organ_traits = list(TRAIT_GOOD_HEARING)
+
 /obj/item/organ/internal/ears/cat/bunny/random
-	var/list/random_ear_choices = list("Bunny (Large)", "Rabbit (Large)", "Bunny", "Rabbit")
+	var/list/random_ear_choices = list(/datum/sprite_accessory/ears/bunny_large, /datum/sprite_accessory/ears/rabbit_large, /datum/sprite_accessory/ears/bunny, /datum/sprite_accessory/ears/rabbit)
 
 /obj/item/organ/internal/ears/cat/bunny/random/Initialize(mapload)
 	. = ..()
-	variant = pick(random_ear_choices)
+	var/list_of_ear_names = list()
+	for(var/datum/sprite_accessory/ears/ear_choice in random_ear_choices)
+		list_of_ear_names += initial(ear_choice.name)
+	variant = pick(list_of_ear_names)
 
 /obj/item/organ/internal/ears/penguin
 	name = "penguin ears"
