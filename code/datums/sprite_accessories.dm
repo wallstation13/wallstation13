@@ -1876,7 +1876,7 @@
 /datum/sprite_accessory/snouts/bunny
 	name = "Bunny"
 	icon_state = "bunny"
-	locked = TRUE // too powerful for roundstart
+	locked = TRUE
 	color_src = HAIR_COLOR
 
 /datum/sprite_accessory/horns
