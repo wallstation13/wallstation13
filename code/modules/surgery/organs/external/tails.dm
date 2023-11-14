@@ -171,11 +171,12 @@
 /obj/item/organ/external/tail/cat/bunny
 	sprite_to_use = "Bunny"
 
-/datum/bodypart_overlay/mutant/tail/get_global_feature_list()
-	return SSaccessories.tails_list_human
-
-/obj/item/organ/external/tail/cat/get_butt_sprite()
-	return icon('icons/mob/butts.dmi', BUTT_SPRITE_CAT)
+/obj/item/organ/external/tail/cat/bunny/on_insert(mob/living/carbon/human/tail_owner)
+	. = ..()
+	if(istype(tail_owner) && tail_owner.dna)
+		tail_owner.dna.features["tail_cat"] = tail_owner.dna.species.mutant_bodyparts["tail_cat"] = sprite_to_use
+		tail_owner.dna.update_uf_block(DNA_TAIL_BLOCK)
+		tail_owner.update_body()
 
 ///Cat tail bodypart overlay
 /datum/bodypart_overlay/mutant/tail/cat

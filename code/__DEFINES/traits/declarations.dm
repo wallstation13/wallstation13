@@ -1155,6 +1155,10 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_MOB_HATCHED "mob_hatched"
 /// Trait given to mobs that we do not want to mindswap
 #define TRAIT_NO_MINDSWAP "no_mindswap"
+
+/// Trait given to mobs that we want to register as [species]-derived mutant
+#define TRAIT_MUTANT "species_derived_mutant"
+
 ///trait given to food that can be baked by /datum/component/bakeable
 #define TRAIT_BAKEABLE "bakeable"
 

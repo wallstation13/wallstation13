@@ -19,6 +19,7 @@
 		TRAIT_HULK,
 		TRAIT_PUSHIMMUNE,
 		TRAIT_STUNIMMUNE,
+		TRAIT_MUTANT
 	)
 
 /datum/mutation/human/hulk/New(class, timer, datum/mutation/human/copymut)
