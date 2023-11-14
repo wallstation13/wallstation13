@@ -162,14 +162,8 @@
 /obj/item/organ/internal/ears/cat/bunny
 	variant = "Bunny (Large)"
 	damage_multiplier = 2
+	organ_traits = list(TRAIT_GOOD_HEARING)
 
-/obj/item/organ/internal/ears/cat/bunny/on_insert(mob/living/carbon/ear_owner)
-	. = ..()
-	ADD_TRAIT(ear_owner, TRAIT_GOOD_HEARING, ORGAN_TRAIT)
-
-/obj/item/organ/internal/ears/cat/bunny/on_remove(mob/living/carbon/ear_owner)
-	. = ..()
-	REMOVE_TRAIT(ear_owner, TRAIT_GOOD_HEARING, ORGAN_TRAIT)
 
 /obj/item/organ/internal/ears/cat/bunny/random
 	var/list/random_ear_choices = list("Bunny (Large)", "Rabbit (Large)", "Bunny", "Rabbit")
