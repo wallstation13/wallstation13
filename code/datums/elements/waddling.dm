@@ -1,4 +1,8 @@
 /datum/element/waddling
+	var/hops = FALSE
+
+/datum/element/waddling/hopping
+	hops = TRUE
 
 /datum/element/waddling/Attach(datum/target)
 	. = ..()
@@ -20,11 +24,16 @@
 		var/mob/living/living_moved = moved
 		if (living_moved.incapacitated() || living_moved.body_position == LYING_DOWN)
 			return
-	waddling_animation(moved)
+	waddling_animation(moved, hops)
 
-/datum/element/waddling/proc/waddling_animation(atom/movable/target)
-	var/prev_pixel_z = target.pixel_z
-	animate(target, pixel_z = target.pixel_z + 4, time = 0)
-	var/prev_transform = target.transform
-	animate(pixel_z = prev_pixel_z, transform = turn(target.transform, pick(-12, 0, 12)), time=2)
-	animate(transform = prev_transform, time = 0)
+/datum/element/waddling/proc/waddling_animation(atom/movable/target, hopping = FALSE)
+	if(!hopping)
+		animate(target, pixel_z = 4, time = 0)
+		var/prev_trans = matrix(target.transform)
+		animate(pixel_z = 0, transform = turn(target.transform, pick(-12, 0, 12)), time=2)
+		animate(pixel_z = 0, transform = prev_trans, time = 0)
+	else
+		if(HAS_TRAIT(target, TRAIT_MOVE_FLYING))
+			return
+		animate(target, pixel_y = target.pixel_y + 4, time = 1, easing = CIRCULAR_EASING|EASE_OUT)
+		animate(pixel_y = initial(target.pixel_y), time = 1, easing = CIRCULAR_EASING|EASE_IN)
