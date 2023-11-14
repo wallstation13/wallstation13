@@ -163,8 +163,6 @@
 	variant = "Bunny (Large)"
 	damage_multiplier = 2
 	organ_traits = list(TRAIT_GOOD_HEARING)
-
-
 /obj/item/organ/internal/ears/cat/bunny/random
 	var/list/random_ear_choices = list("Bunny (Large)", "Rabbit (Large)", "Bunny", "Rabbit")
 
