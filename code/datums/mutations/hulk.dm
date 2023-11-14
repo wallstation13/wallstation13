@@ -19,7 +19,7 @@
 		TRAIT_HULK,
 		TRAIT_PUSHIMMUNE,
 		TRAIT_STUNIMMUNE,
-		TRAIT_MUTANT
+		TRAIT_MUTANT,
 	)
 
 /datum/mutation/human/hulk/New(class, timer, datum/mutation/human/copymut)
@@ -269,6 +269,7 @@
 		TRAIT_HULK,
 		TRAIT_PUSHIMMUNE,
 		TRAIT_STUNIMMUNE,
+		TRAIT_MUTANT,
 	) // no chunk
 
 /datum/mutation/human/hulk/superhuman
