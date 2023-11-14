@@ -1,15 +1,13 @@
 /datum/element/waddling
+	element_flags = ELEMENT_BESPOKE
+	argument_hash_start_idx = 2
 	var/hops = FALSE
 
-/datum/element/waddling/hopping
-	hops = TRUE
-
-/datum/element/waddling/Attach(datum/target)
+/datum/element/waddling/Attach(datum/target, hops = FALSE)
 	. = ..()
 	if(!ismovable(target))
 		return ELEMENT_INCOMPATIBLE
-	if(!HAS_TRAIT(target, TRAIT_WADDLING))
-		stack_trace("[type] added to [target] without adding TRAIT_WADDLING first. Please use AddElementTrait instead.")
+	src.hops = hops
 	RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(Waddle))
 
 /datum/element/waddling/Detach(datum/source)
