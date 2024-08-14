@@ -11,4 +11,17 @@ caseSensitive: false
 labelMappings:
   "[WIP]": WIP
   "fix:": bugfix
+  "add:": feature
+  "del:": removal
+  "qol:": quality of life
+  "balance:": balance
+  "sound:": sound
+  "image:": image
+  "spellcheck:": grammer
+  "code:": code improvement
+  "refactor:": refactor
+  "config:": config edit
+  "admin:": administration
+  "server": server
+
 
