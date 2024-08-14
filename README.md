@@ -8,7 +8,7 @@
 | Wiki                      | [https://tgstation13.org/wiki/Main_Page](https://tgstation13.org/wiki/Main_Page)   |
 | Codedocs                  | [https://codedocs.tgstation13.org/](https://codedocs.tgstation13.org/)       |
 | Wallstation Discord       | [https://discord.gg/55Z4R5Xtsw](https://discord.gg/55Z4R5Xtsw) |
-| /tg/ Coderbus Discord          | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)               |
+| Coderbus Discord          | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)               |
 
 This is the codebase for the Wallstation flavoured fork of SpaceStation 13.
 
