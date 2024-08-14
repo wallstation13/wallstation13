@@ -29,14 +29,12 @@ fi
 if ! [ -x "$has_cargo" ]; then
 	echo "Installing rust..."
 	if ! [ -x "$has_sudo" ]; then
-		dpkg --add-architecture i386
-		apt-get update
-		apt-get install -y g++-multilib libclang-dev:i386
-	else
-		sudo dpkg --add-architecture i386
-		sudo apt-get update
-		sudo apt-get install -y g++-multilib libclang-dev:i386
-	fi
+        apt-get update
+        apt-get install -y g++-multilib libclang-dev
+    else
+        sudo apt-get update
+        sudo apt-get install -y g++-multilib libclang-dev
+    fi
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 	. ~/.profile
 fi
