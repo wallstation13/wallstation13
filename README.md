@@ -5,7 +5,8 @@
 
 | Website                   | Link                                           |
 |---------------------------|------------------------------------------------|
-| Wiki                      | [https://tgstation13.org/wiki/Main_Page](https://tgstation13.org/wiki/Main_Page)   |
+| wallstation site          |   [https://nowalls.lol/](https://nowalls.lol/) |
+| /tg/Wiki                      | [https://tgstation13.org/wiki/Main_Page](https://tgstation13.org/wiki/Main_Page)   |
 | Codedocs                  | [https://codedocs.tgstation13.org/](https://codedocs.tgstation13.org/)       |
 | Wallstation Discord       | [https://discord.gg/55Z4R5Xtsw](https://discord.gg/55Z4R5Xtsw) |
 | Coderbus Discord          | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)               |
