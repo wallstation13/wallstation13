@@ -3,6 +3,7 @@
  *
  * A grouping of tiles into a logical space, mostly used by map editors
  */
+ // boob
 /area
 	name = "Space"
 	icon = 'icons/area/areas_misc.dmi'
