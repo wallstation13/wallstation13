@@ -1,18 +1,35 @@
+
+#define UNITS_PER_RAT 15
+
 /datum/reagent/rats
 	name = "Rats"
-	description = "A rat a day keeps the meddocs away"
+	description = "It's amazing what medicine can do nowadays."
 	reagent_state = SOLID
 	color = "#463001"
 	taste_mult = 5
-	taste_description = "something big and fuzzy"
+	taste_description = "greasy fuzz"
 	metabolization_rate = 2.5 * REAGENTS_METABOLISM //0.5u/s
 	penetrates_skin = NONE
 	self_consuming = TRUE
 	ph = 7.4 // same as blood
 	var/rat_mob = /mob/living/basic/mouse/rat
+	var/is_living_rat = FALSE
 
 /datum/reagent/rats/on_mob_life(mob/living/carbon/victim, seconds_per_tick)
-	. = ..()
+	if (volume >= UNITS_PER_RAT)
+		if (!is_living_rat)
+			is_living_rat = TRUE
+			if (volume >= UNITS_PER_RAT * 2)
+				victim.visible_message(
+					span_userdanger("There's a rat crawling inside of you!"),
+				)
+			else
+				victim.visible_message(
+					span_userdanger("There's rats inside of you!")
+				)
+	. = ..() // delay metabolism until we determine if there's enough "rat juice" to make a full rat
+	if (!is_living_rat)
+		return
 	if (SPT_PROB(5, seconds_per_tick))
 		if (prob(50))
 			victim.cause_wound_of_type_and_severity(WOUND_SLASH, pick(victim.bodyparts), WOUND_SEVERITY_TRIVIAL, WOUND_SEVERITY_SEVERE)
@@ -30,14 +47,16 @@
 				span_userdanger("A rat crawls out of you!"),
 			)
 		new rat_mob(get_turf(victim.loc))
+		volume = max(0, volume - UNITS_PER_RAT)
 	if(SPT_PROB(2, seconds_per_tick)) // Stuns, but purges rats.
-		victim.vomit(VOMIT_CATEGORY_BLOOD, lost_nutrition = rand(5,10), purge_ratio = 1)
+		victim.vomit(VOMIT_CATEGORY_BLOOD, lost_nutrition = rand(5,10), purge_ratio = 0)
 		victim.visible_message(
 				span_danger("A rat crawls out of [victim]'s mouth!"),
 				span_userdanger("A rat crawls out of your mouth!"),
 			)
 		victim.cause_wound_of_type_and_severity(WOUND_BLUNT, victim.head, WOUND_SEVERITY_TRIVIAL, WOUND_SEVERITY_MODERATE)
 		new rat_mob(get_turf(victim.loc))
+		volume = max(0, volume - UNITS_PER_RAT)
 
 /datum/reagent/rats/expose_obj(obj/exposed_obj, reac_volume)
 	. = ..()
@@ -53,10 +72,12 @@
 	. = ..()
 	if(!istype(exposed_turf) || isspaceturf(exposed_turf)) // Is the turf valid
 		return
-	var/rats_to_spawn = floor(volume)
+	var/rats_to_spawn = floor(reac_volume / UNITS_PER_RAT)
+	if (rats_to_spawn == 0)
+		return
 	var/variance = ceil(rats_to_spawn / 10)
 	var/sqrt_variance = sqrt(variance)
-	for (var/i in 1 to floor(volume))
+	for (var/i in 1 to rats_to_spawn)
 		var/mob/living/basic/mouse/rat/spawned = new rat_mob(exposed_turf)
 		var/turf/target_turf = locate(exposed_turf.x + sqrt(rand(0, variance)) - sqrt_variance / 2, exposed_turf.y + sqrt(rand(0, variance)) - sqrt_variance / 2, exposed_turf.z)
 		if (!target_turf.density)
@@ -64,9 +85,15 @@
 
 /datum/chemical_reaction/rats // frankenrat
 	results = list(/datum/reagent/rats = 1)
-	required_reagents = list(/datum/reagent/blood = 60, /datum/reagent/medicine/c2/synthflesh = 50, /datum/reagent/stable_plasma = 20)
+	required_reagents = list(
+		/datum/reagent/blood = (60 / UNITS_PER_RAT),
+		/datum/reagent/medicine/c2/synthflesh = (50 / UNITS_PER_RAT),
+		/datum/reagent/stable_plasma = (20 / UNITS_PER_RAT)
+		)
 	optimal_ph_min = 3
 	optimal_ph_max = 12
 	required_temp = 470
 	reaction_flags = REACTION_INSTANT | REAGENT_SPLITRETAINVOL
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_UNIQUE
+
+#undef UNITS_PER_RAT
