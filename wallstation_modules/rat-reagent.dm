@@ -9,7 +9,6 @@
 	penetrates_skin = NONE
 	self_consuming = TRUE
 	ph = 7.4 // same as blood
-	/// rat to spawn when spilled
 	var/rat_mob = /mob/living/basic/mouse/rat
 
 /datum/reagent/rats/on_mob_life(mob/living/carbon/victim, seconds_per_tick)
@@ -18,7 +17,7 @@
 		if (prob(50))
 			victim.cause_wound_of_type_and_severity(WOUND_SLASH, pick(victim.bodyparts), WOUND_SEVERITY_TRIVIAL, WOUND_SEVERITY_SEVERE)
 			victim.visible_message(
-				span_userdanger("The rats are tearing you apart!"),
+				span_userdanger("The rats are slashing you apart!"),
 			)
 		else
 			victim.cause_wound_of_type_and_severity(WOUND_PIERCE, pick(victim.bodyparts), WOUND_SEVERITY_TRIVIAL, WOUND_SEVERITY_MODERATE)
@@ -28,10 +27,10 @@
 	if (SPT_PROB(1, seconds_per_tick))
 		victim.cause_wound_of_type_and_severity(WOUND_PIERCE, pick(victim.bodyparts), WOUND_SEVERITY_CRITICAL)
 		victim.visible_message(
-				span_userdanger("The rats are tearing you apart!"),
+				span_userdanger("A rat crawls out of you!"),
 			)
 		new rat_mob(get_turf(victim.loc))
-	if(SPT_PROB(2, seconds_per_tick)) // Stuns, but purges ants.
+	if(SPT_PROB(2, seconds_per_tick)) // Stuns, but purges rats.
 		victim.vomit(VOMIT_CATEGORY_BLOOD, lost_nutrition = rand(5,10), purge_ratio = 1)
 		victim.visible_message(
 				span_danger("A rat crawls out of [victim]'s mouth!"),
@@ -42,11 +41,11 @@
 
 /datum/reagent/rats/expose_obj(obj/exposed_obj, reac_volume)
 	. = ..()
-	var/turf/open/my_turf = exposed_obj.loc // No dumping ants on an object in a storage slot
-	if(!istype(my_turf)) //Are we actually in an open turf?
+	var/turf/open/my_turf = exposed_obj.loc
+	if(!istype(my_turf))
 		return
 	var/static/list/accepted_types = typecacheof(list(/obj/machinery/atmospherics, /obj/structure/cable, /obj/structure/disposalpipe))
-	if(!accepted_types[exposed_obj.type]) // if you try to splash anything but accepted_types it'll get blocked
+	if(!accepted_types[exposed_obj.type])
 		return
 	expose_turf(my_turf, reac_volume)
 
@@ -66,7 +65,6 @@
 /datum/chemical_reaction/rats // frankenrat
 	results = list(/datum/reagent/rats = 1)
 	required_reagents = list(/datum/reagent/blood = 60, /datum/reagent/medicine/c2/synthflesh = 50, /datum/reagent/stable_plasma = 20)
-	//FermiChem vars:
 	optimal_ph_min = 3
 	optimal_ph_max = 12
 	required_temp = 470
