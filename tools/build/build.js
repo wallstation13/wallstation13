@@ -216,6 +216,7 @@ export const DmTarget = new Juke.Target({
     'html/**',
     'icons/**',
     'interface/**',
+	'wallstation_modules/**', ///WALLSTATION EDIT: Stops the build tool from skipping changes in the modular folder
     `${DME_NAME}.dme`,
     NamedVersionFile,
   ],
