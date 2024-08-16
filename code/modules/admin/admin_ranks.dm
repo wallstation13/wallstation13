@@ -1,4 +1,4 @@
-GLOBAL_LIST_EMPTY(admin_ranks) //list of all admin_rank datums
+GLOBAL_LIST_EMPTY(admin_ranks) //list of all admin_rank datums --test
 GLOBAL_PROTECT(admin_ranks)
 
 GLOBAL_LIST_EMPTY(protected_ranks) //admin ranks loaded from txt
