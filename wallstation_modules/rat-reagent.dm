@@ -12,7 +12,9 @@
 	penetrates_skin = NONE
 	self_consuming = TRUE
 	ph = 7.4 // same as blood
+	/// The rat to spawn on spill
 	var/rat_mob = /mob/living/basic/mouse/rat
+	/// Set to true when there are enough units to produce a rat, never reset.
 	var/is_living_rat = FALSE
 
 /datum/reagent/rats/on_mob_life(mob/living/carbon/victim, seconds_per_tick)
