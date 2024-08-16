@@ -6357,5 +6357,6 @@
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
 #include "wallstation_modules\buckshot\code\buckshot_designs.dm"
-#include "wallstation_modules\buckshot\code\security_nodes.dm"
+#include "wallstation_modules\buckshot\code\buckshot_node.dm"
+#include "wallstation_modules\buckshot\code\shotgun.dm"
 // END_INCLUDE
