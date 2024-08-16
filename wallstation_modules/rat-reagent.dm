@@ -84,10 +84,10 @@
 			spawned.forceMove(target_turf)
 
 /datum/chemical_reaction/rats // frankenrat
-	results = list(/datum/reagent/rats = UNITS_PER_RAT)
+	results = list(/datum/reagent/rats = (UNITS_PER_RAT * 2))
 	required_reagents = list(
-		/datum/reagent/blood = 60,
-		/datum/reagent/medicine/c2/synthflesh = 50,
+		/datum/reagent/blood = 40,
+		/datum/reagent/medicine/c2/synthflesh = 60,
 		/datum/reagent/stable_plasma = 20,
 		)
 	optimal_ph_min = 3
