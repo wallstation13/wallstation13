@@ -1,5 +1,5 @@
 
-#define UNITS_PER_RAT 15
+#define UNITS_PER_RAT 8
 
 /datum/reagent/rats
 	name = "Rats"
