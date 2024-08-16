@@ -2,9 +2,108 @@
 "aq" = (
 /obj/item/storage/backpack/duffelbag/syndie/surgery,
 /obj/structure/table/reinforced,
+<<<<<<< HEAD
 /turf/open/floor/plastic,
 /area/virtual_domain)
 "aw" = (
+=======
+/obj/item/gun/ballistic/automatic/l6_saw/unrestricted{
+	pixel_y = 8
+	},
+/obj/item/ammo_box/magazine/m7mm{
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"aS" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 5
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"aT" = (
+/obj/structure/table/reinforced,
+/obj/item/assembly/prox_sensor{
+	pixel_y = 8
+	},
+/obj/item/assembly/prox_sensor{
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"bg" = (
+/obj/machinery/suit_storage_unit/syndicate,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"bm" = (
+/obj/machinery/power/shuttle_engine/huge{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/virtual_domain)
+"bU" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_access = list("syndicate");
+	secure = 1
+	},
+/obj/item/crowbar/red,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/gun/ballistic/automatic/pistol,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"bW" = (
+/turf/closed/indestructible/binary,
+/area/virtual_domain/fullbright)
+"cv" = (
+/obj/machinery/door/window/left/directional/north{
+	name = "Spare Equipment";
+	req_access = list("syndicate")
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"cL" = (
+/turf/closed/mineral/random,
+/area/virtual_domain/protected_space)
+"cM" = (
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/iron,
+/area/virtual_domain)
+"dF" = (
+/obj/structure/filingcabinet,
+/obj/machinery/door/window/left/directional/west{
+	name = "Syndicate Interior Door";
+	req_access = list("syndicate")
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"dN" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"el" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"eo" = (
+/obj/machinery/power/smes,
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"eq" = (
+/obj/structure/cable,
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 4
 	},
@@ -12,7 +111,142 @@
 /obj/effect/landmark/bitrunning/mob_segment,
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
+<<<<<<< HEAD
 "aN" = (
+=======
+"eL" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/obj/item/stack/ore/plasma{
+	amount = 19
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"fN" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"fW" = (
+/obj/machinery/ore_silo,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"ge" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_access = list("syndicate");
+	secure = 1
+	},
+/obj/item/ammo_box/c9mm,
+/obj/item/gun/ballistic/automatic/pistol,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"gz" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"gE" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"hb" = (
+/obj/machinery/door/airlock/external/ruin{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/structure/cable,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/virtual_domain/protected_space)
+"he" = (
+/obj/effect/landmark/bitrunning/cache_spawn,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"hz" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_access = list("syndicate");
+	secure = 1
+	},
+/obj/item/gun/ballistic/automatic/pistol,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"ie" = (
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"iN" = (
+/obj/structure/closet,
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/card/id/advanced/black/syndicate_command/crew_id,
+/obj/item/card/id/advanced/black/syndicate_command/crew_id,
+/obj/item/card/id/advanced/black/syndicate_command/crew_id,
+/obj/machinery/camera/xray/directional/north{
+	c_tag = "Cargo pod";
+	network = list("fsci")
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"ji" = (
+/obj/effect/landmark/bitrunning/cache_spawn,
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"jo" = (
+/obj/machinery/door/window/left/directional/south{
+	name = "Control Room";
+	req_access = list("syndicate")
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"jv" = (
+/obj/effect/baseturf_helper/virtual_domain,
+/turf/closed/indestructible/syndicate,
+/area/virtual_domain/protected_space)
+"jw" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_access = list("syndicate");
+	secure = 1
+	},
+/obj/effect/spawner/random/contraband/armory,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"jH" = (
+/obj/machinery/atmospherics/components/unary/vent_pump,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"jU" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"kJ" = (
+/obj/modular_map_root/safehouse{
+	key = "shuttle_space"
+	},
+/turf/template_noop,
+/area/virtual_domain/safehouse)
+"lt" = (
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /obj/structure/closet/crate/secure/gear{
 	req_access = list("syndicate")
 	},
@@ -31,12 +265,181 @@
 /obj/machinery/recharge_station,
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
+<<<<<<< HEAD
 "bh" = (
 /turf/open/floor/carpet/royalblack,
 /area/virtual_domain)
 "bD" = (
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+=======
+"ml" = (
+/obj/machinery/door/airlock/external/ruin{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"mQ" = (
+/obj/machinery/light/small/directional/south,
+/obj/machinery/shower/directional/east,
+/turf/open/floor/iron,
+/area/virtual_domain)
+"mR" = (
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"nh" = (
+/obj/machinery/light/small/directional/south,
+/obj/effect/landmark/bitrunning/cache_spawn,
+/turf/open/floor/iron/dark,
+/area/virtual_domain)
+"nl" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/obj/item/stack/sheet/mineral/titanium{
+	amount = 40
+	},
+/obj/item/stack/sheet/mineral/uranium{
+	amount = 15
+	},
+/turf/open/floor/pod/dark,
+/area/virtual_domain/protected_space)
+"nK" = (
+/obj/structure/tank_dispenser/oxygen,
+/obj/structure/sign/poster/contraband/c20r/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"om" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/medkit/regular{
+	pixel_y = 8
+	},
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"oP" = (
+/obj/effect/baseturf_helper/virtual_domain,
+/turf/closed/wall/r_wall/syndicate,
+/area/virtual_domain)
+"oT" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"pi" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Captain's Room"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/machinery/door/poddoor{
+	id = "fscaproom";
+	name = "Captain's Blast Door";
+	state_open = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"pP" = (
+/obj/machinery/porta_turret/syndicate/energy{
+	dir = 4;
+	name = "Syndicate Ship Turret";
+	on = 0;
+	shot_delay = 10
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/turf/open/floor/plating/airless,
+/area/virtual_domain)
+"pT" = (
+/obj/machinery/computer/operating,
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"qn" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"rn" = (
+/obj/effect/mob_spawn/ghost_role/human/virtual_domain/syndie,
+/turf/open/floor/carpet/royalblack,
+/area/virtual_domain)
+"rs" = (
+/obj/machinery/power/shuttle_engine/propulsion{
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/virtual_domain)
+"rD" = (
+/turf/closed/mineral/random/high_chance,
+/area/ruin/space/virtual_domain)
+"rN" = (
+/obj/machinery/porta_turret/syndicate/energy{
+	dir = 4;
+	name = "Syndicate Ship Turret";
+	on = 0;
+	shot_delay = 10
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plating/airless,
+/area/virtual_domain)
+"rO" = (
+/obj/machinery/vending/cigarette/syndicate,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"rX" = (
+/obj/machinery/airalarm/directional/north,
+/obj/effect/mapping_helpers/airalarm/syndicate_access,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"ss" = (
+/obj/structure/chair/comfy,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"sM" = (
+/turf/template_noop,
+/area/virtual_domain/safehouse)
+"tm" = (
+/obj/structure/table/reinforced,
+/obj/item/paper/fluff/ruins/forgottenship/missionobj{
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"tK" = (
+/obj/machinery/computer/atmos_alert{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"tO" = (
+/obj/item/stack/sheet/mineral/uranium{
+	amount = 15
+	},
+/obj/structure/cable,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"ui" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/turf/open/floor/iron/dark/side{
+	dir = 1
+	},
+/area/virtual_domain)
+"uk" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 8
+	},
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -88,11 +491,49 @@
 /obj/machinery/door/airlock/grunge{
 	name = "Syndicate Ship Airlock"
 	},
+<<<<<<< HEAD
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 8
 	},
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/turf/open/floor/plating/airless,
+/area/virtual_domain)
+"vX" = (
+/obj/effect/landmark/bitrunning/cache_spawn,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"vZ" = (
+/obj/item/storage/backpack/duffelbag/syndie/surgery{
+	pixel_y = 8
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"wF" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"wH" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/turf/open/floor/pod/dark,
+/area/virtual_domain/protected_space)
+"xa" = (
+/obj/structure/sign/warning/vacuum/external/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"xc" = (
+/obj/structure/table/reinforced,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -113,8 +554,15 @@
 /area/virtual_domain)
 "cZ" = (
 /obj/structure/table/reinforced,
+<<<<<<< HEAD
 /obj/item/gun/ballistic/automatic/l6_saw/unrestricted,
 /obj/item/ammo_box/magazine/m7mm,
+=======
+/obj/item/dualsaber/green{
+	pixel_y = 8
+	},
+/obj/machinery/light/small/directional/east,
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain/protected_space)
 "da" = (
@@ -770,9 +1218,26 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
+<<<<<<< HEAD
 "Gn" = (
 /obj/structure/chair/comfy{
 	dir = 1
+=======
+"zy" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/cup/glass/trophy/silver_cup{
+	pixel_y = 12
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"zE" = (
+/turf/closed/mineral/random,
+/area/ruin/space/virtual_domain)
+"zN" = (
+/obj/machinery/camera/xray/directional/east{
+	c_tag = "Medbay";
+	network = list("fsc")
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
@@ -792,8 +1257,30 @@
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
+<<<<<<< HEAD
 "GZ" = (
 /obj/machinery/door/airlock/external/ruin{
+=======
+"zU" = (
+/turf/open/floor/pod/dark,
+/area/virtual_domain/protected_space)
+"Aq" = (
+/obj/machinery/button/crematorium/directional/west{
+	id = "fscremate"
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"Av" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
+/obj/effect/landmark/bitrunning/mob_segment,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"AE" = (
+/obj/machinery/door/airlock/grunge{
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 	name = "Syndicate Ship Airlock"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
@@ -821,9 +1308,23 @@
 	dir = 8
 	},
 /turf/open/space/basic,
+<<<<<<< HEAD
 /area/virtual_domain)
 "If" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+=======
+/area/virtual_domain/protected_space)
+"Bb" = (
+/obj/item/ai_module/core/full/cybersun{
+	pixel_y = 8
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Bq" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2{
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -839,7 +1340,14 @@
 	on = 0;
 	shot_delay = 10
 	},
+<<<<<<< HEAD
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
+=======
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/plating/airless,
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /area/virtual_domain)
 "Im" = (
 /obj/structure/table/reinforced,
@@ -955,10 +1463,177 @@
 /obj/item/clothing/shoes/combat,
 /turf/open/floor/mineral/plastitanium/red,
 /area/virtual_domain)
+<<<<<<< HEAD
 "MR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
+=======
+"DY" = (
+/obj/effect/mob_spawn/ghost_role/human/virtual_domain/syndie,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"EI" = (
+/obj/structure/table/reinforced,
+/obj/item/ammo_box/c9mm{
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"EL" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 9
+	},
+/obj/effect/landmark/bitrunning/mob_segment,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Fe" = (
+/obj/structure/table/reinforced,
+/obj/item/toy/plush/nukeplushie,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Fl" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_access = list("syndicate");
+	secure = 1
+	},
+/obj/item/crowbar/red,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m9mm,
+/obj/machinery/light/small/directional/north,
+/obj/item/gun/ballistic/automatic/pistol,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"Fq" = (
+/obj/structure/cable,
+/mob/living/basic/trooper/syndicate/melee/space/stormtrooper,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"Fv" = (
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"FO" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/obj/item/stack/ore/diamond{
+	amount = 3
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"FQ" = (
+/obj/structure/transit_tube/station/dispenser/reverse{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"Gb" = (
+/turf/open/floor/iron/dark,
+/area/virtual_domain)
+"Gl" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_access = list("syndicate");
+	secure = 1
+	},
+/obj/item/ammo_box/c9mm,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Gu" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"GR" = (
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/item/paper/fluff/ruins/forgottenship/powerissues,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Hc" = (
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"He" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/obj/effect/spawner/random/clothing/costume,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"Hf" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2,
+/obj/machinery/portable_atmospherics/scrubber{
+	anchored = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"HG" = (
+/turf/closed/wall/r_wall/syndicate,
+/area/virtual_domain)
+"HH" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/carpet/royalblack,
+/area/virtual_domain)
+"ID" = (
+/obj/machinery/suit_storage_unit/syndicate{
+	helmet_type = /obj/item/clothing/head/helmet/space/syndicate/black;
+	suit_type = /obj/item/clothing/suit/space/syndicate/black
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"IL" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 5
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Je" = (
+/obj/structure/cable,
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external/ruin{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"JB" = (
+/obj/effect/landmark/bitrunning/mob_segment,
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"JH" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/turf/open/floor/iron/dark,
+/area/virtual_domain)
+"JR" = (
+/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"JY" = (
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"JZ" = (
+/obj/structure/transit_tube/crossing,
+/turf/closed/wall/r_wall/syndicate,
+/area/virtual_domain/protected_space)
+"Kt" = (
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/mineral/plastitanium/red,
 /area/virtual_domain)
@@ -981,15 +1656,92 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/pod/dark,
 /area/virtual_domain/protected_space)
+<<<<<<< HEAD
 "Of" = (
+=======
+"Lg" = (
+/obj/machinery/turretid/directional/north{
+	enabled = 0;
+	lethal = 1;
+	req_access = list("syndicate");
+	name = "Ship turret control panel"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Lj" = (
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"Lv" = (
+/obj/structure/chair/comfy{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"LA" = (
+/turf/closed/mineral,
+/area/ruin/space/virtual_domain)
+"ME" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"MN" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/door/table{
+	id = "fslockdown";
+	name = "Window shutters";
+	req_access = list("syndicate");
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Nj" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"NF" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"NO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"NQ" = (
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /obj/structure/closet/crate/secure/gear{
 	req_access = list("syndicate")
 	},
 /obj/item/disk/surgery/forgottenship,
 /turf/open/floor/pod/dark,
 /area/virtual_domain/protected_space)
+<<<<<<< HEAD
 "Ox" = (
 /obj/machinery/atmospherics/components/unary/vent_pump,
+=======
+"NY" = (
+/obj/machinery/camera/xray/directional/east{
+	c_tag = "Conference room";
+	network = list("fsc")
+	},
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
 "OH" = (
@@ -1018,12 +1770,19 @@
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/pod/dark,
 /area/virtual_domain/protected_space)
+<<<<<<< HEAD
 "Qg" = (
 /obj/machinery/suit_storage_unit/syndicate{
 	helmet_type = /obj/item/clothing/head/helmet/space/syndicate/black;
 	suit_type = /obj/item/clothing/suit/space/syndicate/black
 	},
 /turf/open/floor/mineral/plastitanium,
+=======
+"Rl" = (
+/obj/structure/sink/directional/south,
+/obj/structure/mirror/directional/north,
+/turf/open/floor/iron/dark,
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /area/virtual_domain)
 "Qi" = (
 /obj/item/stack/sheet/mineral/uranium{
@@ -1191,6 +1950,152 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/virtual_domain)
+<<<<<<< HEAD
+=======
+"SE" = (
+/obj/machinery/vending/medical/syndicate_access/cybersun,
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"SR" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/mob/living/basic/trooper/syndicate/ranged/smg/pilot,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Td" = (
+/obj/structure/sign/poster/contraband/syndicate_pistol,
+/turf/closed/wall/r_wall/syndicate,
+/area/virtual_domain)
+"Tw" = (
+/obj/structure/table/optable,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"TJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 10
+	},
+/obj/item/wrench,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"TO" = (
+/obj/structure/table/reinforced,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/layer2,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"Uu" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/external/ruin{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"UK" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/obj/item/clothing/head/helmet/space/syndicate/black/engie,
+/obj/item/clothing/suit/space/syndicate/black/engie,
+/turf/open/floor/pod/dark,
+/area/virtual_domain/protected_space)
+"Vq" = (
+/obj/structure/transit_tube/station/dispenser/reverse{
+	dir = 8
+	},
+/turf/template_noop,
+/area/virtual_domain/safehouse)
+"Vv" = (
+/obj/machinery/stasis{
+	dir = 4
+	},
+/turf/open/floor/plastic,
+/area/virtual_domain)
+"VE" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"VU" = (
+/obj/machinery/computer/security{
+	desc = "Used to access interrogation room camera.";
+	dir = 8;
+	name = "Ship cameras console";
+	network = list("fsc","fsci");
+	screen_loc = ""
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Ws" = (
+/obj/structure/closet/crate/secure/gear{
+	req_access = list("syndicate")
+	},
+/obj/item/melee/energy/sword/saber/red,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/pod/dark,
+/area/virtual_domain/protected_space)
+"WA" = (
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"WD" = (
+/obj/structure/closet/syndicate{
+	anchored = 1;
+	desc = "A basic closet for all your villainous needs.";
+	locked = 1;
+	name = "Closet";
+	req_access = list("syndicate");
+	secure = 1
+	},
+/obj/item/crowbar/red,
+/obj/item/ammo_box/magazine/m9mm_aps,
+/obj/item/ammo_box/magazine/m9mm_aps,
+/obj/item/gun/ballistic/automatic/pistol,
+/turf/open/floor/carpet/royalblack,
+/area/virtual_domain)
+"Xn" = (
+/obj/structure/cable,
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/syndicate{
+	pixel_y = 8
+	},
+/obj/item/storage/toolbox/syndicate{
+	pixel_y = 8
+	},
+/obj/structure/sign/poster/contraband/tools/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain/protected_space)
+"Xw" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"XI" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Bridge"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"XK" = (
+/obj/structure/table/reinforced,
+/obj/item/paper{
+	pixel_y = 8
+	},
+/obj/item/pen{
+	pixel_y = 8
+	},
+/obj/machinery/computer/security/telescreen/forgotten_ship/sci/directional/south,
+/turf/open/floor/carpet/royalblack,
+/area/virtual_domain)
+"Yl" = (
+/obj/machinery/atmospherics/components/unary/vent_pump,
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 "Yr" = (
 /obj/effect/baseturf_helper/virtual_domain,
 /turf/template_noop,
@@ -1216,6 +2121,61 @@
 	dir = 8
 	},
 /turf/open/space/basic,
+<<<<<<< HEAD
+=======
+/area/virtual_domain/protected_space)
+"YO" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable,
+/turf/open/space/basic,
+/area/space/virtual_domain)
+"Ze" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"Zp" = (
+/obj/structure/transit_tube/crossing,
+/turf/closed/mineral/random,
+/area/virtual_domain/protected_space)
+"Zr" = (
+/obj/machinery/light/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"Zv" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/virtual_domain)
+"ZI" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/door/table{
+	id = "fscaproom";
+	name = "Room shutters control";
+	req_access = list("syndicate");
+	pixel_y = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/virtual_domain)
+"ZX" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Syndicate Ship Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 /area/virtual_domain)
 
 (1,1,1) = {"
@@ -1973,6 +2933,7 @@ qx
 Hq
 "}
 (14,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -2087,6 +3048,122 @@ qx
 qx
 qx
 Hq
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+rN
+HG
+yk
+Nj
+WA
+Pj
+FO
+Nj
+WA
+eL
+NF
+Pj
+WA
+Nj
+He
+HG
+Cg
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(15,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+HG
+Pj
+WA
+mb
+Lj
+WA
+WA
+WA
+WA
+WA
+Lj
+WA
+mb
+Pj
+HG
+oP
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 "}
 (16,1,1) = {"
 Hq
@@ -2147,6 +3224,7 @@ qx
 Hq
 "}
 (17,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -2493,6 +3571,354 @@ qx
 qx
 qx
 Hq
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+HG
+jU
+HG
+rn
+WD
+HG
+eo
+GR
+ie
+HG
+aT
+Lv
+WA
+bU
+DY
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+zE
+rD
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(18,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+zy
+VE
+HG
+ah
+Kt
+HG
+tO
+OO
+Qx
+HG
+bU
+WA
+WA
+WA
+dN
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+zE
+zE
+zE
+zE
+zE
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(19,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+xF
+Qx
+pi
+ah
+ah
+SB
+lM
+AN
+IL
+AE
+WA
+WA
+Pj
+ss
+tm
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+zE
+zE
+RA
+RA
+RA
+RA
+zE
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(20,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+Bb
+Qx
+HG
+ah
+ah
+SB
+Zv
+Bq
+Zv
+AE
+WA
+WA
+mb
+ss
+EI
+HG
+ON
+ON
+ON
+ON
+ON
+zE
+zE
+RA
+RA
+UK
+UK
+RA
+jv
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(21,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+Rx
+HG
+Qx
+HG
+HH
+XK
+HG
+TJ
+aS
+OL
+HG
+Fl
+WA
+WA
+DY
+HG
+HG
+ON
+ON
+ON
+ON
+zE
+Ck
+zE
+RA
+lt
+zU
+zU
+nl
+RA
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(22,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+pP
+HG
+dF
+HG
+ZI
+Cc
+Td
+Hf
+Pm
+QB
+HG
+Cc
+Lv
+WA
+bU
+HG
+vv
+ON
+ON
+ON
+ON
+zE
+rD
+zE
+RA
+Ws
+zU
+zU
+Kv
+RA
+zE
+rD
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 "}
 (23,1,1) = {"
 Hq
@@ -2611,6 +4037,7 @@ qx
 Hq
 "}
 (25,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -2659,6 +4086,56 @@ Vg
 Vg
 Vg
 Vg
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+Tw
+Hc
+JB
+Vv
+HG
+Gu
+SA
+WA
+HG
+Rl
+nh
+HG
+HG
+HG
+ON
+ON
+ON
+ON
+ON
+zE
+zE
+rD
+ye
+ye
+PD
+fW
+ye
+ye
+cL
+cL
+cL
+cL
+YC
+YC
+YC
+YC
+YC
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 sM
 sM
 sM
@@ -2669,6 +4146,7 @@ qx
 Hq
 "}
 (26,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -2717,6 +4195,56 @@ fd
 fd
 fd
 fd
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+vZ
+zN
+Hc
+Hc
+gE
+Yl
+eq
+WA
+JH
+Gb
+Gb
+ui
+mQ
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+zE
+zE
+ye
+nK
+PD
+PD
+FQ
+JZ
+Zp
+Zp
+AW
+AW
+AW
+AW
+AW
+AW
+AW
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 BN
 Vq
 sM
@@ -2727,6 +4255,7 @@ qx
 Hq
 "}
 (27,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -2775,6 +4304,56 @@ Vg
 Vg
 Vg
 Vg
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+rN
+HG
+HG
+HG
+HG
+HG
+HG
+HG
+ZX
+HG
+HG
+HG
+HG
+HG
+HG
+HG
+HG
+ON
+ON
+ON
+ON
+ON
+zE
+zE
+ye
+iN
+PD
+PD
+PD
+ye
+cL
+YC
+YC
+YC
+YC
+YC
+YC
+YC
+YC
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 sM
 sM
 sM
@@ -2785,6 +4364,7 @@ qx
 Hq
 "}
 (28,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -2833,6 +4413,56 @@ qx
 qx
 qx
 qx
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+HG
+Aq
+HG
+uN
+AT
+AT
+AT
+zb
+AT
+AT
+AT
+WA
+HG
+WA
+ID
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+zE
+ye
+om
+JY
+PD
+Og
+ye
+LA
+zE
+zE
+zE
+ON
+ON
+ON
+ON
+ON
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 sM
 sM
 sM
@@ -2843,6 +4473,7 @@ qx
 Hq
 "}
 (29,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -2891,6 +4522,56 @@ qx
 qx
 qx
 qx
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+CP
+dN
+HG
+rX
+WA
+fN
+fN
+ME
+fN
+fN
+AT
+WA
+HG
+mR
+ID
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ye
+Xn
+JY
+PD
+bg
+ye
+rD
+zE
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 sM
 sM
 sM
@@ -2959,6 +4640,7 @@ qx
 Hq
 "}
 (31,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -3131,6 +4813,180 @@ qx
 qx
 qx
 Hq
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+el
+WA
+HG
+WA
+WA
+WA
+Yl
+Av
+WA
+WA
+WA
+WA
+HG
+xa
+ID
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ye
+aA
+PD
+PD
+bg
+ye
+zE
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(32,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+HG
+WA
+HG
+qn
+WA
+WA
+WA
+Ze
+WA
+WA
+WA
+Dt
+HG
+WA
+Fv
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+zE
+ye
+ye
+xN
+xg
+ye
+ye
+zE
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(33,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+pP
+HG
+Cc
+HG
+rO
+WA
+WA
+WA
+Ze
+NY
+WA
+WA
+WA
+HG
+Cc
+HG
+Rx
+ON
+ON
+ON
+ON
+ON
+zE
+zE
+zE
+ye
+ye
+ye
+ye
+zE
+zE
+rD
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 "}
 (34,1,1) = {"
 Hq
@@ -3191,6 +5047,7 @@ qx
 Hq
 "}
 (35,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -3479,6 +5336,296 @@ qx
 qx
 qx
 Hq
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+jw
+Gl
+Qx
+Qx
+NO
+Qx
+Qx
+hz
+ge
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+rD
+zE
+zE
+zE
+zE
+zE
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(36,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+HG
+HG
+HG
+JR
+Qx
+Qx
+Qx
+NO
+Qx
+Qx
+Qx
+Qx
+HG
+HG
+HG
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(37,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+Lg
+Qx
+HG
+Zr
+Qx
+Qx
+jH
+EL
+Qx
+Qx
+Qx
+oT
+HG
+Qx
+ur
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(38,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+HG
+he
+jo
+Qx
+SR
+Qx
+Xw
+wF
+Xw
+Qx
+SR
+Qx
+cv
+VE
+HG
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(39,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+pP
+HG
+Qx
+HG
+Qx
+Qx
+Qx
+VU
+Qx
+tK
+Qx
+Qx
+Qx
+HG
+DF
+HG
+vv
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 "}
 (40,1,1) = {"
 Hq
@@ -3539,6 +5686,7 @@ qx
 Hq
 "}
 (41,1,1) = {"
+<<<<<<< HEAD
 Hq
 qx
 qx
@@ -3653,6 +5801,122 @@ qx
 qx
 qx
 Hq
+=======
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+HG
+HG
+HG
+jU
+Fe
+jU
+MN
+jU
+jU
+jU
+jU
+HG
+HG
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+rD
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+"}
+(42,1,1) = {"
+bW
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+pP
+HG
+Dr
+Dr
+Dr
+Dr
+Dr
+Dr
+Dr
+HG
+vv
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+rD
+rD
+rD
+rD
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+ON
+bW
+>>>>>>> 8ea2d8a9351 (Fixes For Bitrunner Domains & Safehouses To Fit The New Perspective (#85832))
 "}
 (43,1,1) = {"
 Hq
