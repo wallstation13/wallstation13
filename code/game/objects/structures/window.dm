@@ -86,13 +86,12 @@
 		return
 	/// For performance reasons and to cut down on init times we are "lazy-loading" the leaning component when someone drags their sprite onto us, and then calling dragging code again to trigger the component
 	/// WALLSTATION EDIT BEGIN
-	var/offset = 11
 	if(!fulltile)
-		offset = 6
-	AddComponent(/datum/component/leanable, offset, same_turf = (flags_1 & ON_BORDER_1), lean_check = CALLBACK(src, PROC_REF(lean_check)))
+		return
+	AddComponent(/datum/component/leanable, 11, same_turf = (flags_1 & ON_BORDER_1), lean_check = CALLBACK(src, PROC_REF(lean_check)))
 	added_leaning = TRUE
 	dropping.base_mouse_drop_handler(src, null, null, params)
-	/// comment: characters clip through directional windows if you're on the same tile so I'll just reduce the offset if it's directional
+	/// Comment: characters clip through directional windows if you're on the same tile so I'll disable leaning on directional windows.
 	/// WALLSTATION EDIT END
 /obj/structure/window/proc/lean_check(mob/living/leaner, list/modifiers)
 	if (!(flags_1 & ON_BORDER_1))
@@ -105,14 +104,17 @@
 
 /obj/structure/window/setDir(newdir)
 	. = ..()
-	if(fulltile)
-		return
+	// WALLSTATION EDIT BEGIN
+	///if(fulltile)
+	///	return
 	// Needed because render targets seem to shift larger then 32x32 icons down constantly. No idea why
-	pixel_y = 0
-	pixel_z = 16
-	if(smoothing_flags & SMOOTH_BORDER_OBJECT)
-		QUEUE_SMOOTH_NEIGHBORS(src)
-		QUEUE_SMOOTH(src)
+	///pixel_y = 0
+	///pixel_z = 16
+	///if(smoothing_flags & SMOOTH_BORDER_OBJECT)
+	///	QUEUE_SMOOTH_NEIGHBORS(src)
+	///	QUEUE_SMOOTH(src)
+	/// Comment: This is all wallening stuff, may it rest in peace.
+	// WALLSTATION EDIT END
 
 /obj/structure/window/examine(mob/user)
 	. = ..()
