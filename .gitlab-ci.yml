@@ -1,7 +1,7 @@
 build:
     stage: build
     rules:
-      - if: $CI_MERGE_REQUEST_IID || $CI_COMMIT_REF_NAME == "master"
+      - if: $CI_MERGE_REQUEST_IID || $CI_COMMIT_REF_NAME == "main"
         changes:
           - tgui/**/*.js
           - tgui/**/*.scss

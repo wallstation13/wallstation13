@@ -17,17 +17,24 @@ if ! ( [ -x "$has_git" ] && [ -x "$has_curl" ] && [ -f "/usr/lib/i386-linux-gnu/
 	if ! [ -x "$has_sudo" ]; then
 		dpkg --add-architecture i386
 		apt-get update
-		apt-get install -y lib32z1 git pkg-config libssl-dev:i386 libssl-dev zlib1g-dev:i386 curl
+		apt-get install -y lib32z1 git pkg-config libssl-dev:i386 libssl-dev zlib1g-dev:i386 curl libclang-dev g++-multilib
 	else
 		sudo dpkg --add-architecture i386
 		sudo apt-get update
-		sudo apt-get install -y lib32z1 git pkg-config libssl-dev:i386 libssl-dev zlib1g-dev:i386 curl
+		sudo apt-get install -y lib32z1 git pkg-config libssl-dev:i386 libssl-dev zlib1g-dev:i386 curl libclang-dev g++-multilib
 	fi
 fi
 
 # install cargo if needed
 if ! [ -x "$has_cargo" ]; then
 	echo "Installing rust..."
+	if ! [ -x "$has_sudo" ]; then
+        apt-get update
+        apt-get install -y g++-multilib libclang-dev
+    else
+        sudo apt-get update
+        sudo apt-get install -y g++-multilib libclang-dev
+    fi
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 	. ~/.profile
 fi
