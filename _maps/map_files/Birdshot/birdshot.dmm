@@ -30,7 +30,6 @@
 /area/station/maintenance/department/electrical)
 "aav" = (
 /obj/structure/sink/directional/west,
-/obj/structure/mirror/directional/east,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
@@ -329,7 +328,22 @@
 /turf/open/floor/iron/white/corner{
 	dir = 8
 	},
+<<<<<<< HEAD
 /area/station/hallway/secondary/dock)
+=======
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering Office"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "atmos_airlock_1"
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/turf/open/floor/iron,
+/area/station/engineering/atmos/office)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "agR" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 6
@@ -395,6 +409,42 @@
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/wood/tile,
 /area/station/command/bridge)
+<<<<<<< HEAD
+=======
+"ahF" = (
+/obj/structure/chair/comfy/beige{
+	dir = 4
+	},
+/obj/machinery/button/door/directional/north{
+	id = "CabinS";
+	name = "Bolt Control";
+	normaldoorcontrol = 1;
+	specialfunctions = 4
+	},
+/turf/open/floor/carpet/green,
+/area/station/commons/dorms)
+"ahI" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/iron,
+/area/station/maintenance/department/medical/central)
+"ahV" = (
+/obj/machinery/door/airlock/external{
+	name = "Atmospherics External Access";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/turf/open/floor/plating,
+/area/station/maintenance/disposal/incinerator)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "ahW" = (
 /obj/structure/railing{
 	dir = 1
@@ -637,6 +687,7 @@
 /obj/structure/disposalpipe/junction{
 	dir = 4
 	},
+/obj/structure/sign/warning/pods/directional/north,
 /turf/open/floor/iron/checker,
 /area/station/security/breakroom)
 "apF" = (
@@ -1053,7 +1104,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/mail_sorting/science/xenobiology,
-/obj/machinery/camera/autoname/directional/north,
 /obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/white/side,
 /area/station/science/lower)
@@ -1361,9 +1411,6 @@
 "aBb" = (
 /obj/structure/table/glass,
 /obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/machinery/camera/directional/south{
-	c_tag = "Atmospherics - South"
-	},
 /obj/item/storage/box/syringes{
 	pixel_x = 3;
 	pixel_y = 14
@@ -1798,8 +1845,16 @@
 /obj/machinery/atmospherics/components/trinary/filter/flipped/critical{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/bot{
 	dir = 1
+=======
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -1843,12 +1898,13 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/engineering{
-	name = "Auxillary Base Construction"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/aux_base,
 /obj/machinery/door/firedoor,
 /obj/effect/landmark/navigate_destination,
+/obj/machinery/door/airlock/atmos{
+	dir = 4;
+	name = "Auxiliary Base Construction"
+	},
 /turf/open/floor/iron/textured_half{
 	dir = 8
 	},
@@ -2002,6 +2058,26 @@
 /obj/structure/sign/poster/official/random/directional/north,
 /turf/open/floor/iron/dark/small,
 /area/station/medical/storage)
+<<<<<<< HEAD
+=======
+"aNo" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/turf/open/floor/grass,
+/area/station/service/chapel)
+"aNx" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Dorms";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/textured_half{
+	dir = 1
+	},
+/area/station/commons/fitness/locker_room)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "aNJ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/left/directional/north{
@@ -2069,12 +2145,26 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/machinery/light/warm/dim,
 /obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/tile/neutral,
 /obj/machinery/camera/autoname/directional/south,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
+=======
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/secondary/recreation)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "aOz" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -2191,8 +2281,25 @@
 /obj/effect/turf_decal/siding/wideplating/dark/corner,
 /turf/open/floor/iron,
 /area/station/security)
+<<<<<<< HEAD
 "aQX" = (
 /obj/effect/turf_decal/siding/wideplating{
+=======
+"aQK" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Docking Corridor";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/hallway/secondary/dock)
+"aQO" = (
+/obj/structure/disposalpipe/segment{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -2466,7 +2573,6 @@
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/west,
-/obj/machinery/camera/autoname/directional/west,
 /obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/iron/checker,
 /area/station/security/breakroom)
@@ -2641,7 +2747,23 @@
 /turf/open/floor/iron/dark/textured_corner{
 	dir = 4
 	},
+<<<<<<< HEAD
 /area/station/command/heads_quarters/hop)
+=======
+/turf/open/floor/iron/dark/small,
+/area/station/engineering/supermatter/room)
+"bal" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "bat" = (
 /turf/open/floor/engine/n2o,
 /area/station/ai_monitored/turret_protected/ai)
@@ -2770,6 +2892,35 @@
 /obj/machinery/computer/atmos_control/oxygen_tank{
 	dir = 1
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/requests_console/announcement,
+/obj/effect/mapping_helpers/requests_console/information,
+/obj/machinery/requests_console/directional/south,
+/turf/open/floor/iron/stairs/old{
+	dir = 4
+	},
+/area/station/command/heads_quarters/ce)
+"bdx" = (
+/obj/effect/turf_decal/sand/plating,
+/turf/closed/wall/r_wall,
+/area/space/nearstation)
+"bdL" = (
+/obj/structure/table,
+/obj/machinery/cell_charger{
+	pixel_y = 18
+	},
+/obj/item/stock_parts/power_store/cell/high{
+	pixel_y = 18
+	},
+/obj/item/clothing/suit/hazardvest,
+/obj/effect/turf_decal/siding/thinplating_new/terracotta{
+	dir = 4
+	},
+/obj/machinery/firealarm/directional/west,
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "bed" = (
@@ -3002,6 +3153,33 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
+<<<<<<< HEAD
+=======
+"bjt" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister,
+/turf/open/floor/plating,
+/area/station/maintenance/disposal/incinerator)
+"bjx" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/engineering/gravity_generator)
+"bjB" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 9
+	},
+/obj/structure/flora/bush/flowers_pp/style_random,
+/obj/machinery/camera/directional/north,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "bjL" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/table,
@@ -3206,7 +3384,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/external{
-	name = "Tram Maintenance"
+	name = "Tram Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -3257,6 +3436,7 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/security/checkpoint/engineering)
+<<<<<<< HEAD
 "bnX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -3264,6 +3444,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/herringbone,
 /area/station/commons/dorms)
+=======
+"bnW" = (
+/obj/machinery/door/airlock/security/glass{
+	id_tag = "permaouter";
+	name = "Permabrig Transfer";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/turf/open/floor/iron/textured_half{
+	dir = 1
+	},
+/area/station/security/execution/transfer)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "bob" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -3406,7 +3602,9 @@
 /area/station/security/prison/safe)
 "bqm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
@@ -3579,6 +3777,7 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
+<<<<<<< HEAD
 "bta" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2,
@@ -3586,6 +3785,79 @@
 /obj/structure/lattice,
 /turf/open/space/basic,
 /area/space/nearstation)
+=======
+"btg" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/rag{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = 10;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = 5;
+	pixel_y = 16
+	},
+/obj/item/reagent_containers/cup/glass/drinkingglass{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/cup/glass/shaker{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/sign/warning/no_smoking/circle/directional/north,
+/turf/open/floor/iron/dark/diagonal,
+/area/station/service/bar)
+"btu" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 4
+	},
+/obj/machinery/door/airlock/atmos/glass{
+	name = "Distro Access";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor,
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/turf/open/floor/iron,
+/area/station/engineering/atmos/pumproom)
+"btA" = (
+/obj/effect/turf_decal/tile/red/opposingcorners,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/item/storage/box{
+	pixel_x = -8;
+	pixel_y = 15
+	},
+/obj/structure/extinguisher_cabinet/directional/west,
+/turf/open/floor/iron/smooth,
+/area/station/service/greenroom)
+"btF" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/neutral/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/neutral/line{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/fore)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "btG" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/delivery/white,
@@ -3601,7 +3873,34 @@
 	},
 /turf/open/floor/wood,
 /area/station/engineering/main)
+<<<<<<< HEAD
 "btY" = (
+=======
+"bud" = (
+/obj/machinery/computer/communications{
+	dir = 1
+	},
+/obj/machinery/keycard_auth/wall_mounted/directional/south,
+/turf/open/floor/wood/large,
+/area/station/command/heads_quarters/captain)
+"bue" = (
+/obj/machinery/door/airlock/hatch{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/hallway/secondary/dock)
+"buq" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/station/engineering/atmospherics_engine)
+"bus" = (
+/obj/structure/table/wood,
+/obj/structure/displaycase/forsale/kitchen{
+	pixel_y = 8
+	},
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
@@ -4207,7 +4506,8 @@
 /area/station/maintenance/central/greater)
 "bFR" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /obj/effect/mapping_helpers/airlock/unres{
@@ -5503,7 +5803,9 @@
 "cgZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/delivery/red,
 /obj/effect/mapping_helpers/airlock/access/all/medical/general,
 /obj/machinery/door/airlock/medical/glass{
@@ -5837,7 +6139,9 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/public,
+/obj/machinery/door/airlock/public{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/any/medical/maintenance,
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 8
@@ -5944,7 +6248,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance_hatch{
-	name = "AISat Maintenance"
+	name = "AISat Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -6161,7 +6466,8 @@
 "csF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/green/visible,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "aigas"
+	id = "aigas";
+	dir = 4
 	},
 /obj/effect/spawner/structure/window/survival_pod,
 /turf/open/floor/engine,
@@ -6333,7 +6639,8 @@
 /area/station/hallway/secondary/entry)
 "cwX" = (
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "aigas"
+	id = "aigas";
+	dir = 4
 	},
 /obj/effect/spawner/structure/window/survival_pod,
 /turf/open/floor/engine,
@@ -6467,7 +6774,9 @@
 "cAj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/delivery/red,
 /obj/effect/mapping_helpers/airlock/access/all/medical/surgery,
 /obj/machinery/door/airlock/medical{
@@ -6834,7 +7143,8 @@
 	},
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Two";
-	space_dir = 8
+	space_dir = 8;
+	dir = 4
 	},
 /turf/open/floor/iron/small,
 /area/station/maintenance/port/lesser)
@@ -6857,6 +7167,7 @@
 /obj/item/clothing/mask/surgical,
 /turf/open/floor/iron/small,
 /area/station/medical/storage)
+<<<<<<< HEAD
 "cGV" = (
 /turf/closed/wall/r_wall,
 /area/station/engineering/atmos/storage)
@@ -6864,6 +7175,14 @@
 /obj/structure/tank_dispenser,
 /obj/effect/turf_decal/bot{
 	dir = 1
+=======
+"cGW" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /obj/machinery/light/cold/dim/directional/east,
 /turf/open/floor/iron/smooth,
@@ -6944,7 +7263,8 @@
 "cHR" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/external{
-	name = "Solar Maintenance"
+	name = "Solar Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -6953,6 +7273,28 @@
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /turf/open/floor/plating,
 /area/station/maintenance/department/prison)
+<<<<<<< HEAD
+=======
+"cHS" = (
+/obj/machinery/vending/hydronutrients,
+/obj/effect/turf_decal/tile/green/opposingcorners,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 8
+	},
+/obj/effect/turf_decal/delivery/white{
+	color = "#52B4E9"
+	},
+/obj/item/radio/intercom/directional/north,
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/iron,
+/area/station/service/hydroponics)
+"cHW" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/turf/open/floor/wood,
+/area/station/service/chapel)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "cHX" = (
 /obj/structure/filingcabinet,
 /obj/item/folder/documents,
@@ -7346,6 +7688,23 @@
 	},
 /turf/open/floor/plating,
 /area/station/ai_monitored/turret_protected/aisat/maint)
+"cQR" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/security/glass{
+	id_tag = "permaouter";
+	name = "Permabrig Transfer";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/turf/open/floor/iron/textured_half{
+	dir = 1
+	},
+/area/station/security/execution/transfer)
 "cQV" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Engineering Storage"
@@ -7615,9 +7974,16 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
+=======
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance";
+	dir = 4
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
@@ -7682,7 +8048,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/grunge{
-	name = "Morgue"
+	name = "Morgue";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/morgue,
 /turf/open/floor/iron/dark/textured_half{
@@ -7691,7 +8058,8 @@
 /area/station/hallway/primary/aft)
 "cWZ" = (
 /obj/machinery/door/airlock/external{
-	name = "Primary Docking Bay"
+	name = "Primary Docking Bay";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -8235,14 +8603,57 @@
 /obj/machinery/status_display/ai/directional/north,
 /turf/open/floor/circuit/red,
 /area/station/ai_monitored/turret_protected/ai)
+<<<<<<< HEAD
+=======
+"dfA" = (
+/obj/machinery/atmospherics/pipe/smart/simple/purple/visible{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/open/floor/iron/small,
+/area/station/engineering/atmos/pumproom)
+"dfI" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/machinery/firealarm/directional/south,
+/obj/machinery/camera/directional/south,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+"dfK" = (
+/obj/machinery/atmospherics/pipe/smart/simple/general/visible{
+	dir = 4
+	},
+/obj/effect/spawner/random/engineering/tracking_beacon,
+/turf/open/floor/engine,
+/area/station/science/xenobiology)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "dfN" = (
 /obj/structure/window/spawner/directional/west,
 /obj/structure/window/spawner/directional/south,
 /turf/open/floor/grass,
 /area/station/cargo/storage)
+<<<<<<< HEAD
 "dfT" = (
 /obj/effect/turf_decal/bot{
 	dir = 1
+=======
+"dga" = (
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/station/maintenance/hallway/abandoned_command)
+"dgc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/light/small/directional/south,
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
+"dgf" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
+	dir = 4
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/iron/smooth,
@@ -8377,7 +8788,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "MedbayFoyer";
 	name = "Medbay Clinic"
@@ -8422,11 +8835,26 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "diK" = (
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /obj/effect/turf_decal/tile/blue/opposingcorners{
+=======
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "hopqueue";
+	name = "HoP Queue Shutters"
+	},
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/blue/half{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue/half{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -8625,7 +9053,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 3"
+	name = "Cell 3";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -8674,7 +9103,8 @@
 /area/station/commons/fitness/recreation)
 "dnU" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8814,7 +9244,8 @@
 /area/station/security/office)
 "dre" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Transit Tube Station"
+	name = "Transit Tube Station";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /turf/open/floor/plating,
@@ -8925,6 +9356,17 @@
 /obj/structure/tram,
 /turf/open/floor/tram,
 /area/station/maintenance/port/aft)
+<<<<<<< HEAD
+=======
+"dta" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/stripes/red/line,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 1
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/central/fore)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "dtk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/closed/wall,
@@ -9091,6 +9533,24 @@
 /obj/structure/cable,
 /turf/open/floor/iron/smooth_large,
 /area/station/engineering/storage_shared)
+<<<<<<< HEAD
+=======
+"dwF" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/flora/bush/jungle/a,
+/obj/machinery/status_display/ai/directional/north,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+"dwN" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Recreation"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/textured_half,
+/area/station/commons/fitness/recreation/entertainment)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "dwT" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -9424,9 +9884,12 @@
 /area/station/ai_monitored/turret_protected/ai)
 "dCU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/security/glass{
-	name = "Security Office"
+	name = "Security Office";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
@@ -9523,6 +9986,9 @@
 /area/station/service/hydroponics)
 "dEu" = (
 /obj/machinery/vending/cigarette,
+/obj/machinery/camera/autoname/directional/east{
+	dir = 10
+	},
 /turf/open/floor/iron/kitchen/small,
 /area/station/security/breakroom)
 "dEw" = (
@@ -9711,9 +10177,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/security/glass{
 	id_tag = "permaouter";
-	name = "Permabrig Transfer"
+	name = "Permabrig Transfer";
+	dir = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -9955,7 +10424,8 @@
 	dir = 5
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "aigas"
+	id = "aigas";
+	dir = 4
 	},
 /obj/effect/spawner/structure/window/survival_pod,
 /turf/open/floor/engine,
@@ -10445,7 +10915,6 @@
 /obj/item/retractor,
 /obj/item/hemostat,
 /obj/item/cautery,
-/obj/machinery/camera/autoname/directional/north,
 /obj/structure/sign/poster/official/random/directional/north,
 /obj/machinery/status_display/ai/directional/west,
 /turf/open/floor/iron/showroomfloor,
@@ -10489,7 +10958,6 @@
 /area/station/ai_monitored/turret_protected/ai)
 "dZF" = (
 /obj/structure/sink/directional/west,
-/obj/structure/mirror/directional/east,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
@@ -10532,9 +11000,21 @@
 /obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+<<<<<<< HEAD
 /turf/open/floor/iron,
 /area/station/maintenance/fore/greater)
 "ebc" = (
+=======
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
@@ -10734,7 +11214,8 @@
 /area/station/commons/fitness/locker_room)
 "eeY" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Transit Tube Workshop"
+	name = "Transit Tube Workshop";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine/atmos)
@@ -10901,9 +11382,22 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+<<<<<<< HEAD
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/textured_half,
 /area/station/commons/vacant_room/commissary)
+=======
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/light/small/directional/south,
+/obj/machinery/camera/autoname/directional/south,
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "ehV" = (
 /obj/structure/cable,
 /obj/structure/chair/sofa/right{
@@ -10963,6 +11457,7 @@
 /obj/machinery/light/cold/dim/directional/east,
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/neutral,
+<<<<<<< HEAD
 /obj/structure/sign/directions/evac/directional/east{
 	dir = 2
 	},
@@ -10974,6 +11469,8 @@
 	pixel_y = -8;
 	dir = 2
 	},
+=======
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "eiU" = (
@@ -11053,7 +11550,6 @@
 /obj/effect/mapping_helpers/requests_console/announcement,
 /obj/effect/mapping_helpers/requests_console/information,
 /obj/effect/mapping_helpers/requests_console/assistance,
-/obj/machinery/camera/autoname/directional/west,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/stone,
@@ -11230,7 +11726,8 @@
 /area/station/command/heads_quarters/rd)
 "emB" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /turf/open/floor/plating,
@@ -11686,6 +12183,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold/orange{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "evW" = (
@@ -11709,6 +12207,12 @@
 	dir = 1
 	},
 /area/station/hallway/secondary/dock)
+=======
+/obj/effect/mapping_helpers/airlock/access/all/science/research,
+/obj/machinery/door/firedoor,
+/turf/open/floor/catwalk_floor/iron_white,
+/area/station/science/research)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "ewW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11807,15 +12311,10 @@
 /obj/machinery/modular_computer/preset/id{
 	dir = 1
 	},
-/obj/machinery/requests_console/directional/east{
-	department = "Captain's Desk";
-	name = "Captain's Requests Console";
-	pixel_x = 0;
-	pixel_y = -30
-	},
 /obj/effect/mapping_helpers/requests_console/announcement,
 /obj/effect/mapping_helpers/requests_console/information,
 /obj/effect/mapping_helpers/requests_console/assistance,
+/obj/machinery/requests_console/directional/south,
 /turf/open/floor/wood/large,
 /area/station/command/heads_quarters/captain)
 "ezE" = (
@@ -11874,6 +12373,7 @@
 	dir = 5
 	},
 /obj/machinery/camera/autoname/directional/north,
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/smooth_large,
 /area/station/science/robotics/mechbay)
 "eAo" = (
@@ -12020,7 +12520,9 @@
 /turf/open/floor/grass,
 /area/station/hallway/primary/central/fore)
 "eDo" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/construction,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -12098,9 +12600,12 @@
 	cycle_id = "sci-maint-passthrough"
 	},
 /obj/machinery/door/airlock/hatch{
-	name = "MiniSat Antechamber"
+	name = "MiniSat Antechamber";
+	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/command/minisat,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/ai_monitored/turret_protected/aisat/equipment)
@@ -12231,7 +12736,9 @@
 "eGb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = "MedbayFoyer";
 	name = "Medbay Clinic"
@@ -12493,7 +13000,8 @@
 /area/station/hallway/secondary/entry)
 "eKW" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Bathroom"
+	name = "Bathroom";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
@@ -12512,7 +13020,9 @@
 	name = "E.V.A. Storage"
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/command/eva,
 /turf/open/floor/iron/smooth_half{
 	dir = 1
@@ -12720,7 +13230,8 @@
 /area/station/hallway/primary/aft)
 "eQk" = (
 /obj/machinery/door/airlock/security{
-	name = "Isolation"
+	name = "Isolation";
+	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/white/small,
@@ -12758,7 +13269,8 @@
 /area/station/maintenance/starboard/greater)
 "eQY" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /turf/open/floor/plating,
@@ -12796,6 +13308,31 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/catwalk_floor/iron,
 /area/station/science/lower)
+<<<<<<< HEAD
+=======
+"eSz" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/bush/flowers_yw,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+"eSH" = (
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/machinery/camera/autoname/directional/south,
+/obj/machinery/status_display/door_timer/directional/south{
+	id = "Cell 3";
+	name = "Cell 3"
+	},
+/turf/open/floor/iron/dark/small,
+/area/station/security/brig)
+"eSN" = (
+/obj/machinery/door/airlock/public/glass/incinerator/atmos_exterior,
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/dark/visible,
+/turf/open/floor/engine/vacuum,
+/area/station/maintenance/disposal/incinerator)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "eSV" = (
 /obj/structure/bed/maint,
 /turf/open/floor/iron/small,
@@ -13065,12 +13602,26 @@
 /turf/open/floor/iron,
 /area/station/security/prison/workout)
 "eXB" = (
+<<<<<<< HEAD
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/spawner/random/structure/closet_maintenance,
 /obj/effect/spawner/random/maintenance,
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/central/greater)
+=======
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/wood,
+/area/station/service/chapel/office)
+"eXC" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/iron/small,
+/area/station/service/bar)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "eXK" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/structure/table/wood,
@@ -13459,12 +14010,11 @@
 /area/station/engineering/storage_shared)
 "fgk" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/machinery/status_display/door_timer{
-	id = "Cell 4";
-	name = "Cell 4";
-	pixel_y = -32
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/status_display/door_timer/directional/south{
+	id = "Cell 4";
+	name = "Cell 4"
+	},
 /turf/open/floor/iron/dark/small,
 /area/station/security/brig)
 "fgp" = (
@@ -13587,10 +14137,29 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/greater)
+<<<<<<< HEAD
 "fik" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/eighties,
 /area/station/service/abandoned_gambling_den/gaming)
+=======
+"fir" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/research/glass{
+	name = "Gun Lab"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/science/general,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/iron_white,
+/area/station/science/auxlab/firing_range)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "fiw" = (
 /obj/effect/turf_decal/sand/plating,
 /obj/structure/table,
@@ -13753,12 +14322,25 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/interrogation)
+<<<<<<< HEAD
 "flw" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/bush/flowers_yw/style_3,
 /turf/open/floor/grass,
 /area/station/service/chapel)
 "flx" = (
+=======
+"flF" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock{
+	name = "Kitchen"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/research/glass{
@@ -13835,6 +14417,28 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/service/chapel/funeral)
+<<<<<<< HEAD
+=======
+"fnb" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = -3
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
+	},
+/obj/effect/spawner/random/food_or_drink/condiment,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "fnd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/closed/wall/r_wall,
@@ -14179,7 +14783,7 @@
 	id = "wardshut";
 	name = "Privacy Shutters";
 	pixel_x = 6;
-	pixel_y = -2
+	pixel_y = 16
 	},
 /turf/open/floor/iron,
 /area/station/security/warden)
@@ -14514,6 +15118,40 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/ai_monitored/turret_protected/aisat/maint)
+<<<<<<< HEAD
+=======
+"fzi" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/port)
+"fzk" = (
+/obj/machinery/door/airlock/atmos/glass{
+	name = "Project Room";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "fzq" = (
 /obj/structure/closet/crate/trashcart/filled,
 /turf/open/floor/plating,
@@ -14929,6 +15567,28 @@
 	},
 /turf/open/floor/iron/small,
 /area/station/maintenance/department/electrical)
+<<<<<<< HEAD
+=======
+"fFQ" = (
+/obj/effect/turf_decal/tile/neutral/opposingcorners,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/commons/fitness/recreation/entertainment)
+"fFR" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/security/glass{
+	name = "Security Office";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/turf/open/floor/catwalk_floor/iron_white,
+/area/station/security/checkpoint/science)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "fFT" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -14955,7 +15615,9 @@
 	name = "Virology Interior Airlock"
 	},
 /obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door_buttons/access_button{
 	idDoor = "virology_airlock_interior";
 	idSelf = "virology_airlock_control";
@@ -15140,9 +15802,12 @@
 	cycle_id = "sci-maint-passthrough"
 	},
 /obj/machinery/door/airlock/hatch{
-	name = "MiniSat Antechamber"
+	name = "MiniSat Antechamber";
+	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/command/minisat,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/ai_monitored/turret_protected/aisat/teleporter)
@@ -15344,7 +16009,47 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/security)
+<<<<<<< HEAD
 "fLL" = (
+=======
+"fMd" = (
+/obj/structure/sink/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/machinery/camera/autoname/directional/north,
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/dark/small,
+/area/station/service/chapel/storage)
+"fMf" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/pen{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/small/directional/north,
+/obj/structure/sign/painting/library{
+	pixel_y = 32
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/structure/cable,
+/turf/open/floor/wood/parquet,
+/area/station/service/library)
+"fMk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/public/glass{
+	name = "Departure Lounge";
+	dir = 4
+	},
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -15372,7 +16077,8 @@
 /area/station/hallway/primary/aft)
 "fMv" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Bathroom"
+	name = "Bathroom";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/security/maintenance,
 /turf/open/floor/iron,
@@ -15442,7 +16148,8 @@
 	},
 /obj/machinery/door/poddoor{
 	id = "justiceblast";
-	name = "Justice Blast Door"
+	name = "Justice Blast Door";
+	dir = 4
 	},
 /turf/open/floor/plating/airless,
 /area/station/security/execution/education)
@@ -15582,7 +16289,9 @@
 /area/station/ai_monitored/turret_protected/aisat_interior)
 "fPR" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/door/airlock/external/glass,
+/obj/machinery/door/airlock/external/glass{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
@@ -15908,7 +16617,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 2"
+	name = "Cell 2";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -16020,12 +16730,15 @@
 /turf/open/floor/iron/smooth,
 /area/station/ai_monitored/turret_protected/aisat/foyer)
 "fXB" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/door/airlock/security/glass{
-	name = "Engineering Security Post"
+	name = "Engineering Security Post";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/catwalk_floor,
@@ -16297,6 +17010,22 @@
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plating,
 /area/station/ai_monitored/turret_protected/aisat/maint)
+<<<<<<< HEAD
+=======
+"gda" = (
+/obj/machinery/door/firedoor/heavy{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured,
+/area/station/engineering/atmos/office)
+"gdj" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/station/service/chapel)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gdn" = (
 /obj/item/kirbyplants/organic/applebush,
 /obj/effect/turf_decal/tile/red{
@@ -16337,7 +17066,6 @@
 /area/station/maintenance/fore/lesser)
 "gdD" = (
 /obj/machinery/light/cold/directional/south,
-/obj/structure/sign/warning/pods/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
@@ -16693,6 +17421,18 @@
 /obj/machinery/digital_clock/directional/south,
 /turf/open/floor/wood/tile,
 /area/station/command/bridge)
+<<<<<<< HEAD
+=======
+"giW" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Dorms";
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 1
+	},
+/area/station/commons/fitness/locker_room)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "giY" = (
 /obj/structure/window/spawner/directional/west,
 /obj/structure/lattice,
@@ -16845,7 +17585,9 @@
 /area/station/maintenance/starboard/aft)
 "gmn" = (
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/medical{
 	name = "Cryogenics Bay"
 	},
@@ -17141,8 +17883,29 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 10
 	},
+<<<<<<< HEAD
 /turf/open/floor/iron/small,
 /area/station/commons/fitness/locker_room)
+=======
+/obj/effect/turf_decal/tile/dark_red/half/contrasted,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron,
+/area/station/security/brig/entrance)
+"gtm" = (
+/obj/structure/sign/directions/medical/east_arrow{
+	pixel_y = -8;
+	dir = 2
+	},
+/obj/structure/sign/directions/evac/east_arrow{
+	dir = 2
+	},
+/obj/structure/sign/directions/command/east_arrow{
+	pixel_y = 8;
+	dir = 2
+	},
+/turf/closed/wall,
+/area/station/hallway/primary/fore)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gto" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -17219,6 +17982,45 @@
 "guY" = (
 /turf/closed/wall,
 /area/station/service/chapel/storage)
+<<<<<<< HEAD
+=======
+"gva" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/maintenance/central/greater)
+"gvg" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 6
+	},
+/obj/structure/flora/bush/flowers_yw/style_3,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+"gvm" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Janitorial Closet";
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/service/janitor,
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/service/janitor)
+"gvK" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/iron,
+/area/station/maintenance/starboard/aft)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gvV" = (
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
 /obj/structure/chair/office{
@@ -17379,7 +18181,9 @@
 /turf/open/floor/iron/smooth,
 /area/station/cargo/miningfoundry)
 "gxs" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/research/glass{
 	name = "Chemistry Lab"
 	},
@@ -17666,11 +18470,11 @@
 /obj/structure/table/glass,
 /obj/machinery/recharger{
 	pixel_x = 6;
-	pixel_y = 7
+	pixel_y = 11
 	},
 /obj/machinery/cell_charger{
 	pixel_x = 1;
-	pixel_y = -1
+	pixel_y = 4
 	},
 /turf/open/floor/glass/reinforced,
 /area/station/command/bridge)
@@ -17715,7 +18519,9 @@
 /area/station/engineering/atmos/storage)
 "gBT" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/secure_safe/caps_spare,
+/obj/structure/secure_safe/caps_spare{
+	pixel_y = 7
+	},
 /obj/structure/table/glass,
 /turf/open/floor/glass/reinforced,
 /area/station/command/bridge)
@@ -18006,11 +18812,22 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+<<<<<<< HEAD
 /obj/structure/cable,
 /turf/open/floor/wood/tile,
 /area/station/service/bar)
 "gGy" = (
 /obj/machinery/atmospherics/pipe/smart/simple/orange{
+=======
+/obj/machinery/door/airlock/research{
+	name = "Research and Development Lab"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/science/research,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /obj/structure/lattice,
@@ -18022,6 +18839,14 @@
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
 /turf/open/floor/iron,
 /area/station/security/prison)
+<<<<<<< HEAD
+=======
+"gGI" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/siding/wood,
+/turf/open/floor/stone,
+/area/station/service/chapel)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gGK" = (
 /obj/effect/landmark/start/roboticist,
 /turf/open/floor/iron/smooth_large,
@@ -18356,7 +19181,8 @@
 /area/station/command/corporate_suite)
 "gLZ" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Bridge Closet"
+	name = "Bridge Closet";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/abandoned,
 /obj/effect/mapping_helpers/airlock/access/any/command/maintenance,
@@ -18612,6 +19438,7 @@
 /obj/structure/sign/warning/no_smoking/circle/directional/north,
 /turf/open/floor/iron/smooth,
 /area/station/commons/storage/tools)
+<<<<<<< HEAD
 "gQy" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/structure/cable,
@@ -18619,6 +19446,18 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal/incinerator)
+=======
+"gQF" = (
+/obj/machinery/door/airlock/external{
+	name = "Departure Lounge Airlock";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "sci-entrance"
+	},
+/turf/open/floor/catwalk_floor/iron_smooth,
+/area/station/hallway/secondary/exit/departure_lounge)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gQG" = (
 /obj/structure/window/spawner/directional/east,
 /obj/structure/closet/crate,
@@ -18635,20 +19474,65 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/commons/storage/tools)
+<<<<<<< HEAD
 "gRm" = (
 /obj/structure/flora/bush/flowers_br,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
 /area/station/service/chapel)
+=======
+"gQN" = (
+/obj/structure/sign/warning/engine_safety/directional/north,
+/obj/machinery/light/cold/dim/directional/north,
+/obj/structure/closet/secure_closet/engineering_personal,
+/obj/item/clothing/suit/hooded/wintercoat/engineering,
+/turf/open/floor/iron/small,
+/area/station/engineering/break_room)
+"gRg" = (
+/obj/item/kirbyplants/random,
+/obj/machinery/camera/autoname/directional/west,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/obj/structure/sign/departments/medbay/alt/directional/west,
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/central/aft)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gRp" = (
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/machinery/door/airlock/security{
-	name = "Transfer E.V.A."
+	name = "Transfer E.V.A.";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
 	},
 /area/station/security/tram)
+<<<<<<< HEAD
+=======
+"gRA" = (
+/obj/machinery/door/airlock/highsecurity{
+	name = "Engine Room";
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/general,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "engine_airlock_2"
+	},
+/turf/open/floor/catwalk_floor,
+/area/station/engineering/supermatter/room)
+"gRC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/iron,
+/area/station/hallway/primary/port)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gRG" = (
 /obj/structure/toilet{
 	dir = 8
@@ -18810,7 +19694,9 @@
 /turf/open/floor/iron/cafeteria,
 /area/station/science/circuits)
 "gTW" = (
-/obj/machinery/door/airlock/hatch,
+/obj/machinery/door/airlock/hatch{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/dock)
 "gTX" = (
@@ -18843,7 +19729,9 @@
 /obj/machinery/door/airlock/command{
 	name = "Council Chambers"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
@@ -18899,10 +19787,28 @@
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/hallway/secondary/command)
 "gVi" = (
+<<<<<<< HEAD
 /obj/effect/spawner/structure/window,
 /obj/structure/sign/departments/medbay/alt/directional/east,
 /turf/open/floor/plating,
 /area/station/medical/medbay/lobby)
+=======
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/delivery/red,
+/turf/open/floor/iron/white/small,
+/area/station/medical/medbay/central)
+"gVm" = (
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/station/engineering/atmospherics_engine)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "gVp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood/large,
@@ -19651,6 +20557,18 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/construction)
+<<<<<<< HEAD
+=======
+"hgR" = (
+/obj/machinery/door/airlock/silver{
+	name = "Showers";
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 1
+	},
+/area/station/commons/dorms)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "hgY" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
@@ -19677,6 +20595,14 @@
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /turf/open/floor/iron/textured_half,
 /area/station/security/checkpoint/customs)
+<<<<<<< HEAD
+=======
+"hhj" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "hhk" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/machinery/pdapainter{
@@ -19689,7 +20615,8 @@
 "hhl" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "sci-entrance"
@@ -19697,8 +20624,22 @@
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+<<<<<<< HEAD
 "hhr" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden{
+=======
+"hho" = (
+/obj/structure/mirror/directional/east,
+/obj/structure/chair/stool/bar/directional/east,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/iron/showroomfloor,
+/area/station/service/barber)
+"hhy" = (
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /turf/closed/wall/r_wall,
@@ -19913,7 +20854,9 @@
 	name = "Ordnance Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/ordnance,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/storage)
 "hlX" = (
@@ -20252,7 +21195,9 @@
 /area/station/security/checkpoint/customs)
 "hrE" = (
 /obj/effect/turf_decal/sand/plating,
-/obj/machinery/door/airlock/external/glass,
+/obj/machinery/door/airlock/external/glass{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -20456,7 +21401,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance_hatch{
-	name = "AISat Maintenance"
+	name = "AISat Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -21007,6 +21953,7 @@
 	},
 /turf/open/floor/plating,
 /area/station/ai_monitored/command/storage/eva)
+<<<<<<< HEAD
 "hEu" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -21023,6 +21970,18 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron,
 /area/station/commons/fitness/recreation/entertainment)
+=======
+"hEq" = (
+/obj/machinery/door/morgue{
+	name = "Private Study";
+	req_access = list("library");
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/catwalk_floor/iron_dark,
+/area/station/maintenance/central/greater)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "hED" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -21140,7 +22099,6 @@
 	pixel_x = -2;
 	pixel_y = 6
 	},
-/obj/structure/sign/departments/telecomms/directional/south,
 /turf/open/floor/iron,
 /area/station/science/lobby)
 "hHy" = (
@@ -21365,9 +22323,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/public/glass{
-	name = "Docking Corridor"
+	name = "Docking Corridor";
+	dir = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/textured_half{
 	dir = 8
 	},
@@ -21524,9 +22485,18 @@
 	dir = 1
 	},
 /area/station/security/execution/transfer)
+<<<<<<< HEAD
 "hOO" = (
 /obj/structure/flora/tree/jungle/small/style_4,
 /turf/open/floor/grass,
+=======
+"hOQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/siding/wood/corner{
+	dir = 8
+	},
+/turf/open/floor/stone,
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /area/station/service/chapel)
 "hOX" = (
 /obj/item/chair,
@@ -21595,7 +22565,8 @@
 "hPW" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/external{
-	name = "Solar Maintenance"
+	name = "Solar Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -21739,10 +22710,50 @@
 	},
 /turf/open/floor/iron/diagonal,
 /area/station/engineering/lobby)
+<<<<<<< HEAD
+=======
+"hTc" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister,
+/obj/effect/turf_decal/bot{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/structure/railing/corner,
+/turf/open/floor/iron,
+/area/station/engineering/atmos)
+"hTg" = (
+/turf/closed/wall/r_wall/rust,
+/area/station/maintenance/disposal/incinerator)
+"hTk" = (
+/obj/effect/turf_decal/tile/brown/opposingcorners,
+/obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering Office"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "atmos_airlock_1"
+	},
+/obj/structure/cable,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/turf/open/floor/iron,
+/area/station/engineering/atmos/office)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "hTr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/maintenance{
-	name = "Atmospherics Maintenance"
+	name = "Atmospherics Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/abandoned,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
@@ -22128,7 +23139,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/machinery/door/airlock/security{
-	name = "Prison Transfer Tram"
+	name = "Prison Transfer Tram";
+	dir = 1
 	},
 /turf/open/floor/iron,
 /area/station/security/tram)
@@ -22386,7 +23398,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/security/glass{
-	name = "Secure Gear Storage"
+	name = "Secure Gear Storage";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
@@ -22521,6 +23534,26 @@
 	dir = 1
 	},
 /area/station/science/lobby)
+<<<<<<< HEAD
+=======
+"ifZ" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/service/library)
+"igh" = (
+/obj/effect/spawner/random/structure/crate,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/iron,
+/area/station/maintenance/department/medical/central)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "igr" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -22718,7 +23751,8 @@
 /area/station/ai_monitored/turret_protected/aisat/maint)
 "ijI" = (
 /obj/machinery/door/airlock/external{
-	name = "Primary Docking Bay"
+	name = "Primary Docking Bay";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -22753,9 +23787,12 @@
 /area/station/maintenance/starboard/fore)
 "ikl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/security/glass{
-	name = "Gear Room"
+	name = "Gear Room";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
@@ -23551,6 +24588,13 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/small,
 /area/station/security/detectives_office)
+"ixp" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/extinguisher_cabinet/directional/west,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
 "ixz" = (
 /obj/structure/cable,
 /turf/open/floor/iron/small,
@@ -23743,6 +24787,7 @@
 /obj/structure/bed{
 	dir = 4
 	},
+<<<<<<< HEAD
 /obj/effect/spawner/random/bedsheet{
 	dir = 4
 	},
@@ -23760,6 +24805,12 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/fore/greater)
+=======
+/obj/machinery/computer/security/telescreen/vault/directional/south,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/qm)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "iAy" = (
 /obj/structure/table,
 /obj/item/clothing/shoes/sneakers/orange{
@@ -23962,7 +25013,8 @@
 "iDt" = (
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/machinery/door/airlock/security{
-	name = "Holding Cell"
+	name = "Holding Cell";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/central/lesser)
@@ -24045,6 +25097,31 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/engine,
 /area/station/science/explab)
+<<<<<<< HEAD
+=======
+"iEC" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Public Shrine";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/hallway/primary/central/fore)
+"iED" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron,
+/area/station/maintenance/department/medical/central)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "iEG" = (
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/dark/side{
@@ -24127,7 +25204,8 @@
 "iGp" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/external{
-	name = "Solar Maintenance"
+	name = "Solar Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -24612,7 +25690,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/external{
-	name = "Tram Maintenance"
+	name = "Tram Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -24731,7 +25810,9 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/captain,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/command/glass{
 	name = "Captain's Office"
 	},
@@ -25020,7 +26101,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/obj/structure/sign/warning/pods/directional/west,
 /turf/open/floor/iron/checker,
 /area/station/security/breakroom)
 "iTe" = (
@@ -25075,7 +26155,8 @@
 "iTP" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/external{
-	name = "Solar Maintenance"
+	name = "Solar Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -25590,7 +26671,6 @@
 	},
 /obj/machinery/holopad,
 /obj/machinery/light/small/directional/north,
-/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron/small,
 /area/station/ai_monitored/command/storage/eva)
 "jaL" = (
@@ -25609,7 +26689,6 @@
 /obj/machinery/status_display/supply{
 	pixel_y = 32
 	},
-/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "jaP" = (
@@ -25821,7 +26900,6 @@
 /area/station/engineering/main)
 "jeW" = (
 /obj/effect/spawner/structure/window,
-/obj/structure/sign/departments/medbay/alt/directional/west,
 /turf/open/floor/plating,
 /area/station/medical/medbay/lobby)
 "jfs" = (
@@ -25980,11 +27058,20 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/processing)
+=======
+/obj/effect/mapping_helpers/airlock/access/all/science/research,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/catwalk_floor/iron_white,
+/area/station/science/cytology)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "jir" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -26145,6 +27232,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+<<<<<<< HEAD
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/steam_vent,
 /turf/open/floor/plating,
@@ -26154,6 +27242,22 @@
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/stone,
 /area/station/service/chapel)
+=======
+/obj/machinery/door/airlock/public/glass{
+	name = "Cargo Botique";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 1
+	},
+/area/station/hallway/primary/central/fore)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "jlL" = (
 /obj/structure/closet/secure_closet/engineering_chief,
 /obj/item/storage/briefcase/secure,
@@ -26875,7 +27979,6 @@
 /obj/machinery/status_display/supply{
 	pixel_y = -32
 	},
-/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "jxU" = (
@@ -26978,7 +28081,9 @@
 	name = "Captain's Quarters"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/captain,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
 	},
@@ -27026,7 +28131,9 @@
 	name = "Captain's Bedroom"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/captain,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
 	},
@@ -27239,7 +28346,6 @@
 	},
 /obj/machinery/light/small/directional/north,
 /obj/effect/landmark/start/assistant,
-/obj/structure/sign/warning/no_smoking/circle/directional/north,
 /turf/open/floor/iron,
 /area/station/science/lobby)
 "jEu" = (
@@ -27380,10 +28486,25 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/fore/lesser)
+<<<<<<< HEAD
 "jFK" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
+=======
+"jFS" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/status_display/evac/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/port)
+"jFV" = (
+/obj/machinery/button/transport/tram/directional/south{
+	id = 1;
+	specific_transport_id = "bird_2"
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood/tile,
@@ -27730,7 +28851,9 @@
 	name = "Cargo Office"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/stairs{
 	dir = 4
 	},
@@ -27916,7 +29039,9 @@
 /turf/open/floor/engine/air,
 /area/station/engineering/atmos)
 "jNw" = (
-/obj/machinery/door/airlock/external/glass,
+/obj/machinery/door/airlock/external/glass{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -28330,7 +29455,8 @@
 /area/station/hallway/secondary/entry)
 "jUl" = (
 /obj/machinery/door/airlock/external{
-	name = "Common Mining Dock"
+	name = "Common Mining Dock";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/station/hallway/secondary/dock)
@@ -28398,7 +29524,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/maintenance{
-	name = "Security Maintenance"
+	name = "Security Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plating,
@@ -28628,8 +29755,26 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/greater)
+<<<<<<< HEAD
 "jYe" = (
 /obj/effect/turf_decal/siding/thinplating{
+=======
+"jXX" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/wood/tile,
+/area/station/maintenance/aft)
+"jYq" = (
+/obj/effect/mapping_helpers/airlock/access/any/service/hydroponics,
+/obj/machinery/door/airlock/hydroponics/glass{
+	name = "Hydroponics"
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 8
 	},
 /turf/open/floor/eighties,
@@ -28726,7 +29871,9 @@
 	name = "Ordnance Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/ordnance,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/storage)
 "kam" = (
@@ -28843,7 +29990,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/maintenance_hatch{
-	name = "Construction Hatch"
+	name = "Construction Hatch";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/construction,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -29242,6 +30390,7 @@
 /obj/effect/spawner/random/structure/grille,
 /turf/open/floor/plating,
 /area/station/maintenance/fore/lesser)
+<<<<<<< HEAD
 "kjs" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -29275,6 +30424,14 @@
 /obj/effect/turf_decal/weather/snow,
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 10
+=======
+"kjH" = (
+/obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
+/obj/structure/cable,
+/obj/machinery/door/airlock{
+	id_tag = "commiss2";
+	name = "Commissary"
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -29434,7 +30591,8 @@
 "kmg" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor2";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4
 	},
 /obj/machinery/conveyor{
 	dir = 4;
@@ -29460,7 +30618,8 @@
 "kmo" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor2";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4
 	},
 /obj/machinery/conveyor{
 	dir = 4;
@@ -29754,7 +30913,9 @@
 	cycle_id = "sci-entrance"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/cargo/sorting)
 "kqX" = (
@@ -29902,7 +31063,9 @@
 	cycle_id = "sci-entrance"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/maintenance/port/fore)
 "ksA" = (
@@ -29919,10 +31082,13 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/construction,
 /obj/machinery/door/airlock/highsecurity{
-	name = "Gravity Generator"
+	name = "Gravity Generator";
+	dir = 4
 	},
 /turf/open/floor/catwalk_floor/iron,
 /area/station/engineering/gravity_generator)
@@ -30063,7 +31229,9 @@
 /area/station/engineering/break_room)
 "kux" = (
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -30113,12 +31281,23 @@
 /obj/effect/turf_decal/trimline/neutral/line,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
+<<<<<<< HEAD
 "kvz" = (
 /turf/open/floor/engine/n2o,
 /area/station/engineering/atmos)
 "kvD" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral{
+=======
+"kvm" = (
+/turf/open/floor/wood/parquet,
+/area/station/medical/psychology)
+"kvG" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment{
@@ -30336,6 +31515,18 @@
 /obj/effect/spawner/random/structure/closet_empty/crate,
 /turf/open/floor/iron/smooth_large,
 /area/station/cargo/warehouse)
+<<<<<<< HEAD
+=======
+"kzO" = (
+/obj/effect/turf_decal/siding/wood/end{
+	dir = 8
+	},
+/obj/effect/landmark/navigate_destination/kitchen,
+/obj/machinery/camera/autoname/directional/north,
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/wood,
+/area/station/hallway/primary/central/aft)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "kzP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash,
@@ -30532,7 +31723,8 @@
 /area/station/engineering/main)
 "kEs" = (
 /obj/machinery/door/airlock/external/glass{
-	name = "Supply Door Airlock"
+	name = "Supply Door Airlock";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -30832,7 +32024,9 @@
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/station/cargo/office)
 "kIQ" = (
@@ -30963,6 +32157,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/station/service/chapel/funeral)
+<<<<<<< HEAD
 "kLr" = (
 /obj/structure/table,
 /obj/item/hfr_box/body/waste_output,
@@ -30972,6 +32167,35 @@
 /obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmospherics_engine)
+=======
+"kLs" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/service/bar)
+"kLw" = (
+/obj/structure/chair/sofa/bench/right,
+/obj/machinery/light/dim/directional/north,
+/turf/open/floor/iron/white,
+/area/station/science/cytology)
+"kLC" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Lockers";
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/commons/fitness/locker_room)
+"kLR" = (
+/obj/structure/sign/poster/official/moth_piping/directional/north,
+/obj/machinery/light/cold/dim/directional/north,
+/obj/structure/closet/firecloset,
+/turf/open/floor/iron/small,
+/area/station/engineering/break_room)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "kLS" = (
 /turf/open/floor/iron/stairs{
 	dir = 1
@@ -31772,10 +32996,42 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/solars/port/aft)
 "lbi" = (
+<<<<<<< HEAD
 /obj/structure/flora/bush/flowers_br,
 /obj/structure/flora/bush/flowers_yw,
 /obj/machinery/light/floor,
 /turf/open/floor/grass,
+=======
+/obj/effect/turf_decal/tile/dark_red/opposingcorners,
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/security/brig/entrance)
+"lbn" = (
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/central/aft)
+"lbt" = (
+/obj/structure/table,
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/power_store/cell/high,
+/turf/open/floor/circuit,
+/area/station/maintenance/port/aft)
+"lbz" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/iron,
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /area/station/hallway/primary/central/fore)
 "lbl" = (
 /obj/effect/turf_decal/siding/wood{
@@ -32479,11 +33735,6 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/light/small/directional/west,
 /obj/machinery/light_switch/directional/south,
-/obj/machinery/requests_console/directional/west{
-	department = "Robotics";
-	name = "Robotics Requests Console";
-	pixel_y = -30
-	},
 /obj/effect/mapping_helpers/requests_console/ore_update,
 /obj/effect/mapping_helpers/requests_console/supplies,
 /obj/machinery/button/door/directional/west{
@@ -32491,13 +33742,16 @@
 	name = "Robotics Shutters";
 	pixel_y = 8
 	},
+/obj/machinery/requests_console/directional/south,
 /turf/open/floor/iron,
 /area/station/science/robotics/lab)
 "lka" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/workout)
 "lkd" = (
@@ -32624,7 +33878,9 @@
 /obj/machinery/door/airlock{
 	name = "Xenobiology Maintenance"
 	},
-/obj/structure/barricade/wooden,
+/obj/structure/barricade/wooden{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/science/xenobio,
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
@@ -32835,6 +34091,17 @@
 "lpC" = (
 /turf/open/floor/plating,
 /area/station/service/chapel/funeral)
+<<<<<<< HEAD
+=======
+"lpD" = (
+/obj/effect/landmark/start/hangover,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/machinery/status_display/evac/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "lpJ" = (
 /obj/structure/hedge,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -33333,7 +34600,9 @@
 	name = "Mining Office"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/mining,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "lxI" = (
@@ -33471,7 +34740,9 @@
 /obj/machinery/door/airlock/command{
 	name = "Council Chambers"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
@@ -33702,6 +34973,18 @@
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
+"lCE" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/central/aft)
 "lCK" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -33719,7 +35002,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance{
-	name = "Coroner Office Maintenance"
+	name = "Coroner Office Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/coroner,
 /turf/open/floor/plating,
@@ -33820,7 +35104,8 @@
 "lEJ" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4
 	},
 /obj/machinery/conveyor{
 	dir = 8;
@@ -34052,7 +35337,9 @@
 	name = "Quartermaster's Bedroom"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/qm,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/structure/cable,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
@@ -34080,7 +35367,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/silver{
-	name = "Bathroom"
+	name = "Bathroom";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/captain,
 /turf/open/floor/iron/dark/textured_half{
@@ -34622,7 +35910,27 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/stripes/line{
+=======
+/area/station/hallway/secondary/dock)
+"lRv" = (
+/obj/machinery/status_display/evac/directional/north,
+/turf/open/misc/dirt/station,
+/area/station/service/chapel)
+"lRP" = (
+/obj/effect/spawner/random/structure/closet_maintenance,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/station/maintenance/central/greater)
+"lRZ" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/trimline/neutral/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/neutral/line{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /turf/open/floor/iron/dark/corner{
@@ -34895,10 +36203,30 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
+<<<<<<< HEAD
+=======
+"lVZ" = (
+/obj/machinery/door/firedoor/heavy{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/iron/dark/textured,
+/area/station/engineering/atmos/office)
+"lWf" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 10
+	},
+/obj/structure/flora/bush/sparsegrass,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "lWk" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/large,
 /area/station/hallway/primary/central/fore)
+<<<<<<< HEAD
 "lWp" = (
 /obj/structure/table,
 /obj/machinery/light/small/directional/west,
@@ -34909,6 +36237,23 @@
 /obj/item/clothing/head/collectable/petehat{
 	pixel_x = 5;
 	pixel_y = -5
+=======
+"lWq" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/closed/wall,
+/area/station/hallway/primary/central/aft)
+"lWy" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Dormatories";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/textured_half{
+	dir = 8
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /obj/item/cigarette/cigar/cohiba{
 	pixel_y = 4
@@ -35866,7 +37211,8 @@
 "mmw" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "evashutter";
-	name = "E.V.A. Storage Shutter"
+	name = "E.V.A. Storage Shutter";
+	dir = 4
 	},
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/smooth_half{
@@ -35937,9 +37283,12 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/security/glass{
-	name = "Security Office"
+	name = "Security Office";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/structure/cable,
@@ -36007,6 +37356,7 @@
 /obj/machinery/computer/cargo{
 	dir = 4
 	},
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "mog" = (
@@ -36222,7 +37572,9 @@
 	name = "Cargo Bay"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "msJ" = (
@@ -36685,8 +38037,38 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
+<<<<<<< HEAD
 "mDf" = (
 /obj/structure/chair/wood{
+=======
+"mCM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/plaque{
+	icon_state = "L6";
+	pixel_y = -15
+	},
+/obj/effect/turf_decal/trimline/neutral/line,
+/obj/effect/turf_decal/trimline/neutral/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
+"mCR" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Public Shrine";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -36802,7 +38184,6 @@
 /turf/open/floor/tram,
 /area/station/maintenance/department/medical/central)
 "mEU" = (
-/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/prison/shower)
 "mFh" = (
@@ -37088,8 +38469,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
+<<<<<<< HEAD
 "mJe" = (
 /obj/structure/disposalpipe/segment{
+=======
+"mJn" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Holodeck Door";
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/yellow{
@@ -37161,7 +38548,6 @@
 /area/station/security/courtroom)
 "mJZ" = (
 /obj/structure/cable,
-/obj/machinery/camera/autoname/directional/south,
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron,
 /area/station/security/prison/workout)
@@ -37506,7 +38892,9 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/command{
 	name = "Head of Security's Office"
 	},
@@ -37757,6 +39145,19 @@
 /obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
+<<<<<<< HEAD
+=======
+"mVp" = (
+/obj/machinery/door/airlock/external{
+	name = "Atmospherics External Access";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "mVt" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/dark_red{
@@ -37767,7 +39168,8 @@
 /area/station/ai_monitored/security/armory)
 "mVC" = (
 /obj/machinery/door/airlock/external{
-	name = "Departure Lounge Airlock"
+	name = "Departure Lounge Airlock";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -37858,6 +39260,24 @@
 /obj/item/stack/sheet/mineral/titanium,
 /turf/open/floor/tram,
 /area/station/security/tram)
+<<<<<<< HEAD
+=======
+"mXH" = (
+/obj/effect/turf_decal/weather/dirt{
+	dir = 1
+	},
+/obj/structure/flora/grass/jungle/b/style_3,
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+"mXR" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "mXT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -37918,6 +39338,44 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
+<<<<<<< HEAD
+=======
+"mYv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/chair/sofa/bench/right{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/station/hallway/secondary/dock)
+"mYz" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable,
+/obj/machinery/duct,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/station/maintenance/central/lesser)
+"mYH" = (
+/obj/machinery/door/airlock/public/glass{
+	name = "Lockers";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/commons/fitness/locker_room)
+"mYK" = (
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 6
+	},
+/turf/open/floor/iron/showroomfloor,
+/area/station/commons/dorms)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "mYP" = (
 /obj/structure/table,
 /obj/item/storage/bag/tray/cafeteria{
@@ -37959,7 +39417,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/security{
 	aiControlDisabled = 1;
-	name = "Education Chamber"
+	name = "Education Chamber";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
@@ -38002,6 +39461,9 @@
 	dir = 10
 	},
 /obj/item/radio/intercom/directional/south,
+/obj/machinery/camera/autoname/directional/south{
+	dir = 9
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
 "nah" = (
@@ -38012,9 +39474,12 @@
 "nay" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/public/glass{
-	name = "Research Wing"
+	name = "Research Wing";
+	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/white/textured_half{
 	dir = 1
 	},
@@ -39312,7 +40777,6 @@
 /turf/open/floor/iron/smooth,
 /area/station/service/greenroom)
 "nyB" = (
-/obj/structure/sign/departments/xenobio/alt/directional/west,
 /turf/open/floor/iron/white/corner{
 	dir = 4
 	},
@@ -39346,7 +40810,9 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/command/heads_quarters/qm)
 "nyT" = (
@@ -39744,7 +41210,6 @@
 /obj/effect/turf_decal/tile/dark_red{
 	dir = 4
 	},
-/obj/machinery/camera/autoname/directional/north,
 /obj/structure/cable,
 /obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/dark,
@@ -40123,10 +41588,14 @@
 /obj/effect/turf_decal/trimline/neutral/line{
 	dir = 1
 	},
+<<<<<<< HEAD
 /obj/effect/turf_decal/trimline/neutral/line,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+=======
+/obj/machinery/status_display/evac/directional/north,
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
 "nNA" = (
@@ -40655,7 +42124,9 @@
 "nXt" = (
 /obj/effect/turf_decal/tile/yellow/full,
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/window/right/directional/east{
 	name = "Pharmacy Desk";
 	req_access = list("pharmacy")
@@ -40997,7 +42468,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/door/airlock/maintenance{
-	name = "Funerary Driver"
+	name = "Funerary Driver";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
 /turf/open/floor/plating,
@@ -41381,9 +42853,11 @@
 	name = "Ordnance Lab"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/ordnance,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
+	dir = 4;
 	id = "rdordnance";
 	name = "Ordnance Lab Shutters"
 	},
@@ -41619,9 +43093,20 @@
 	dir = 1
 	},
 /area/station/hallway/secondary/entry)
+<<<<<<< HEAD
 "oqi" = (
 /obj/machinery/atmospherics/components/trinary/filter{
 	dir = 4
+=======
+"oqp" = (
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	location = "QM #2"
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
@@ -41640,6 +43125,7 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/dock)
+<<<<<<< HEAD
 "oqT" = (
 /obj/machinery/camera/autoname/directional/north,
 /obj/machinery/firealarm/directional/north,
@@ -41657,6 +43143,14 @@
 /obj/structure/sign/poster/official/random/directional/north,
 /turf/open/floor/iron/small,
 /area/station/service/barber)
+=======
+"oqM" = (
+/obj/effect/turf_decal/weather/dirt,
+/obj/structure/flora/bush/flowers_yw/style_3,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "ora" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -41691,11 +43185,18 @@
 /obj/structure/cable,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/solars/starboard/fore)
+<<<<<<< HEAD
 "orW" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+=======
+"orE" = (
+/obj/machinery/door/airlock/grunge{
+	name = "Gambling Den";
+	dir = 4
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
@@ -41816,7 +43317,9 @@
 	id_tag = "com_guest";
 	name = "Guest Suite"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
@@ -41872,7 +43375,8 @@
 /area/station/maintenance/starboard/greater)
 "ouN" = (
 /obj/machinery/door/airlock/external/glass{
-	name = "Supply Door Airlock"
+	name = "Supply Door Airlock";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -41914,6 +43418,34 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+<<<<<<< HEAD
+=======
+"ovX" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/side,
+/area/station/cargo/office)
+"ovZ" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
+"owa" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/stairs/right{
+	dir = 1
+	},
+/area/station/maintenance/hallway/abandoned_command)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "owb" = (
 /obj/structure/cable,
 /obj/machinery/firealarm/directional/south,
@@ -42116,10 +43648,26 @@
 /obj/structure/mannequin/plastic,
 /turf/open/floor/carpet/blue,
 /area/station/cargo/boutique)
+<<<<<<< HEAD
 "ozQ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /turf/closed/wall/r_wall,
 /area/station/engineering/supermatter)
+=======
+"ozU" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
+	},
+/obj/effect/spawner/random/food_or_drink/donuts,
+/turf/open/floor/plating,
+/area/station/service/kitchen)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "ozV" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -42163,7 +43711,8 @@
 "oBv" = (
 /obj/machinery/door/airlock/external{
 	name = "Labor Camp Shuttle Airlock";
-	shuttledocked = 1
+	shuttledocked = 1;
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -42745,10 +44294,27 @@
 /obj/effect/turf_decal/tile/dark_red/half/contrasted,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
+<<<<<<< HEAD
 /area/station/security/brig/entrance)
 "oLr" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
+=======
+/area/station/maintenance/fore/greater)
+"oMk" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/visible/layer4,
+/obj/structure/lattice,
+/turf/open/misc/asteroid/airless,
+/area/space/nearstation)
+"oMr" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	},
 /obj/effect/mapping_helpers/broken_floor,
 /obj/machinery/light/small/directional/north,
@@ -42783,11 +44349,20 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/white/small,
 /area/station/medical/storage)
+<<<<<<< HEAD
 "oNs" = (
 /turf/open/floor/iron/stairs/left{
 	dir = 1
 	},
 /area/station/maintenance/hallway/abandoned_command)
+=======
+"oNg" = (
+/obj/machinery/door/poddoor/incinerator_atmos_main{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/station/maintenance/disposal/incinerator)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "oNv" = (
 /obj/effect/turf_decal/tile/dark_red/anticorner/contrasted{
 	dir = 1
@@ -43031,7 +44606,8 @@
 "oQr" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4
 	},
 /obj/machinery/conveyor{
 	dir = 8;
@@ -43144,7 +44720,8 @@
 "oRV" = (
 /obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
 /obj/machinery/door/airlock/grunge{
-	name = "St. Brendan's"
+	name = "St. Brendan's";
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -43917,6 +45494,7 @@
 	pixel_y = 2
 	},
 /obj/machinery/camera/autoname/directional/north,
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron/small,
 /area/station/ai_monitored/command/storage/eva)
 "pfT" = (
@@ -43996,6 +45574,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/structure/sign/directions/security/directional/west{
 	dir = 2
 	},
@@ -44007,6 +45586,8 @@
 	pixel_y = -8;
 	dir = 10
 	},
+=======
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "phG" = (
@@ -44261,7 +45842,9 @@
 /area/station/medical/medbay/central)
 "plr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
@@ -44812,7 +46395,6 @@
 /area/station/medical/medbay/lobby)
 "pwn" = (
 /obj/effect/spawner/random/vending/colavend,
-/obj/structure/sign/departments/telecomms/directional/south,
 /turf/open/floor/iron,
 /area/station/science/lower)
 "pwq" = (
@@ -44875,7 +46457,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 4"
+	name = "Cell 4";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -44912,6 +46495,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
+	},
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/plating,
 /area/station/maintenance/port/greater)
 "pyF" = (
@@ -45536,6 +47127,20 @@
 	},
 /turf/open/floor/engine,
 /area/station/science/cytology)
+"pIt" = (
+/obj/structure/sign/directions/science/west_arrow{
+	pixel_y = 8;
+	dir = 10
+	},
+/obj/structure/sign/directions/security/west_arrow{
+	dir = 2
+	},
+/obj/structure/sign/directions/upload/west_arrow{
+	pixel_y = -8;
+	dir = 10
+	},
+/turf/closed/wall/r_wall,
+/area/station/hallway/primary/fore)
 "pIw" = (
 /obj/structure/bodycontainer/morgue,
 /turf/open/floor/iron/dark/small,
@@ -45581,6 +47186,23 @@
 	dir = 8
 	},
 /area/station/cargo/storage)
+<<<<<<< HEAD
+=======
+"pJp" = (
+/obj/machinery/door/airlock/atmos/glass{
+	name = "HFR Chamber";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/station/engineering/atmospherics_engine)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "pJr" = (
 /obj/machinery/portable_atmospherics/canister,
 /turf/open/floor/plating,
@@ -45623,9 +47245,12 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "pKi" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/security{
-	name = "Security Transferring Center"
+	name = "Security Transferring Center";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
@@ -45715,7 +47340,9 @@
 	name = "E.V.A. Storage"
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
 /obj/machinery/door/poddoor/preopen{
 	id = "bridge blast";
@@ -46016,7 +47643,6 @@
 	},
 /obj/machinery/mechpad,
 /obj/machinery/light/small/directional/north,
-/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/smooth_large,
 /area/station/science/robotics/mechbay)
 "pQE" = (
@@ -46220,7 +47846,9 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/chemistry)
 "pUs" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/construction,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -46264,6 +47892,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/light/small/directional/east,
+/obj/machinery/camera/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/command/corporate_dock)
 "pUM" = (
@@ -46278,7 +47907,8 @@
 "pUS" = (
 /obj/machinery/door/airlock/external{
 	name = "Labor Camp Shuttle Airlock";
-	shuttledocked = 1
+	shuttledocked = 1;
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -46538,7 +48168,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "pYu" = (
-/obj/machinery/door/airlock/external/glass,
+/obj/machinery/door/airlock/external/glass{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -46605,6 +48237,7 @@
 	pixel_y = 3
 	},
 /obj/machinery/airalarm/directional/south,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "pZK" = (
@@ -46921,6 +48554,30 @@
 	dir = 8;
 	name = "Pure to Waste"
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance";
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
+"qfN" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/status_display/ai/directional/south,
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "qfV" = (
@@ -47257,7 +48914,6 @@
 "qld" = (
 /obj/machinery/destructive_scanner,
 /obj/machinery/light/small/directional/south,
-/obj/structure/sign/departments/telecomms/directional/south,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
 "qli" = (
@@ -47368,7 +49024,8 @@
 "qnc" = (
 /obj/machinery/door/airlock/external{
 	name = "Labor Camp Shuttle Airlock";
-	shuttledocked = 1
+	shuttledocked = 1;
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -47465,6 +49122,7 @@
 	pixel_y = 4
 	},
 /obj/item/restraints/handcuffs,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/security/checkpoint/escape)
 "qqd" = (
@@ -47492,9 +49150,15 @@
 /turf/open/floor/eighties/red,
 /area/station/hallway/primary/central/fore)
 "qrb" = (
-/obj/structure/sign/warning/biohazard,
-/turf/closed/wall/r_wall,
-/area/station/science/xenobiology)
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/camera/autoname/directional/north,
+/turf/open/floor/iron/white/side,
+/area/station/science/lower)
 "qrg" = (
 /obj/structure/cable,
 /obj/structure/displaycase/captain{
@@ -48018,9 +49682,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/security/glass{
 	id_tag = "permaouter";
-	name = "Permabrig Transfer"
+	name = "Permabrig Transfer";
+	dir = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -48608,7 +50275,9 @@
 "qKS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/delivery/red,
 /obj/machinery/door/airlock/medical/glass{
 	name = "CMO Office"
@@ -49332,7 +51001,8 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance_hatch{
-	name = "AISat Maintenance"
+	name = "AISat Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -49501,6 +51171,7 @@
 /area/station/maintenance/port/aft)
 "qYD" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/prison/shower)
 "qYE" = (
@@ -49599,6 +51270,27 @@
 	},
 /turf/open/floor/tram,
 /area/station/maintenance/port/aft)
+<<<<<<< HEAD
+=======
+"qZL" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Engineering Maintenance";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/general,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
+"qZN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/machinery/light/small/dim/directional/south,
+/turf/open/floor/iron/white/small,
+/area/station/service/hydroponics)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "qZU" = (
 /obj/machinery/portable_atmospherics/canister/plasma,
 /obj/effect/turf_decal/stripes/white/line{
@@ -49606,6 +51298,30 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/station/science/ordnance/storage)
+<<<<<<< HEAD
+=======
+"rab" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/fore)
+"rac" = (
+/obj/machinery/door/airlock/external{
+	name = "Atmospherics External Access";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/turf/open/floor/plating,
+/area/station/maintenance/disposal/incinerator)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "raf" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
@@ -50096,7 +51812,9 @@
 /turf/open/floor/iron/smooth,
 /area/station/cargo/warehouse)
 "rig" = (
-/obj/machinery/door/poddoor/massdriver_chapel,
+/obj/machinery/door/poddoor/massdriver_chapel{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/station/service/chapel/funeral)
 "rik" = (
@@ -50659,7 +52377,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/public/glass{
-	name = "Prison Garden"
+	name = "Prison Garden";
+	dir = 4
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/textured_half{
@@ -50807,7 +52526,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/external{
-	name = "Tram Maintenance"
+	name = "Tram Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -51496,6 +53216,7 @@
 /obj/structure/cable,
 /turf/open/floor/iron/smooth,
 /area/station/engineering/main)
+<<<<<<< HEAD
 "rHl" = (
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 1
@@ -51504,6 +53225,22 @@
 /obj/machinery/vending/cigarette,
 /turf/open/floor/iron/dark/side,
 /area/station/hallway/primary/central/fore)
+=======
+"rHi" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/public/glass{
+	name = "Dormatories";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/commons/fitness/locker_room)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "rHp" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/landmark/event_spawn,
@@ -51706,6 +53443,14 @@
 	},
 /turf/open/floor/iron/dark/herringbone,
 /area/station/ai_monitored/command/nuke_storage)
+"rLP" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/camera/autoname/directional/south,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
 "rMb" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/landmark/generic_maintenance_landmark,
@@ -51948,11 +53693,25 @@
 /obj/structure/sign/poster/official/random/directional/west,
 /turf/open/floor/iron,
 /area/station/engineering/main)
+<<<<<<< HEAD
 "rPW" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
 /area/station/service/chapel)
+=======
+"rPY" = (
+/obj/machinery/door/airlock/maintenance{
+	name = "Atmospherics Maintenance";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/mapping_helpers/airlock/access/all/engineering/atmos,
+/turf/open/floor/plating,
+/area/station/maintenance/disposal/incinerator)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "rQi" = (
 /turf/closed/wall/r_wall,
 /area/station/engineering/main)
@@ -52006,9 +53765,12 @@
 "rRf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/public/glass{
-	name = "Courtroom"
+	name = "Courtroom";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/effect/mapping_helpers/airlock/access/any/security/court,
@@ -52483,7 +54245,9 @@
 /area/station/engineering/atmos)
 "rYG" = (
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/workout)
 "rYL" = (
@@ -52645,7 +54409,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
@@ -52842,7 +54608,9 @@
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
@@ -52890,7 +54658,9 @@
 	name = "Cargo Bay"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "sgO" = (
@@ -53342,7 +55112,8 @@
 "spg" = (
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/machinery/door/airlock/security{
-	name = "Courtroom"
+	name = "Courtroom";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/security/court,
 /turf/open/floor/plating,
@@ -53737,7 +55508,9 @@
 	name = "Xenobiology Secure Lab"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/xenobio,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "svD" = (
@@ -53750,6 +55523,30 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/science/explab)
+<<<<<<< HEAD
+=======
+"svH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/iron,
+/area/station/hallway/primary/port)
+"svJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/camera/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/port)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "svK" = (
 /obj/machinery/light/cold/dim/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -53787,7 +55584,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Four";
-	space_dir = 4
+	space_dir = 4;
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -53872,7 +55670,8 @@
 /area/station/cargo/storage)
 "swT" = (
 /obj/machinery/door/airlock/maintenance_hatch{
-	name = "Engineering Maintenance"
+	name = "Engineering Maintenance";
+	dir = 4
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
@@ -53914,7 +55713,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Four";
-	space_dir = 4
+	space_dir = 4;
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -54139,7 +55939,9 @@
 	name = "Medbay"
 	},
 /obj/effect/turf_decal/delivery/red,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 8
 	},
@@ -54404,6 +56206,19 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/station/engineering/break_room)
+<<<<<<< HEAD
+=======
+"sHN" = (
+/obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
+/obj/machinery/door/airlock{
+	name = "Kitchen"
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "sHO" = (
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
 	dir = 4
@@ -54650,7 +56465,9 @@
 	cycle_id = "sci-entrance"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
 	},
@@ -55054,8 +56871,20 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/iron,
 /area/station/hallway/secondary/recreation)
+=======
+/obj/machinery/door/airlock/maintenance{
+	name = "Crematorium";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/service/chapel_office,
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/service/chapel/storage)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "sSq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -55654,7 +57483,8 @@
 "tbk" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/hatch{
-	name = "Experimentation Chamber"
+	name = "Experimentation Chamber";
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -55803,6 +57633,35 @@
 /obj/effect/turf_decal/bot_white/left,
 /turf/open/floor/engine,
 /area/station/engineering/gravity_generator)
+<<<<<<< HEAD
+=======
+"tdJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/siding/red{
+	dir = 10
+	},
+/turf/open/floor/iron/small,
+/area/station/security/office)
+"tdM" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/security/armory,
+/obj/machinery/door/airlock/security{
+	name = "Warden's Office";
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/security/warden)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "tdO" = (
 /obj/effect/turf_decal/stripes/white/end{
 	dir = 4
@@ -55844,10 +57703,24 @@
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating{
+=======
+/turf/open/floor/stone,
+/area/station/service/chapel)
+"tek" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -55990,7 +57863,9 @@
 /obj/structure/desk_bell{
 	pixel_x = 6
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 8;
 	id = "roboticshut";
@@ -56307,7 +58182,8 @@
 "tmT" = (
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod Two";
-	space_dir = 8
+	space_dir = 8;
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -56661,12 +58537,41 @@
 /obj/machinery/computer/atmos_control/plasma_tank,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
+<<<<<<< HEAD
 "tsb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/sign/departments/aiupload/directional/south,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
+=======
+"trZ" = (
+/obj/structure/flora/tree/jungle/small/style_3,
+/obj/effect/turf_decal/weather/dirt,
+/obj/machinery/light/small/directional/south,
+/obj/machinery/camera/directional/south,
+/turf/open/floor/grass,
+/area/station/service/chapel)
+"tsb" = (
+/obj/machinery/door/airlock/security{
+	name = "Isolation";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/turf/open/floor/iron/white/small,
+/area/station/security/prison/safe)
+"tsr" = (
+/obj/effect/turf_decal/tile/red/opposingcorners,
+/obj/effect/turf_decal/tile/blue/opposingcorners{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/west,
+/turf/open/floor/iron/smooth,
+/area/station/service/greenroom)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "tst" = (
 /obj/machinery/atmospherics/pipe/smart/simple/general/visible{
 	dir = 4
@@ -56739,7 +58644,9 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
 "ttX" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -57048,7 +58955,6 @@
 /area/station/maintenance/hallway/abandoned_command)
 "tyA" = (
 /obj/machinery/vending/modularpc,
-/obj/structure/sign/departments/science/alt/directional/east,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
 "tyD" = (
@@ -57062,6 +58968,50 @@
 /obj/effect/landmark/transport/nav_beacon/tram/nav/birdshot/prison,
 /turf/open/floor/tram,
 /area/station/security/tram)
+<<<<<<< HEAD
+=======
+"tza" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/smooth,
+/area/station/engineering/main)
+"tze" = (
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/station/security/office)
+"tzl" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/status_display/ai/directional/north,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/fore)
+"tzm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/central/fore)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "tzo" = (
 /obj/structure/alien/egg/burst,
 /obj/structure/alien/weeds,
@@ -57075,7 +59025,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
 /turf/open/floor/plating,
@@ -57320,7 +59271,9 @@
 /area/station/medical/treatment_center)
 "tDb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -57365,7 +59318,8 @@
 "tDE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/public/glass{
-	name = "Departure Lounge"
+	name = "Departure Lounge";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -57547,7 +59501,9 @@
 "tHL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/secondary/entry)
 "tIa" = (
@@ -57622,7 +59578,9 @@
 	name = "Xenobiology Secure Lab"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/xenobio,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "tJz" = (
@@ -57661,6 +59619,7 @@
 /obj/structure/closet/emcloset,
 /turf/open/floor/plating,
 /area/station/maintenance/port/greater)
+<<<<<<< HEAD
 "tKl" = (
 /obj/effect/landmark/start/assistant,
 /obj/effect/turf_decal/tile/neutral{
@@ -57679,6 +59638,18 @@
 /obj/machinery/light/no_nightlight/directional/south,
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
+=======
+"tKv" = (
+/obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
+/obj/machinery/door/airlock/grunge{
+	name = "St. Brendan's";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/station/maintenance/starboard/greater)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "tKG" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/mapping_helpers/broken_floor,
@@ -57774,6 +59745,27 @@
 	},
 /turf/open/floor/circuit,
 /area/station/tcommsat/server)
+<<<<<<< HEAD
+=======
+"tMw" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock{
+	name = "Theater Greenroom"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/service/theatre,
+/obj/structure/cable,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/service/greenroom)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "tMS" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -58133,7 +60125,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 1"
+	name = "Cell 1";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -58254,12 +60247,15 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/airlock/public/glass{
-	name = "Research Wing"
+	name = "Research Wing";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "sci-entrance"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 8;
 	id = "rdrnd";
@@ -58407,7 +60403,8 @@
 /area/station/science/breakroom)
 "tWQ" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Departure Lounge"
+	name = "Departure Lounge";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -58923,7 +60920,9 @@
 	id = "hop";
 	name = "Privacy Shutters"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
 /obj/machinery/door/window/brigdoor/right/directional/east{
 	name = "Head of Personnel's Desk";
 	req_access = list("hop")
@@ -59121,8 +61120,32 @@
 /obj/structure/chair/bronze,
 /turf/open/floor/wood/tile,
 /area/station/maintenance/port/lesser)
+<<<<<<< HEAD
 "uhy" = (
 /obj/effect/turf_decal/stripes/red/line{
+=======
+"uhB" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/maintenance{
+	name = "Crematorium";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/security/brig/entrance)
+"uhI" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden,
+/obj/effect/turf_decal/siding/wideplating{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -59421,6 +61444,17 @@
 "ulO" = (
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
+"umb" = (
+/obj/structure/sign/directions/security/west_arrow{
+	pixel_y = 8
+	},
+/obj/structure/sign/directions/evac/west_arrow,
+/obj/structure/sign/directions/science/west_arrow{
+	dir = 4;
+	pixel_y = -8
+	},
+/turf/closed/wall,
+/area/station/service/bar)
 "ume" = (
 /obj/structure/chair/stool/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -59531,7 +61565,9 @@
 /area/station/maintenance/starboard/central)
 "upg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -59709,7 +61745,9 @@
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /obj/structure/disposalpipe/segment{
@@ -59774,7 +61812,8 @@
 /area/station/commons/vacant_room/commissary)
 "uru" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/security/maintenance,
 /turf/open/floor/plating,
@@ -59911,7 +61950,9 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/command/heads_quarters/qm)
 "utP" = (
@@ -59932,6 +61973,7 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
+<<<<<<< HEAD
 "uuz" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/tile/brown/opposingcorners{
@@ -59942,6 +61984,21 @@
 /obj/machinery/camera/directional/west,
 /turf/open/floor/iron,
 /area/station/commons/vacant_room/commissary)
+=======
+"uum" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/central/fore)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "uuN" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -60116,7 +62173,25 @@
 /turf/open/floor/iron/white/corner{
 	dir = 1
 	},
+<<<<<<< HEAD
 /area/station/hallway/secondary/dock)
+=======
+/turf/open/floor/iron,
+/area/station/engineering/atmos/project)
+"uzV" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/mining{
+	name = "Drone Bay"
+	},
+/obj/effect/mapping_helpers/airlock/access/any/supply/maintenance,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/cargo/drone_bay)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "uzZ" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -60149,8 +62224,21 @@
 	dir = 4
 	},
 /obj/structure/cable,
+<<<<<<< HEAD
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
+=======
+/obj/effect/turf_decal/siding/dark_red{
+	dir = 1
+	},
+/obj/structure/secure_safe/hos{
+	pixel_x = 15;
+	pixel_y = 28
+	},
+/obj/machinery/camera/autoname/directional/north,
+/turf/open/floor/stone,
+/area/station/command/heads_quarters/hos)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "uAK" = (
 /obj/machinery/computer/security,
 /obj/effect/turf_decal/siding/red{
@@ -60387,6 +62475,18 @@
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/stone,
 /area/station/command/corporate_suite)
+<<<<<<< HEAD
+=======
+"uEq" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	id = "meow";
+	name = "Commissary";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/commons/vacant_room/commissary)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "uEC" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/effect/turf_decal/box/red/corners{
@@ -60505,9 +62605,12 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/public/glass{
-	name = "Research Wing"
+	name = "Research Wing";
+	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/iron/white/textured_half{
 	dir = 1
 	},
@@ -60544,12 +62647,15 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/public/glass{
-	name = "Research Wing"
+	name = "Research Wing";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "sci-entrance"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 8;
 	id = "rdrnd";
@@ -60777,11 +62883,23 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
+<<<<<<< HEAD
 /area/station/service/hydroponics)
 "uJq" = (
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plating,
 /area/station/maintenance/fore/greater)
+=======
+/area/station/hallway/primary/central/aft)
+"uJk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/port)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "uJD" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 1
@@ -61101,7 +63219,9 @@
 /area/station/science/ordnance/storage)
 "uQc" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/station/medical/pharmacy)
 "uQf" = (
@@ -61149,6 +63269,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/light/warm/dim,
+/obj/effect/turf_decal/tile/neutral,
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "uQT" = (
@@ -61505,7 +63630,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/grunge{
-	name = "Cell 5"
+	name = "Cell 5";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -61525,7 +63651,9 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/medbay/lobby)
 "uWZ" = (
-/obj/machinery/door/airlock/public,
+/obj/machinery/door/airlock/public{
+	dir = 4
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/airlock/access/any/medical/maintenance,
 /turf/open/floor/plating,
@@ -61691,6 +63819,19 @@
 /obj/item/kirbyplants/organic/applebush,
 /turf/open/floor/iron/smooth,
 /area/station/hallway/secondary/command)
+<<<<<<< HEAD
+=======
+"vaQ" = (
+/obj/machinery/camera/autoname/directional/west{
+	dir = 6
+	},
+/obj/machinery/status_display/evac/directional/west,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "vba" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -61713,7 +63854,6 @@
 /turf/open/floor/iron/dark,
 /area/station/medical/medbay/central)
 "vbA" = (
-/obj/structure/sign/departments/science/alt/directional/east,
 /obj/machinery/camera/autoname/directional/east,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
@@ -61787,6 +63927,18 @@
 	},
 /turf/open/floor/iron/dark/herringbone,
 /area/station/security/courtroom)
+<<<<<<< HEAD
+=======
+"vcU" = (
+/obj/machinery/smartfridge,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
+	},
+/turf/open/floor/iron/kitchen/small,
+/area/station/service/kitchen)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "vcW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -61928,7 +64080,8 @@
 "veA" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/door/poddoor/shutters/preopen{
-	id = "aigas"
+	id = "aigas";
+	dir = 4
 	},
 /obj/effect/spawner/structure/window/survival_pod,
 /obj/machinery/status_display/ai/directional/north,
@@ -61967,7 +64120,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/external{
-	name = "Tram Maintenance"
+	name = "Tram Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -62490,7 +64644,8 @@
 "vmH" = (
 /obj/machinery/door/morgue{
 	name = "Confession Booth (Chaplain)";
-	req_access = list("chapel_office")
+	req_access = list("chapel_office");
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -62687,10 +64842,28 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron,
 /area/station/security)
+<<<<<<< HEAD
 "voN" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/r_wall,
 /area/station/command/teleporter)
+=======
+"voK" = (
+/obj/machinery/light/small/directional/south,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
+"voT" = (
+/obj/structure/table,
+/obj/item/stack/cable_coil{
+	pixel_x = -1;
+	pixel_y = -3
+	},
+/obj/item/stack/cable_coil,
+/turf/open/floor/iron/dark,
+/area/station/engineering/atmospherics_engine)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "vpb" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Tool Supply Corridor"
@@ -62858,9 +65031,12 @@
 /turf/open/floor/iron/herringbone,
 /area/station/commons/dorms)
 "vrO" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/grunge{
-	name = "Courtroom"
+	name = "Courtroom";
+	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_half{
 	dir = 1
@@ -64092,7 +66268,9 @@
 	name = "Medbay"
 	},
 /obj/effect/turf_decal/delivery/red,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 8
 	},
@@ -64274,10 +66452,13 @@
 /turf/open/misc/asteroid,
 /area/station/maintenance/starboard/greater)
 "vMs" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/public/glass{
-	name = "Arrivals"
+	name = "Arrivals";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 8
@@ -64610,6 +66791,7 @@
 /turf/open/floor/iron/small,
 /area/station/service/bar)
 "vSL" = (
+<<<<<<< HEAD
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -64619,6 +66801,11 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/primary/aft)
+=======
+/obj/structure/sign/departments/medbay/alt/directional/east,
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/starboard)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "vSM" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -64823,7 +67010,6 @@
 /obj/machinery/light/cold/directional/south,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/dark_red/fourcorners,
-/obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron/smooth,
 /area/station/security/checkpoint/escape)
 "vVx" = (
@@ -64904,9 +67090,12 @@
 "vWr" = (
 /obj/machinery/door/airlock/security/glass{
 	id_tag = "permaouter";
-	name = "Permabrig Transfer"
+	name = "Permabrig Transfer";
+	dir = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/iron/textured_half{
 	dir = 1
@@ -65603,9 +67792,12 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/maintenance_hatch{
-	name = "Construction Hatch"
+	name = "Construction Hatch";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/construction,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -65843,9 +68035,21 @@
 /obj/machinery/holopad,
 /turf/open/floor/iron/showroomfloor,
 /area/station/medical/surgery/theatre)
+<<<<<<< HEAD
 "wmL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible,
 /turf/open/floor/iron,
+=======
+"wmI" = (
+/obj/machinery/door/airlock/external{
+	name = "Atmospherics External Access";
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plating,
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /area/station/engineering/atmos)
 "wmS" = (
 /obj/structure/cable,
@@ -66173,7 +68377,6 @@
 /obj/machinery/computer/security{
 	dir = 8
 	},
-/obj/machinery/camera/directional/east,
 /obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/command/corporate_dock)
@@ -66594,7 +68797,9 @@
 /turf/open/floor/iron/white/small,
 /area/station/science/lab)
 "wxW" = (
-/obj/machinery/door/airlock/external/glass,
+/obj/machinery/door/airlock/external/glass{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
@@ -66656,7 +68861,8 @@
 /area/station/science/genetics)
 "wyH" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -67085,7 +69291,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -67234,6 +69442,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
+/obj/machinery/camera/autoname/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/security/processing)
 "wJL" = (
@@ -67285,12 +69494,8 @@
 	pixel_y = 8
 	},
 /obj/item/ai_module/supplied/freeform,
-/obj/machinery/flasher/directional/north,
 /obj/item/radio/intercom/directional/north{
-	broadcasting = 1;
-	frequency = 1447;
-	name = "Private Channel";
-	pixel_x = -26
+	pixel_x = 16
 	},
 /turf/open/floor/circuit/red,
 /area/station/ai_monitored/turret_protected/ai_upload)
@@ -67414,7 +69619,7 @@
 /obj/effect/spawner/round_default_module,
 /obj/machinery/flasher/directional/east,
 /obj/item/radio/intercom/directional/north{
-	pixel_x = 27
+	pixel_x = -16
 	},
 /turf/open/floor/circuit/red,
 /area/station/ai_monitored/turret_protected/ai_upload)
@@ -68134,10 +70339,27 @@
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/wood,
 /area/station/hallway/primary/central/aft)
 "wUS" = (
 /obj/structure/window/reinforced/spawner/directional/north,
+=======
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 8
+	},
+/area/station/service/library)
+"wUD" = (
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -68339,7 +70561,8 @@
 /area/space)
 "wZb" = (
 /obj/machinery/door/airlock/external{
-	name = "Departure Lounge Airlock"
+	name = "Departure Lounge Airlock";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -68499,7 +70722,8 @@
 	},
 /obj/machinery/door/poddoor{
 	id = "miningdoor";
-	name = "Mining Shuttle Hangar"
+	name = "Mining Shuttle Hangar";
+	dir = 4
 	},
 /turf/open/floor/plating/airless,
 /area/station/cargo/miningoffice)
@@ -68507,6 +70731,18 @@
 /obj/structure/cable,
 /turf/open/floor/grass,
 /area/station/science/xenobiology)
+<<<<<<< HEAD
+=======
+"xbf" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/machinery/modular_computer/preset/id{
+	dir = 1
+	},
+/obj/machinery/keycard_auth/wall_mounted/directional/south,
+/obj/machinery/camera/autoname/directional/south,
+/turf/open/floor/wood,
+/area/station/command/heads_quarters/qm)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xbg" = (
 /turf/closed/wall,
 /area/station/commons/fitness/recreation)
@@ -68706,7 +70942,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/any/security/maintenance,
 /obj/effect/mapping_helpers/airlock/unres{
@@ -69107,7 +71344,8 @@
 /area/station/maintenance/central/greater)
 "xjT" = (
 /obj/machinery/door/airlock/external{
-	name = "Construction Zone"
+	name = "Construction Zone";
+	dir = 4
 	},
 /turf/open/floor/iron,
 /area/station/construction/mining/aux_base)
@@ -69537,8 +71775,24 @@
 /turf/closed/wall,
 /area/station/maintenance/hallway/abandoned_command)
 "xqL" = (
+<<<<<<< HEAD
 /obj/structure/cable,
 /obj/machinery/power/emitter/welded,
+=======
+/obj/structure/table/reinforced,
+/obj/structure/desk_bell{
+	pixel_x = 4;
+	pixel_y = 3
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenshutters";
+	name = "Kitchen Shutters";
+	dir = 4
+	},
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "xqN" = (
@@ -69579,6 +71833,7 @@
 /obj/item/kirbyplants/random/fullysynthetic,
 /obj/machinery/airalarm/directional/east,
 /obj/item/radio/intercom/prison/directional/south,
+/obj/machinery/camera/autoname/directional/south,
 /turf/open/floor/iron,
 /area/station/security/prison/workout)
 "xry" = (
@@ -69732,7 +71987,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
@@ -69804,8 +72061,16 @@
 	},
 /turf/open/floor/iron/checker,
 /area/station/security/breakroom)
+<<<<<<< HEAD
 "xtD" = (
 /obj/effect/turf_decal/siding/wood{
+=======
+"xtj" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -70048,7 +72313,9 @@
 	cycle_id = "sci-entrance"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
 	},
@@ -70231,9 +72498,12 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/open/floor/catwalk_floor,
 /area/station/hallway/secondary/entry)
+<<<<<<< HEAD
 "xyZ" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -70242,6 +72512,20 @@
 /obj/structure/broken_flooring/pile/directional/east,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+=======
+"xyT" = (
+/obj/machinery/door/airlock/external{
+	name = "Primary Docking Bay";
+	dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/iron/textured_half{
+	dir = 1
+	},
+/area/station/hallway/secondary/entry)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xzd" = (
 /obj/structure/lattice,
 /obj/structure/railing/corner,
@@ -70253,6 +72537,7 @@
 	},
 /turf/open/floor/iron/small,
 /area/station/hallway/secondary/exit/departure_lounge)
+<<<<<<< HEAD
 "xzl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -70267,6 +72552,25 @@
 	},
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/station/hallway/secondary/exit/departure_lounge)
+=======
+"xzv" = (
+/obj/machinery/door/window/right/directional/north{
+	name = "Library Desk Door";
+	req_access = list("library")
+	},
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/carpet,
+/area/station/service/library)
+"xzw" = (
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron,
+/area/station/commons/dorms)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xzE" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/dark_red,
@@ -70300,6 +72604,20 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/department/science/xenobiology)
+<<<<<<< HEAD
+=======
+"xAj" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/light/cold/directional/north,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/hallway/primary/port)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xAm" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
@@ -70436,6 +72754,28 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/stairs,
 /area/station/hallway/primary/central/fore)
+<<<<<<< HEAD
+=======
+"xCs" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter)
+"xCF" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/central/aft)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xCH" = (
 /obj/structure/railing{
 	dir = 9
@@ -70698,7 +73038,8 @@
 /area/station/commons/storage/tools)
 "xGl" = (
 /obj/machinery/door/airlock/external{
-	name = "External Docking Port"
+	name = "External Docking Port";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -70935,7 +73276,8 @@
 /area/station/medical/treatment_center)
 "xKi" = (
 /obj/machinery/door/airlock/external{
-	name = "External Docking Port"
+	name = "External Docking Port";
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -70968,6 +73310,34 @@
 "xKG" = (
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
+<<<<<<< HEAD
+=======
+"xKJ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
+/turf/open/floor/iron/small,
+/area/station/hallway/primary/central/aft)
+"xKN" = (
+/obj/structure/chair/stool/bar/directional/north,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/effect/landmark/start/assistant,
+/obj/effect/landmark/start/hangover,
+/turf/open/floor/wood/tile,
+/area/station/service/bar)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xKQ" = (
 /obj/effect/turf_decal/tile/dark_red/fourcorners,
 /obj/machinery/firealarm/directional/north,
@@ -71002,7 +73372,8 @@
 "xLl" = (
 /obj/machinery/door/airlock/external{
 	name = "Labor Camp Shuttle Airlock";
-	shuttledocked = 1
+	shuttledocked = 1;
+	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
 /obj/structure/cable,
@@ -71311,7 +73682,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/cold/directional/south,
 /obj/effect/turf_decal/stripes/line,
-/obj/structure/sign/departments/aiupload/directional/south,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
 "xQa" = (
@@ -71828,6 +74198,18 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/solars/port/aft)
+<<<<<<< HEAD
+=======
+"xWB" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/small,
+/area/station/service/bar)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xWD" = (
 /obj/structure/table/glass,
 /obj/item/experi_scanner{
@@ -72018,6 +74400,23 @@
 "xYO" = (
 /turf/closed/wall/r_wall,
 /area/station/maintenance/department/bridge)
+<<<<<<< HEAD
+=======
+"xYT" = (
+/obj/machinery/light/warm/dim,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central/aft)
+"xZc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark/corner{
+	dir = 1
+	},
+/area/station/science/ordnance/testlab)
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 "xZd" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/effect/decal/cleanable/dirt,
@@ -72192,9 +74591,12 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /obj/machinery/door/airlock/public/glass{
-	name = "Arrivals"
+	name = "Arrivals";
+	dir = 4
 	},
 /turf/open/floor/iron/textured_half{
 	dir = 8
@@ -72376,7 +74778,6 @@
 	pixel_x = -3;
 	pixel_y = -4
 	},
-/obj/structure/sign/warning/test_chamber/directional/east,
 /turf/open/floor/iron/white,
 /area/station/science/robotics/augments)
 "yew" = (
@@ -81758,9 +84159,9 @@ vdg
 wdB
 sxv
 rCv
-xzo
+gQF
 rCv
-xzo
+gQF
 rCv
 vdg
 wdB
@@ -82786,9 +85187,9 @@ scl
 syg
 tfy
 rCv
-xzo
+gQF
 rCv
-xzo
+gQF
 rCv
 fyv
 vFD
@@ -84842,7 +87243,7 @@ xYD
 yjP
 hVO
 wAW
-wXk
+jFS
 oOy
 atS
 uHI
@@ -85602,6 +88003,7 @@ srn
 iHT
 pRc
 mhk
+<<<<<<< HEAD
 pbw
 qzP
 neF
@@ -85612,6 +88014,18 @@ hAB
 iSD
 cib
 vTn
+=======
+bjB
+eLH
+tdZ
+dEQ
+tee
+iMt
+pde
+hyP
+pbJ
+lxU
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 wBm
 wXk
 dTH
@@ -88172,6 +90586,7 @@ mhk
 mhk
 fpN
 mhk
+<<<<<<< HEAD
 kZj
 xyt
 apq
@@ -88182,6 +90597,18 @@ uzm
 iSD
 iyR
 rya
+=======
+mXH
+eSz
+rlP
+vqN
+lWK
+iZw
+eoh
+hyP
+aDj
+fym
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 wBm
 kvD
 xiS
@@ -88427,6 +90854,7 @@ uiw
 ina
 mhk
 ozt
+<<<<<<< HEAD
 mrn
 vRn
 ani
@@ -88439,6 +90867,20 @@ iSD
 iyR
 lkJ
 qzP
+=======
+jwT
+hkZ
+aER
+frG
+xpB
+qtI
+iaN
+qVk
+hyP
+aDj
+kKK
+dfI
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 wAW
 yiY
 nSb
@@ -88772,7 +91214,7 @@ gPZ
 tYq
 tYq
 dJT
-vWr
+bnW
 tYq
 xAG
 pSd
@@ -90064,7 +92506,7 @@ qPN
 qPN
 qPN
 qPN
-eQk
+tsb
 qPN
 qPN
 qPN
@@ -90753,8 +93195,13 @@ ojA
 uPW
 rPW
 wBm
+<<<<<<< HEAD
 fNW
 uQK
+=======
+svJ
+lXX
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 xOS
 uJD
 tJz
@@ -91097,7 +93544,7 @@ eFy
 rBy
 ngL
 kND
-qBc
+cQR
 vWr
 oQF
 rsH
@@ -91524,9 +93971,15 @@ iSD
 iSD
 iSD
 wAW
+<<<<<<< HEAD
 wXk
 qjt
 sJv
+=======
+uJk
+hkX
+eZO
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 slM
 tJz
 vLC
@@ -91722,7 +94175,7 @@ weA
 nlZ
 lYj
 lYj
-lYj
+pIt
 uKh
 lLA
 lpJ
@@ -92750,7 +95203,7 @@ eiD
 cow
 poL
 rjv
-hem
+gtm
 hFp
 bgE
 lpJ
@@ -92783,7 +95236,7 @@ xZS
 xZS
 xRV
 xRV
-vIJ
+uum
 kux
 wGz
 yaL
@@ -93055,11 +95508,19 @@ rEF
 kGE
 waI
 xeO
+<<<<<<< HEAD
 tnZ
 oPy
 omq
 pKx
 cik
+=======
+jgb
+wKr
+joy
+aMM
+udq
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 wKr
 dsl
 wMz
@@ -94608,10 +97069,17 @@ yfC
 yfC
 yfC
 xli
+<<<<<<< HEAD
 cVm
 sQP
 ifH
 iuR
+=======
+xKJ
+aJe
+lCE
+ciH
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 tYX
 tYX
 iuR
@@ -95105,7 +97573,11 @@ jVM
 jVM
 jVM
 jVM
+<<<<<<< HEAD
 pSI
+=======
+hEq
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 jVM
 xlU
 jRK
@@ -95366,6 +97838,7 @@ gls
 jVM
 lzB
 jVM
+<<<<<<< HEAD
 jfT
 dEq
 wEv
@@ -95382,6 +97855,24 @@ bMV
 dPp
 kMA
 iuR
+=======
+wjU
+nnC
+sgo
+gwD
+fxT
+jDH
+jDH
+jDH
+fMD
+pnp
+eyI
+pkY
+kpj
+moY
+uQG
+ciH
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 tYX
 tYX
 tYX
@@ -95626,6 +98117,7 @@ jVM
 oEz
 dEq
 yfC
+<<<<<<< HEAD
 lZf
 qCK
 dvd
@@ -95638,6 +98130,20 @@ oIY
 bMV
 dPp
 kUL
+=======
+wET
+uYv
+fMD
+fMD
+eeS
+fMD
+pnp
+eyI
+mSu
+kpj
+moY
+rLP
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 tYX
 blb
 blb
@@ -96928,6 +99434,7 @@ blb
 aef
 fBN
 dDB
+<<<<<<< HEAD
 tYX
 tKl
 trB
@@ -96935,6 +99442,15 @@ oIS
 iuR
 anX
 anX
+=======
+ciH
+nNu
+tgO
+voK
+ciH
+qLr
+qLr
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 uXY
 iTn
 nBw
@@ -97442,6 +99958,7 @@ dDB
 kii
 nun
 blb
+<<<<<<< HEAD
 tYX
 rNN
 trB
@@ -97449,6 +99966,15 @@ bNL
 iuR
 anX
 anX
+=======
+ciH
+lpD
+tgO
+dgc
+ciH
+qLr
+qLr
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 uXY
 hzb
 erK
@@ -99224,6 +101750,7 @@ dMi
 vun
 caW
 vkh
+<<<<<<< HEAD
 tes
 dJv
 tvW
@@ -99244,6 +101771,28 @@ deR
 diP
 efm
 waD
+=======
+xIO
+wex
+laY
+vTa
+vTa
+vTa
+qaN
+nbA
+mtg
+rmv
+moY
+get
+ixp
+tgO
+tgO
+fZE
+vaQ
+mbU
+mnJ
+ixO
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 dDB
 dDB
 dDB
@@ -101540,6 +104089,7 @@ vkh
 vkh
 jYM
 vkh
+<<<<<<< HEAD
 vSI
 spH
 spH
@@ -101550,6 +104100,18 @@ iXu
 mVc
 lab
 axd
+=======
+xWB
+eXC
+eXC
+vkh
+kLs
+umb
+hhy
+eaC
+xCF
+kXb
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 xli
 qir
 qir
@@ -102835,8 +105397,8 @@ xJB
 mNQ
 xpU
 uBY
-ygu
-gVi
+vSL
+jeW
 dba
 dse
 gfM
@@ -103114,7 +105676,7 @@ tFQ
 xSO
 tFQ
 xSO
-pKm
+gVi
 xSO
 tFQ
 xSO
@@ -105921,7 +108483,7 @@ hPl
 xPN
 vEA
 vwh
-vSL
+pDU
 rIn
 pDU
 pDU
@@ -108537,7 +111099,7 @@ ich
 meN
 tZJ
 vtC
-ijI
+xyT
 vtC
 tuT
 vtC
@@ -112086,7 +114648,7 @@ pqm
 pqm
 tOZ
 alb
-tsb
+xRB
 ykL
 ykL
 ykL
@@ -113670,8 +116232,13 @@ kOV
 kOV
 rIY
 rIY
+<<<<<<< HEAD
 fPV
 kjw
+=======
+ahr
+ajL
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 svs
 grm
 grm
@@ -114927,11 +117494,16 @@ reh
 tgp
 reh
 reh
-vnf
+qrb
 wML
 oOw
+<<<<<<< HEAD
 keP
 qrb
+=======
+tSD
+aSy
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 aSy
 svz
 aSy
@@ -119322,7 +121894,11 @@ jrU
 qlz
 nVF
 msJ
+<<<<<<< HEAD
 cYk
+=======
+xQj
+>>>>>>> eb0c661bddf ([BIRDSHOT] Wallening Pass (#85821))
 svs
 blb
 blb
@@ -120613,7 +123189,7 @@ svs
 svs
 svs
 svs
-gTW
+bue
 gTW
 svs
 svs
@@ -127551,7 +130127,7 @@ dDB
 ylD
 ylD
 ylD
-sPa
+tKv
 ylD
 ylD
 oRV
