@@ -6365,5 +6365,4 @@
 #include "interface\fonts\vcr_osd_mono.dm"
 #include "wallstation_modules\flavor_text_module\examine_tgui.dm"
 #include "wallstation_modules\flavor_text_module\preferences_savefile.dm"
-#include "wallstation_modules\revertbeheading\code\head.dm"
 // END_INCLUDE
