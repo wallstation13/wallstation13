@@ -1,5 +1,5 @@
-import { Feature, FeatureValueProps, FeatureShortTextInput } from '../base';
 import { Stack, TextArea } from '../../../../../components';
+import { Feature, FeatureShortTextInput, FeatureValueProps } from '../base';
 
 export const MultilineText = (props: FeatureValueProps<string, string>) => {
   const { handleSetValue, value } = props;
