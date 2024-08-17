@@ -28,6 +28,13 @@ fi
 # install cargo if needed
 if ! [ -x "$has_cargo" ]; then
 	echo "Installing rust..."
+	if ! [ -x "$has_sudo" ]; then
+        apt-get update
+        apt-get install -y g++-multilib libclang-dev
+    else
+        sudo apt-get update
+        sudo apt-get install -y g++-multilib libclang-dev
+    fi
 	curl https://sh.rustup.rs -sSf | sh -s -- -y
 	. ~/.profile
 fi
