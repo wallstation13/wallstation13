@@ -6363,5 +6363,5 @@
 #include "interface\fonts\spess_font.dm"
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
-#include "wallstation_modules\modular_wall\code\pocket.dm"
+#include "wallstation_modules\extra_loadout\code\pocket.dm"
 // END_INCLUDE
