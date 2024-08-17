@@ -1,0 +1,4 @@
+author: "Jolly"
+delete-after: True
+changes:
+  - rscadd: "Ported flavor text from Nova Sector, implementation taken from TaleStation (no gross weird stuff)."
