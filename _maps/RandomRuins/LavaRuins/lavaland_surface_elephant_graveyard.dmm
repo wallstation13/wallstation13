@@ -332,6 +332,14 @@
 /obj/effect/decal/cleanable/glass,
 /turf/open/misc/asteroid/basalt/wasteland,
 /area/ruin/unpowered/elephant_graveyard)
+<<<<<<< HEAD
+=======
+"zw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/power/floodlight,
+/turf/open/floor/plating/lavaland_atmos,
+/area/ruin/unpowered/elephant_graveyard)
+>>>>>>> 624222483d8 (Fixed elephant graveyard active turfs (#85913))
 "zY" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/misc/asteroid/basalt/wasteland,
@@ -510,6 +518,15 @@
 "MI" = (
 /obj/structure/cable,
 /obj/machinery/power/floodlight,
+<<<<<<< HEAD
+=======
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/lavaland_atmos,
+/area/ruin/unpowered/elephant_graveyard)
+"NA" = (
+/obj/structure/lattice/catwalk/mining,
+/obj/effect/decal/cleanable/dirt,
+>>>>>>> 624222483d8 (Fixed elephant graveyard active turfs (#85913))
 /turf/open/misc/asteroid/basalt/wasteland,
 /area/ruin/unpowered/elephant_graveyard)
 "NO" = (
@@ -528,7 +545,13 @@
 "PN" = (
 /obj/machinery/power/floodlight,
 /obj/structure/cable,
+<<<<<<< HEAD
 /turf/open/misc/asteroid/basalt/wasteland,
+=======
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/lavaland_atmos,
+>>>>>>> 624222483d8 (Fixed elephant graveyard active turfs (#85913))
 /area/ruin/unpowered/elephant_graveyard)
 "Ql" = (
 /obj/structure/barricade/wooden,
