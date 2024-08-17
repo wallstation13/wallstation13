@@ -17,6 +17,7 @@ import {
   NumberInput,
   Slider,
   Stack,
+  TextArea,
 } from '../../../../components';
 import { createSetPreference, PreferencesMenuData } from '../../data';
 import { ServerPreferencesFetcher } from '../../ServerPreferencesFetcher';
@@ -265,3 +266,94 @@ export const FeatureShortTextInput = (
     />
   );
 };
+
+// WALLSTATION ADDITION START - WALLSTATION FEATURES DOWN HERE
+
+export const FeatureTextInput = (
+  props: FeatureValueProps<string, string, FeatureShortTextData>,
+) => {
+  if (!props.serverData) {
+    return <Box>Loading...</Box>;
+  }
+
+  return (
+    <TextArea
+      height="100px"
+      value={props.value}
+      maxLength={props.serverData.maximum_length}
+      onChange={(_, value) => props.handleSetValue(value)}
+    />
+  );
+};
+
+export const FeatureTriColorInput = (props: FeatureValueProps<string[]>) => {
+  const buttonFromValue = (index) => {
+    return (
+      <Stack.Item>
+        <Button
+          onClick={() => {
+            props.act('set_tricolor_preference', {
+              preference: props.featureId,
+              value: index + 1,
+            });
+          }}
+        >
+          <Stack align="center" fill>
+            <Stack.Item>
+              <Box
+                style={{
+                  background: props.value[index].startsWith('#')
+                    ? props.value[index]
+                    : `#${props.value[index]}`,
+                  border: '2px solid white',
+                  boxSizing: 'content-box',
+                  height: '11px',
+                  width: '11px',
+                  ...(props.shrink
+                    ? {
+                        margin: '1px',
+                      }
+                    : {}),
+                }}
+              />
+            </Stack.Item>
+
+            {!props.shrink && <Stack.Item>Change</Stack.Item>}
+          </Stack>
+        </Button>
+      </Stack.Item>
+    );
+  };
+  return (
+    <Stack align="center" fill>
+      {buttonFromValue(0)}
+      {buttonFromValue(1)}
+      {buttonFromValue(2)}
+    </Stack>
+  );
+};
+
+export const FeatureTriBoolInput = (props: FeatureValueProps<boolean[]>) => {
+  const buttonFromValue = (index) => {
+    return (
+      <Stack.Item align="center">
+        <Button.Checkbox
+          checked={!!props.value[index]}
+          onClick={() => {
+            const currentValue = [...props.value];
+            currentValue[index] = !currentValue[index];
+            props.handleSetValue(currentValue);
+          }}
+        />
+      </Stack.Item>
+    );
+  };
+  return (
+    <Stack align="center" fill>
+      {buttonFromValue(0)}
+      {buttonFromValue(1)}
+      {buttonFromValue(2)}
+    </Stack>
+  );
+};
+// WALLSTATION ADDITION END
