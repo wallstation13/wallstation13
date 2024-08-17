@@ -6363,4 +6363,5 @@
 #include "interface\fonts\spess_font.dm"
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
+#include "wallstation_modules\rat-reagent.dm"
 // END_INCLUDE
