@@ -8,7 +8,7 @@ Having a separate codebase is a lot of work. It's very easy to fall behind with 
 In isolation, updating from /tg/ is simple process, but adding new & unique features to Wallstation, if done improperly, will exponentially increase the amount of work it takes to mirror PRs from tgstation.
 
 ## How does a conflict happen?
-Here is a relatively simple conflict that can happen if we are not careful.
+Here is a relatively simple merge conflict that can happen if we are not careful.
 ```
 /obj/item/melee/weapon
 	force = 30
