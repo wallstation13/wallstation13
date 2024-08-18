@@ -1,0 +1,4 @@
+author: "Hates-The-walls"
+delete-after: True
+changes:
+  - admin: "Stat change is now logged for living mobs"
