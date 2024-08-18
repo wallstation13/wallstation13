@@ -2715,7 +2715,9 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "ld" = (
 /obj/structure/alien/weeds,
-/mob/living/basic/alien/drone,
+/mob/living/basic/alien/drone{
+	pressure_resistance = 100
+	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "le" = (
@@ -6519,7 +6521,9 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/engineering)
 "Af" = (
-/mob/living/basic/alien/drone,
+/mob/living/basic/alien/drone{
+	pressure_resistance = 100
+	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "Ai" = (
@@ -6867,7 +6871,9 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "Fy" = (
 /obj/structure/alien/weeds,
-/mob/living/basic/alien/sentinel,
+/mob/living/basic/alien/sentinel{
+	pressure_resistance = 100
+	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "FA" = (
@@ -6944,7 +6950,9 @@
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "GM" = (
-/mob/living/basic/alien,
+/mob/living/basic/alien{
+	pressure_resistance = 100
+	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "Hp" = (
@@ -7854,7 +7862,9 @@
 /area/awaymission/undergroundoutpost45/central)
 "WX" = (
 /obj/structure/alien/weeds,
-/mob/living/basic/alien/queen,
+/mob/living/basic/alien/queen{
+	pressure_resistance = 100
+	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "Xd" = (
@@ -32094,7 +32104,7 @@ ad
 ad
 ad
 IT
-Fy
+ld
 HQ
 Gn
 HW
