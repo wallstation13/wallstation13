@@ -441,6 +441,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
 "de" = (
@@ -1088,11 +1089,20 @@
 /obj/item/paper/guides/jobs/security/labor_camp,
 /turf/open/floor/iron,
 /area/station/security/brig)
+<<<<<<< HEAD
 "gW" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/radiation/rad_area/directional/north,
 /turf/open/floor/plating,
 /area/station/engineering/gravity_generator)
+=======
+"hl" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock,
+/turf/open/floor/iron,
+/area/station/construction)
+>>>>>>> 9ef722ca61d (Rewires the runtime APC on the map [NO GBP] (#85922))
 "hm" = (
 /obj/machinery/airalarm/directional/west,
 /obj/effect/mapping_helpers/airalarm/unlocked,
@@ -1344,6 +1354,15 @@
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+<<<<<<< HEAD
+=======
+"qD" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/airalarm/directional/north,
+/obj/effect/mapping_helpers/airalarm/unlocked,
+/turf/open/floor/iron,
+/area/station/commons/storage/primary)
+>>>>>>> 9ef722ca61d (Rewires the runtime APC on the map [NO GBP] (#85922))
 "qH" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/iron,
