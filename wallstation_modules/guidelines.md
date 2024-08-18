@@ -16,7 +16,9 @@ Here is a relatively simple merge conflict that can happen if we are not careful
 We decide to change the force of this object in the core code
 ```
 /obj/item/melee/weapon
-	force = 50 //WALL EDIT
+  //START OF WALLSTATION EDIT
+	force = 50 
+  //END OF WALLSTATION EDIT
 ```
 That works well until we the upstream repo decides to change the same variable
 ```
