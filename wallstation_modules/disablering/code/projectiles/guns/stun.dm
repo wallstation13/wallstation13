@@ -10,7 +10,7 @@
 
 /obj/item/gun/energy/disabler/smg/Initialize(mapload)
 	. = ..()
-	underbarrel = new /obj/item/gun/grenadelauncher(src)
+	underbarrel = new /obj/item/gun/grenadelauncher/underbarrel(src)
 
 /obj/item/gun/energy/disabler/smg/examine(mob/user)
 	. = ..()
@@ -40,17 +40,18 @@
 	righthand_file = 'wallstation_modules/disablering/icons/guns_righthand.dmi'
 	lefthand_file = 'wallstation_modules/disablering/icons/guns_lefthand.dmi'
 	icon_state = "disabler_rifle"
-	worn_icon_state = "disabler_rifle"
+	worn_icon_state = null
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/rifle)
 	w_class = WEIGHT_CLASS_HUGE
 	weapon_weight = WEAPON_HEAVY
 	slot_flags = ITEM_SLOT_BACK
 	shaded_charge = 1
-	fire_delay = 30
+	recoil = 1
+	fire_sound_volume = 80
 	pb_knockback = 1 // It beam is powerful enough to knockdown for a second, so it makes sense to knock you back a tile Point Blank
 
 	SET_BASE_PIXEL(-8, 0)
 
 /obj/item/gun/energy/disabler/rifle/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/scope, range_modifier = 1.5) // https://www.youtube.com/watch?v=innJxQM_-CE
+	AddComponent(/datum/component/scope, range_modifier = 2) // https://www.youtube.com/watch?v=innJxQM_-CE
