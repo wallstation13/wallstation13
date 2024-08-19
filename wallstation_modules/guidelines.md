@@ -35,7 +35,7 @@ How does it work? All that means is that the vast majority of our changes are in
 ## How modularization works
 Think about what you want you want to do with your PR, and then pick an ID for your module. E.g. `DISABLER_SNIPER` or `XENOARCHEAOLOGY` - We will use this in future documentation. It is essentially your module ID. It must be uniform throughout the entire module. All references MUST be exactly the same. This is to allow for easy searching.
 
-And then you'll want to establish your core folder that you'll be working out of which is normally your module ID. E.g. `wallstation_modular/modules/disabler_sniper`
+Then establish your core folder from where you'll be applying your changes, which is normally your module ID. E.g. `wallstation_modular/modules/disabler_sniper`
 
 ## Assets: images, sounds, icons and binaries
 
