@@ -41,7 +41,7 @@ Then establish your core folder from where you'll be applying your changes, whic
 
 Git doesn't handle conflicts of binary files well at all, therefore changes to core binary files are absolutely forbidden, unless you have a really *really* ***really*** good reason to do otherwise.
 
-All assets added by us should be placed into the same modular folder as your code. This means everything is kept inside your module folder, sounds, icons and code files.
+All assets added by your changes should be placed into the same modular folder as your code. This means everything is kept inside your module folder, sounds, icons and code files.
 
 - ***Example:*** You're adding a new lavaland mob.
 
