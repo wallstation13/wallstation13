@@ -14,7 +14,6 @@
 		slapcraft_recipes = slapcraft_recipe_list,\
 	)
 
-
 // New SMG with undebarrel grenade launcher
 /obj/item/gun/energy/disabler/smg
 	desc_controls = "Right-click to use underbarrel grenade launcher."
