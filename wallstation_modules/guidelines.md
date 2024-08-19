@@ -58,7 +58,7 @@ Next,  create sub-folders for each component. E.g. `/code` for code,  `/sounds` 
       sound = 'wallstation_modules/modules/lavalandmob/sounds/boom.ogg'
   ```
 
-  This ensures your code is fully modular and will make it easier for future edits.
+  This ensures your code is fully modular and will make it easier to ammend and review.
 
 - Other assets, binaries and tools, should usually be handled likewise, depending on the case-by-case context. When in doubt, ask a maintainer or other contributors for tips and suggestions.
 
