@@ -2,7 +2,8 @@
 <Written by vect0r and heavily inspired by novasector and sections shamelessly stolen from it>
 
 ## Not following this guide *will* result in your Pull Request being closed
-
+## What are "core files"?
+Very simply, core files are the code that we have from /tg/ and is not our own code.
 ## Why we do this
 Having a separate codebase is a lot of work. It's very easy to fall behind with outdated code. A way to solve this issue is by getting updates from a codebase that is more active. In this case, we choose /tg/station.
 In isolation, updating from /tg/ is simple process, but adding new & unique features to Wallstation, if done improperly, will exponentially increase the amount of work it takes to mirror PRs from tgstation.
@@ -25,7 +26,7 @@ That works well until we the upstream repo decides to change the same variable
 /obj/item/melee/weapon
 	force = 10
 ```
-Then we will get a conflict, where we have to decide which of the two edits we want to use.
+Then we will get a merge conflict, where we have to decide which of the two edits we want to use. Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file. For more information, see "[About merge conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts).
 
 ## How we solve it
 This is something we do not want to do manually, and something that we do not trust an automated system to do well. But thankfully there is a simple solution, modularization.
@@ -39,7 +40,7 @@ And then you'll want to establish your core folder that you'll be working out of
 
 ## Assets: images, sounds, icons and binaries
 
-Git doesn't handle conflicts of binary files well at all, therefore changes to core binary files are absolutely forbidden, unless you have a really *really* ***really*** good reason to do otherwise.
+Git doesn't handle conflicts of binary files (sounds, images, icons etc) well at all, therefore changes to core binary files are absolutely forbidden, unless you have a really *really* ***really*** good reason to do otherwise.
 
 All assets added by us should be placed into the same modular folder as your code. This means everything is kept inside your module folder, sounds, icons and code files.
 
