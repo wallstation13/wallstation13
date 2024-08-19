@@ -2,7 +2,6 @@
 	holder_type = /mob/living/silicon/robot
 	proper_name = "Cyborg"
 	randomize = TRUE
-	my_wire_trait = TRAIT_KNOW_ROBO_WIRES
 
 /datum/wires/robot/New(atom/holder)
 	wires = list(
