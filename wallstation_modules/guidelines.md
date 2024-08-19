@@ -296,7 +296,7 @@ This way they are easily identifiable as modular TGUI .tsx/.jsx files. You do no
 ## Afterword
 
 It might seem like a lot to take in, but if we remain consistent, it will save us a lot of headache in the long run, once we start having to resolve conflicts manually.
-Thanks to a bit more scrupulous documentation, it will be immediately obvious what changes were done and where and by which features, things will be a lot less ambiguous and messy.
+Thanks to a bit more scrupulous documentation, it will be immediately obvious what changes were done, where and by which commit, things will be a lot less ambiguous and messy.
 
 Best of luck in your coding. Remember that the community is there for you, if you ever need help.
 ### And a shoutout to Novasector who has the file I have based this one on
