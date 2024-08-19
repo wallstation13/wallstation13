@@ -49,7 +49,7 @@ All assets added by your changes should be placed into the same modular folder a
 
 Next,  create sub-folders for each component. E.g. `/code` for code,  `/sounds` for sound files and `/icons` for any icon files.
 
-  After doing this, you'll want to set your references within the code.
+  After doing this, set your references within the code.
 
   ```
     /mob/lavaland/newmob
