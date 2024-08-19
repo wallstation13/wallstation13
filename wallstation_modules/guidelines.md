@@ -30,7 +30,7 @@ Then we will get a conflict, where we have to decide which of the two edits we w
 ## How we solve it
 This is something we do not want to do manually, and something that we do not trust an automated system to do well. But thankfully, there is a simple solution, modularization.
 
-How does it work? All it means is that the vast majority of our changes are on ``wallstation_modular/`` folder, which /tg/ does not touch, and any changes that cannot be put into that folder are **CLEARLY LABELED** to when they start, the end, and what feature they are a part of.
+How does it work? All that means is that the vast majority of our changes are in the ``wallstation_modules`` folder, which is exclusive to our repository and can't conflict with upstream changes as it does not exist upstream. Any changes that cannot be put into this folder must be **CLEARLY LABELED** where they start and where they end.
 
 ## How modularization works
 Think about what you want you want to do with your PR, and then pick an ID for your module. E.g. `DISABLER_SNIPER` or `XENOARCHEAOLOGY` - We will use this in future documentation. It is essentially your module ID. It must be uniform throughout the entire module. All references MUST be exactly the same. This is to allow for easy searching.
