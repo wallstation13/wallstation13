@@ -99,7 +99,7 @@ Note, that it is possible to append code in front, or behind a core proc, in a m
 
 In general they are a good idea and encouraged whenever it is possible to do so. However this is not a hard rule, and sometimes Wallstation edits are preferable. Just try to use your common sense about it.
 
-For example: please do not copy paste an entire TG proc into a modular override, make one small change, and then bill it as 'fully modular'. These procs are an absolute nightmare to maintain because once something changes upstream you have to update the overridden proc.
+For example: do not copy paste an entire TG proc into a modular override, make one small change, and then bill it as 'fully modular'. These procs are an absolute nightmare to maintain because once something changes upstream you have to update the overridden proc.
 
 Sometimes you aren't even aware the override exists if it compiles fine and doesn't cause any bugs. This often causes features that were added upstream to be missing here. So yeah. Avoid that. It's okay if something isn't fully modular. Sometimes it's the better choice.
 
