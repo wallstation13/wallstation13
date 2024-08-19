@@ -6413,11 +6413,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/undergroundoutpost45/gateway)
-"zb" = (
-/obj/structure/alien/weeds,
-/obj/structure/alien/resin/wall,
-/turf/open/space/basic,
-/area/awaymission/undergroundoutpost45/caves)
 "ze" = (
 /obj/structure/table,
 /obj/item/stack/cable_coil,
@@ -6445,11 +6440,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/engineering)
-"zq" = (
-/obj/structure/alien/resin/wall,
-/obj/structure/alien/weeds,
-/turf/open/space/basic,
-/area/awaymission/undergroundoutpost45/caves)
 "zr" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
@@ -29276,7 +29266,7 @@ zO
 WE
 BQ
 Lz
-zb
+XQ
 ad
 ad
 ad
@@ -29532,8 +29522,8 @@ Lz
 Lz
 Lz
 Af
-zb
-zq
+XQ
+Wd
 ad
 ad
 ad
