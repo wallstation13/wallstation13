@@ -814,6 +814,15 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
+<<<<<<< HEAD
+=======
+/obj/machinery/door_buttons/access_button/directional/north{
+	idDoor = "xeno_airlock_exterior";
+	idSelf = "xeno_airlock_control";
+	name = "Xenobiology Access Button";
+	req_access = list("xenobiology")
+	},
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology/hallway)
 "apT" = (
@@ -2429,7 +2438,9 @@
 "aSZ" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor2";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4;
+	manual_align = 1
 	},
 /obj/machinery/conveyor{
 	dir = 4;
@@ -3008,6 +3019,23 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/command/teleporter)
+<<<<<<< HEAD
+=======
+"bcH" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/light/floor,
+/obj/machinery/door_buttons/access_button/directional/north{
+	idDoor = "xeno_airlock_exterior";
+	idSelf = "xeno_airlock_control";
+	name = "Xenobiology Access Button";
+	req_access = list("xenobiology")
+	},
+/turf/open/floor/iron/white,
+/area/station/science/xenobiology/hallway)
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 "bcT" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "bridge blast";
@@ -3603,7 +3631,10 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/aisat/foyer)
 "bnA" = (
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps{
+	dir = 4;
+	manual_align = 1
+	},
 /obj/machinery/conveyor{
 	dir = 4;
 	id = "QMLoad2"
@@ -5648,6 +5679,14 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
 	},
+/obj/machinery/door_buttons/airlock_controller/directional/west{
+	name = "Xenobiology Access Console";
+	req_access = list("xenobiology");
+	idExterior = "xeno_airlock_exterior";
+	idInterior = "xeno_airlock_interior";
+	idSelf = "xeno_airlock_control";
+	pixel_y = 3
+	},
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
 "bXO" = (
@@ -6058,20 +6097,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
-"chZ" = (
-/obj/structure/sign/directions/engineering{
-	dir = 4
-	},
-/obj/structure/sign/directions/security{
-	dir = 1;
-	pixel_y = 8
-	},
-/obj/structure/sign/directions/command{
-	dir = 8;
-	pixel_y = -8
-	},
-/turf/closed/wall,
-/area/station/maintenance/central)
 "cii" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
@@ -6349,6 +6374,7 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/aisat/foyer)
+<<<<<<< HEAD
 "com" = (
 /obj/structure/cable,
 /obj/machinery/netpod,
@@ -6359,6 +6385,14 @@
 "coz" = (
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 8
+=======
+"coE" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 4
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
@@ -8571,7 +8605,9 @@
 "deU" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4;
+	manual_align = 1
 	},
 /obj/machinery/conveyor{
 	dir = 8;
@@ -8773,6 +8809,7 @@
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 1
 	},
+/obj/machinery/digital_clock/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "dhs" = (
@@ -11186,7 +11223,9 @@
 "dZB" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4;
+	manual_align = 1
 	},
 /obj/machinery/conveyor{
 	dir = 8;
@@ -12925,13 +12964,6 @@
 /obj/effect/spawner/random/entertainment/deck,
 /turf/open/floor/wood,
 /area/station/commons/vacant_room/office)
-"eDL" = (
-/obj/structure/sign/directions/command{
-	dir = 1;
-	pixel_y = -8
-	},
-/turf/closed/wall/r_wall,
-/area/station/command/heads_quarters/captain/private)
 "eDX" = (
 /obj/structure/sign/departments/science/directional/east,
 /obj/effect/turf_decal/tile/purple{
@@ -13380,6 +13412,7 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/command)
+<<<<<<< HEAD
 "eMb" = (
 /obj/structure/sign/directions/command{
 	dir = 1;
@@ -13398,6 +13431,12 @@
 /obj/structure/plasticflaps,
 /turf/open/floor/plating,
 /area/station/cargo/sorting)
+=======
+"eMC" = (
+/obj/effect/spawner/random/engineering/tracking_beacon,
+/turf/open/floor/iron/white,
+/area/station/science/xenobiology)
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 "eMG" = (
 /obj/structure/closet/lasertag/blue,
 /obj/effect/landmark/start/hangover/closet,
@@ -15003,20 +15042,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/storage)
-"fmS" = (
-/obj/structure/sign/directions/security{
-	dir = 1;
-	pixel_y = 8
-	},
-/obj/structure/sign/directions/engineering{
-	dir = 4
-	},
-/obj/structure/sign/directions/command{
-	dir = 1;
-	pixel_y = -8
-	},
-/turf/closed/wall,
-/area/station/medical/medbay/lobby)
 "fmX" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -15481,7 +15506,10 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "fyz" = (
-/obj/structure/plasticflaps,
+/obj/structure/plasticflaps{
+	dir = 4;
+	manual_align = 1
+	},
 /obj/machinery/conveyor{
 	dir = 8;
 	id = "QMLoad"
@@ -15665,6 +15693,10 @@
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"fCw" = (
+/obj/structure/sign/chalkboard_menu,
+/turf/closed/wall,
+/area/station/commons/storage/primary)
 "fDc" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -16848,16 +16880,6 @@
 /obj/effect/mapping_helpers/ianbirthday,
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/hop)
-"gaV" = (
-/obj/structure/sign/directions/evac,
-/obj/structure/sign/directions/medical{
-	pixel_y = 8
-	},
-/obj/structure/sign/directions/science{
-	pixel_y = -8
-	},
-/turf/closed/wall,
-/area/station/security/courtroom)
 "gbf" = (
 /obj/machinery/duct,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -26042,20 +26064,18 @@
 /turf/open/floor/iron/dark/textured,
 /area/station/medical/cryo)
 "jkX" = (
-/obj/machinery/door_buttons/access_button{
-	idDoor = "xeno_airlock_interior";
-	idSelf = "xeno_airlock_control";
-	name = "Access Button";
-	pixel_x = 29;
-	pixel_y = -8;
-	req_access = list("xenobiology")
-	},
-/obj/machinery/firealarm/directional/north,
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/item/soap,
+/obj/machinery/firealarm/directional/east,
+/obj/machinery/door_buttons/access_button/directional/north{
+	req_access = list("xenobiology");
+	name = "Xenobiology Access Button";
+	idSelf = "xeno_airlock_control";
+	idDoor = "xeno_airlock_interior"
+	},
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology/hallway)
 "jle" = (
@@ -28591,7 +28611,6 @@
 /obj/effect/turf_decal/siding/purple/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "kaS" = (
@@ -30553,13 +30572,6 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "kLC" = (
-/obj/machinery/door_buttons/access_button{
-	idDoor = "xeno_airlock_exterior";
-	idSelf = "xeno_airlock_control";
-	name = "Access Button";
-	pixel_y = -24;
-	req_access = list("xenobiology")
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/research{
@@ -31109,6 +31121,7 @@
 /obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/medical/morgue)
+<<<<<<< HEAD
 "kWL" = (
 /obj/structure/sign/directions/command{
 	dir = 4;
@@ -31129,6 +31142,8 @@
 	},
 /turf/closed/wall,
 /area/station/medical/pharmacy)
+=======
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 "kWP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -33730,7 +33745,9 @@
 /area/station/medical/pharmacy)
 "lXG" = (
 /obj/machinery/door/airlock/external/glass{
-	name = "Supply Door Airlock"
+	name = "Supply Door Airlock";
+	dir = 4;
+	manual_align = 1
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -34530,16 +34547,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/command/gateway)
-"mnx" = (
-/obj/structure/sign/directions/evac,
-/obj/structure/sign/directions/medical{
-	pixel_y = 8
-	},
-/obj/structure/sign/directions/science{
-	pixel_y = -8
-	},
-/turf/closed/wall,
-/area/station/maintenance/central)
 "mny" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -36311,18 +36318,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/station/service/kitchen/coldroom)
-"mST" = (
-/obj/structure/sign/directions/medical{
-	dir = 8;
-	pixel_y = 8
-	},
-/obj/structure/sign/directions/evac,
-/obj/structure/sign/directions/science{
-	dir = 4;
-	pixel_y = -8
-	},
-/turf/closed/wall,
-/area/station/science/lobby)
 "mTg" = (
 /obj/structure/cable,
 /obj/machinery/door/airlock/hatch{
@@ -41120,6 +41115,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/greater)
+<<<<<<< HEAD
 "oDH" = (
 /obj/structure/table,
 /obj/item/stack/sheet/iron/fifty,
@@ -41148,6 +41144,8 @@
 /obj/structure/sign/warning/vacuum/external,
 /turf/closed/wall,
 /area/station/cargo/storage)
+=======
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 "oDW" = (
 /obj/effect/turf_decal/trimline/yellow/filled/corner,
 /obj/machinery/firealarm/directional/south,
@@ -49657,6 +49655,40 @@
 /obj/effect/mapping_helpers/airlock/access/any/service/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
+<<<<<<< HEAD
+=======
+"rAi" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/table,
+/obj/item/clipboard{
+	pixel_x = 6;
+	pixel_y = 14
+	},
+/obj/item/stamp/denied{
+	pixel_x = 7;
+	pixel_y = 11
+	},
+/obj/machinery/button/door/table{
+	pixel_x = -7;
+	pixel_y = 14;
+	id = "QMLoaddoor2";
+	name = "Loading Doors (Right)";
+	req_access = list("cargo")
+	},
+/obj/machinery/button/door/table{
+	pixel_x = -7;
+	pixel_y = 5;
+	id = "QMLoaddoor";
+	name = "Loading Doors (Left)";
+	req_access = list("cargo")
+	},
+/obj/item/stamp/granted{
+	pixel_x = 7;
+	pixel_y = 3
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 "rAo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/reagent_dispensers/watertank,
@@ -50756,6 +50788,7 @@
 	dir = 1
 	},
 /obj/machinery/light/cold/directional/north,
+/obj/structure/sign/poster/official/cleanliness/directional/north,
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
 "rVb" = (
@@ -51314,7 +51347,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "seN" = (
-/obj/structure/sign/directions/evac,
 /turf/closed/wall/r_wall,
 /area/station/hallway/primary/aft)
 "sfg" = (
@@ -55806,6 +55838,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+<<<<<<< HEAD
 /obj/machinery/door_buttons/airlock_controller{
 	idExterior = "xeno_airlock_exterior";
 	idInterior = "xeno_airlock_interior";
@@ -55815,6 +55848,8 @@
 	pixel_y = -25;
 	req_access = list("xenobiology")
 	},
+=======
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
 	},
@@ -56887,6 +56922,7 @@
 /obj/structure/sink/directional/west,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
+<<<<<<< HEAD
 "ube" = (
 /obj/structure/sign/directions/science{
 	pixel_y = -8
@@ -56907,6 +56943,8 @@
 	},
 /turf/open/floor/catwalk_floor,
 /area/station/cargo/warehouse)
+=======
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 "ubl" = (
 /obj/machinery/telecomms/broadcaster/preset_left,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -57526,7 +57564,9 @@
 "uor" = (
 /obj/machinery/door/poddoor{
 	id = "QMLoaddoor2";
-	name = "Supply Dock Loading Door"
+	name = "Supply Dock Loading Door";
+	dir = 4;
+	manual_align = 1
 	},
 /obj/machinery/conveyor{
 	dir = 4;
@@ -59696,16 +59736,6 @@
 /turf/open/floor/iron,
 /area/station/security/prison/work)
 "uZj" = (
-/obj/structure/sign/directions/security{
-	dir = 1;
-	pixel_y = 8
-	},
-/obj/structure/sign/directions/engineering{
-	dir = 4
-	},
-/obj/structure/sign/directions/command{
-	pixel_y = -8
-	},
 /turf/closed/wall/r_wall,
 /area/station/commons/storage/tools)
 "uZo" = (
@@ -59980,6 +60010,12 @@
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/theatre)
+"veT" = (
+/obj/machinery/computer/cargo{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/station/cargo/storage)
 "vfa" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 1
@@ -62913,7 +62949,9 @@
 /area/station/service/hydroponics)
 "waB" = (
 /obj/machinery/door/airlock/external/glass{
-	name = "Supply Door Airlock"
+	name = "Supply Door Airlock";
+	dir = 4;
+	manual_align = 1
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -68049,6 +68087,7 @@
 /obj/structure/secure_safe/directional/north,
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/captain/private)
+<<<<<<< HEAD
 "xUB" = (
 /obj/structure/sign/directions/security{
 	dir = 1;
@@ -68073,6 +68112,8 @@
 /obj/effect/turf_decal/tile/green/half/contrasted,
 /turf/open/floor/iron,
 /area/station/service/hydroponics/garden)
+=======
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 "xUH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -85647,9 +85688,15 @@ aaa
 aaa
 hxo
 bnA
+<<<<<<< HEAD
 riU
 oDJ
 lAa
+=======
+pwL
+cbz
+nXf
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 fyz
 hxo
 aaa
@@ -86413,6 +86460,7 @@ nVG
 qOZ
 hKg
 hKg
+<<<<<<< HEAD
 ouu
 jKc
 sCs
@@ -86426,6 +86474,21 @@ cmX
 nxG
 nxG
 bPc
+=======
+jhx
+tMX
+nJb
+nNb
+quh
+ejz
+veT
+jxo
+kTQ
+twg
+nNb
+nNb
+dcO
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 aok
 wbp
 vQs
@@ -91559,7 +91622,11 @@ nZh
 hSf
 pID
 qSp
+<<<<<<< HEAD
 cOj
+=======
+fCw
+>>>>>>> d24bb68b5b2 (Fixes access issues and button placement on Metastation (#85943))
 tcr
 jfX
 aUC
@@ -92097,10 +92164,10 @@ sDG
 pJR
 pJR
 qIl
-kWL
+qIl
 sSL
 pWN
-ube
+tOh
 tOh
 tOh
 tOh
@@ -94410,7 +94477,7 @@ oWT
 qBy
 pJR
 ndS
-eMb
+ndS
 ebx
 pRb
 igZ
@@ -95933,7 +96000,7 @@ qWF
 qWF
 qWF
 uDP
-xUB
+qWF
 xjA
 exC
 dRZ
@@ -95968,7 +96035,7 @@ qyI
 qaP
 bAR
 lgl
-fmS
+pBa
 xIG
 uBI
 uBI
@@ -96961,7 +97028,7 @@ olw
 olw
 izr
 moV
-gaV
+olw
 wtZ
 vpQ
 iLk
@@ -96996,7 +97063,7 @@ bcq
 sRf
 qsl
 gJV
-mST
+wHu
 qCj
 cyG
 oEP
@@ -98522,7 +98589,7 @@ syo
 syo
 sSx
 syo
-eDL
+syo
 lSz
 tst
 dGu
@@ -100835,10 +100902,10 @@ aKb
 aKb
 aKb
 aKb
-chZ
+aKb
 xqL
 dDx
-mnx
+aKb
 aKb
 aKb
 aKb
