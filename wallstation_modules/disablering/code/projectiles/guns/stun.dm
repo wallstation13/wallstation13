@@ -46,7 +46,7 @@
 // Disabler rifle with a scope
 /obj/item/gun/energy/disabler/rifle
 	name = "disabler rifle"
-	desc = "An bulky disabler rifle designed for long range non-lethal takedowns, packing quite a punch but taking long-time to recharge."
+	desc = "A bulky disabler rifle designed for long range non-lethal takedowns, packing quite a punch but taking a long-time to recharge."
 	icon = 'wallstation_modules/disablering/icons/wide_guns.dmi'
 	worn_icon = 'wallstation_modules/disablering/icons/back.dmi'
 	righthand_file = 'wallstation_modules/disablering/icons/guns_righthand.dmi'
