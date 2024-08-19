@@ -1463,6 +1463,7 @@
 #include "code\datums\elements\eyestab.dm"
 #include "code\datums\elements\falling_hazard.dm"
 #include "code\datums\elements\firestacker.dm"
+#include "code\datums\elements\fish_safe_storage.dm"
 #include "code\datums\elements\floorloving.dm"
 #include "code\datums\elements\footstep.dm"
 #include "code\datums\elements\footstep_override.dm"
@@ -6375,6 +6376,7 @@
 #include "wallstation_modules\disablering\code\projectiles\projectiles\beams.dm"
 #include "wallstation_modules\disablering\code\research\designs\weapon_designs.dm"
 #include "wallstation_modules\disablering\code\research\techweb\security_nodes.dm"
+#include "wallstation_modules\extra_loadout\code\pocket.dm"
 #include "wallstation_modules\flavor_text_module\examine_tgui.dm"
 #include "wallstation_modules\flavor_text_module\preferences_savefile.dm"
 // END_INCLUDE

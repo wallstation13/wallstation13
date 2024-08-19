@@ -225,6 +225,10 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_EXAMINE_FISHING_SPOT "examine_fishing_spot"
 ///lobstrosities and carps will prioritize/flee from those that have this trait (given by the skill-locked hat)
 #define TRAIT_SCARY_FISHERMAN "scary_fisherman"
+///This trait lets you get the size and weight of the fish by examining them
+#define TRAIT_EXAMINE_FISH "examine_fish"
+///This trait lets you roughly know if the fish is dead, starving, drowning or sick by examining them
+#define TRAIT_EXAMINE_DEEPER_FISH "examine_deeper_fish"
 ///Trait given to turfs or objects that can be fished from
 #define TRAIT_FISHING_SPOT "fishing_spot"
 ///Trait given to mobs that can fish without a rod
@@ -743,8 +747,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_NEEDS_TWO_HANDS "needstwohands"
 /// Can't be catched when thrown
 #define TRAIT_UNCATCHABLE "uncatchable"
-/// Fish in this won't die
-#define TRAIT_FISH_SAFE_STORAGE "fish_case"
 /// Stuff that can go inside fish cases
 #define TRAIT_FISH_CASE_COMPATIBILE "fish_case_compatibile"
 /// If the item can be used as a bit.
@@ -934,6 +936,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_MECHA_CREATED_NORMALLY "trait_mecha_created_normally"
 
 ///fish traits
+#define TRAIT_FISH_STASIS "fish_stasis"
+#define TRAIT_FISH_FLOPPING "fish_flopping"
 #define TRAIT_RESIST_EMULSIFY "resist_emulsify"
 #define TRAIT_FISH_SELF_REPRODUCE "fish_self_reproduce"
 #define TRAIT_FISH_NO_MATING "fish_no_mating"
@@ -1044,6 +1048,13 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_TASTEFULLY_THICK_ID_CARD "impressive_very_nice"
 /// things with this trait are treated as having no access in /atom/movable/proc/check_access(obj/item)
 #define TRAIT_ALWAYS_NO_ACCESS "alwaysnoaccess"
+
+///The entity has Silicon 'access', so is either a silicon, has an access wand, or is an admin ghost AI.
+///This is put on the mob, it is used on the client for Admins but they are the exception as they use `isAdminGhostAI`.
+#define TRAIT_SILICON_ACCESS "silicon_access_trait"
+///The entity has AI 'access', so is either an AI, has an access wand, or is an admin ghost AI. Used to block off regular Silicons from things.
+///This is put on the mob, it is used on the client for Admins but they are the exception as they use `isAdminGhostAI`.
+#define TRAIT_AI_ACCESS "ai_access_trait"
 
 ///Used by wearable_client_colour to determine whether the mob wants to have the colours of the screen affected by worn items (some still do regardless).
 #define TRAIT_SEE_WORN_COLOURS "see_worn_colour"
