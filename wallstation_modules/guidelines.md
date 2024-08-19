@@ -110,7 +110,7 @@ Performance should also be considered when you are overriding a hot proc (like L
 
 ### These modular overrides should be kept in `master_files`, and you should avoid putting them inside modules as much as possible.
 
-To keep it simple, let's assume you wanted to make guns spark when shot, for simulating muzzle flash or whatever other reasons, and you want potentially to use it with all kinds of guns.
+To keep it simple, let's assume you wanted to make guns spark when shot, for simulating muzzle flash or whatever other reasons, and you potentially want to use it with all kinds of guns.
 
 You could start, in a modular file, by adding a var.
 
