@@ -47,7 +47,7 @@ All assets added by your changes should be placed into the same modular folder a
 
   First, create your module folder. E.g. `wallstation_modules/modules/lavalandmob`
 
-  And then you'd want to create sub-folders for each component. E.g. `/code` for code and `/sounds` for sound files and `/icons` for any icon files.
+Next,  create sub-folders for each component. E.g. `/code` for code,  `/sounds` for sound files and `/icons` for any icon files.
 
   After doing this, you'll want to set your references within the code.
 
