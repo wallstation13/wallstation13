@@ -214,7 +214,7 @@ If you have a define that's used in one file, and won't be used anywhere else, d
 
 ### Module folder layout
 
-To keep form and ensure most modules are easy to navigate and to keep control of the amount of files and folders being made in the repository, you are required to follow this layout.
+To keep ensure most modules are easy to navigate and to keep control of the amount of files and folders being made in the repository, you are required to follow this layout.
 
 Ensure the folder names are exactly as stated.
 
