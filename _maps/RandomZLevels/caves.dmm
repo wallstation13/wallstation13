@@ -80,7 +80,6 @@
 /area/awaymission/caves/bmp_asteroid/level_four)
 "ay" = (
 /obj/structure/destructible/cult/item_dispenser/archives,
-/obj/item/tome,
 /obj/item/stack/sheet/runed_metal{
 	amount = 25
 	},
@@ -225,7 +224,7 @@
 /area/awaymission/caves/bmp_asteroid/level_four)
 "ba" = (
 /obj/structure/destructible/cult/item_dispenser/altar,
-/obj/item/book/granter/martial/plasma_fist/nobomb,
+/obj/item/book/granter/action/spell/random,
 /turf/open/floor/engine/cult{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -519,9 +518,9 @@
 /obj/structure/closet/secure_closet/miner{
 	name = "weapon equipment"
 	},
-/obj/item/grenade/syndieminibomb/concussion,
-/obj/item/grenade/syndieminibomb/concussion,
-/obj/item/grenade/syndieminibomb/concussion,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
 /turf/open/floor/iron,
 /area/awaymission/caves/research)
 "dg" = (
@@ -1495,6 +1494,7 @@
 /obj/structure/sign/warning/vacuum/directional/east{
 	name = "\improper LOW AIR AREA"
 	},
+/obj/item/crowbar/large/heavy,
 /turf/open/floor/iron,
 /area/awaymission/caves/research)
 "yS" = (
@@ -1639,7 +1639,6 @@
 /obj/item/stack/sheet/runed_metal{
 	amount = 25
 	},
-/obj/item/coin/antagtoken,
 /obj/item/book/granter/action/spell/summonitem{
 	name = "\proper an extremely flamboyant book"
 	},
@@ -1695,6 +1694,13 @@
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
 /area/awaymission/caves/bmp_asteroid/level_three)
+"HL" = (
+/obj/item/nullrod/vibro/talking/chainsword,
+/obj/effect/decal/remains/human,
+/turf/open/misc/asteroid/basalt/lava{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
+/area/awaymission/caves/bmp_asteroid/level_four)
 "Ik" = (
 /obj/item/stack/rods,
 /turf/open/misc/asteroid/basalt{
@@ -1843,7 +1849,7 @@
 	},
 /area/awaymission/caves/bmp_asteroid)
 "OA" = (
-/obj/item/gun/ballistic/automatic/pistol/deagle/gold,
+/obj/item/gun/ballistic/automatic/pistol/deagle/regal,
 /turf/open/misc/asteroid/basalt/lava{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -1979,7 +1985,7 @@
 /turf/open/floor/wood,
 /area/awaymission/caves/northblock)
 "XN" = (
-/obj/item/grenade/syndieminibomb/concussion,
+/obj/item/grenade/chem_grenade/holy,
 /turf/open/misc/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -50104,7 +50110,7 @@ ad
 ad
 ad
 ad
-rv
+HL
 ad
 ad
 ad
