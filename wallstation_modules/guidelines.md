@@ -21,7 +21,7 @@ We decide to change the force of this object in the core code
 	force = 50 
   //END OF WALLSTATION EDIT
 ```
-That works well until we the upstream repo decides to change the same variable
+This works well until the upstream repository changes the same lines
 ```
 /obj/item/melee/weapon
 	force = 10
@@ -29,28 +29,28 @@ That works well until we the upstream repo decides to change the same variable
 Then we will get a merge conflict, where we have to decide which of the two edits we want to use. Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file. For more information, see "[About merge conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts).
 
 ## How we solve it
-This is something we do not want to do manually, and something that we do not trust an automated system to do well. But thankfully there is a simple solution, modularization.
+This is something we do not want to do manually, and something that we do not trust an automated system to do well. But thankfully, there is a simple solution, modularization.
 
-How does it work? All it means is that the vast majority of our changes are on ``wallstation_modular/`` folder, which /tg/ does not touch, and any changes that cannot be put into that folder are **CLEARLY LABELED** to when they start, the end, and what feature they are a part of.
+How does it work? All that means is that the vast majority of our changes are in the ``wallstation_modules`` folder, which is exclusive to our repository and can't conflict with upstream changes as it does not exist upstream. Any changes that cannot be put into this folder must be **CLEARLY LABELED** where they start and where they end.
 
 ## How modularization works
 Think about what you want you want to do with your PR, and then pick an ID for your module. E.g. `DISABLER_SNIPER` or `XENOARCHEAOLOGY` - We will use this in future documentation. It is essentially your module ID. It must be uniform throughout the entire module. All references MUST be exactly the same. This is to allow for easy searching.
 
-And then you'll want to establish your core folder that you'll be working out of which is normally your module ID. E.g. `wallstation_modular/modules/disabler_sniper`
+Then establish your core folder from where you'll be applying your changes, which is normally your module ID. E.g. `wallstation_modular/modules/disabler_sniper`
 
 ## Assets: images, sounds, icons and binaries
 
 Git doesn't handle conflicts of binary files (sounds, images, icons etc) well at all, therefore changes to core binary files are absolutely forbidden, unless you have a really *really* ***really*** good reason to do otherwise.
 
-All assets added by us should be placed into the same modular folder as your code. This means everything is kept inside your module folder, sounds, icons and code files.
+All assets added by your changes should be placed into the same modular folder as your code. This means everything is kept inside your module folder, sounds, icons and code files.
 
 - ***Example:*** You're adding a new lavaland mob.
 
-  First of all you create your modular folder. E.g. `wallstation_modules/modules/lavalandmob`
+  First, create your module folder. E.g. `wallstation_modules/modules/lavalandmob`
 
-  And then you'd want to create sub-folders for each component. E.g. `/code` for code and `/sounds` for sound files and `/icons` for any icon files.
+Next,  create sub-folders for each component. E.g. `/code` for code,  `/sounds` for sound files and `/icons` for any icon files.
 
-  After doing this, you'll want to set your references within the code.
+  After doing this, set your references within the code.
 
   ```
     /mob/lavaland/newmob
@@ -59,17 +59,17 @@ All assets added by us should be placed into the same modular folder as your cod
       sound = 'wallstation_modules/modules/lavalandmob/sounds/boom.ogg'
   ```
 
-  This ensures your code is fully modular and will make it easier for future edits.
+  This ensures your code is fully modular and will make it easier to ammend and review.
 
 - Other assets, binaries and tools, should usually be handled likewise, depending on the case-by-case context. When in doubt, ask a maintainer or other contributors for tips and suggestions.
 
 ### The `master_files` Folder
 
-You should always put any modular overrides of icons, sound, code, etc. inside this folder, and it **must** follow the core code folder layout.
+Always put any modular overrides of icons, sound, code, etc. inside this folder, it **must** follow the core code folder layout.
 
 Example: `code/modules/mob/living/living.dm` -> `wallstation_modules/master_files/code/modules/mob/living/living.dm`
 
-This is to make it easier to figure out what changed about a base file without having to search through proc definitions.
+This will make it easier to figure out what changed about a base file without having to search through proc definitions.
 
 It also helps prevent modules needlessly overriding the same proc multiple times. More information on these types of edits come later.
 
@@ -94,13 +94,13 @@ Such modules **need** to have a `readme.md` in their folder, containing the foll
 
 ## Modular Overrides
 
-Note, that it is possible to append code in front, or behind a core proc, in a modular fashion, without editing the original proc, through referring the parent proc, using `. = ..()` or `..()`. And likewise, it is possible to add a new var to an existing datum or obj, without editing the core files.
+Note, that it is possible to append code in front, or behind a core proc, in a modular fashion, without editing the original proc, through referring to the parent proc, using `. = ..()` or `..()`. And likewise, it is possible to add a new var to an existing atom, without editing the core files.
 
 **Note about proc overrides: Just because you can, doesn't mean you should!!**
 
 In general they are a good idea and encouraged whenever it is possible to do so. However this is not a hard rule, and sometimes Wallstation edits are preferable. Just try to use your common sense about it.
 
-For example: please do not copy paste an entire TG proc into a modular override, make one small change, and then bill it as 'fully modular'. These procs are an absolute nightmare to maintain because once something changes upstream you have to update the overridden proc.
+For example: do not copy paste an entire TG proc into a modular override, make one small change, and then bill it as 'fully modular'. These procs are an absolute nightmare to maintain because once something changes upstream you have to update the overridden proc.
 
 Sometimes you aren't even aware the override exists if it compiles fine and doesn't cause any bugs. This often causes features that were added upstream to be missing here. So yeah. Avoid that. It's okay if something isn't fully modular. Sometimes it's the better choice.
 
@@ -206,7 +206,7 @@ In those cases, we've decided to apply the following convention, with examples:
 
 ### Defines
 
-Due to the way byond loads files, it has become necessary to make a different folder for handling our modular defines.
+Due to the way byond loads files, it is necessary to make a different folder for handling our modular defines.
 That folder is **`code/__DEFINES/~wallstation_defines`**, in which you can add them to the existing files, or create those files as necessary.
 
 If you have a define that's used in more than one file, it **must** be declared here.
@@ -215,7 +215,7 @@ If you have a define that's used in one file, and won't be used anywhere else, d
 
 ### Module folder layout
 
-To keep form and ensure most modules are easy to navigate and to keep control of the amount of files and folders being made in the repository, you are required to follow this layout.
+To keep ensure most modules are easy to navigate and to keep control of the amount of files and folders being made in the repository, you are required to follow this layout.
 
 Ensure the folder names are exactly as stated.
 
@@ -297,7 +297,7 @@ This way they are easily identifiable as modular TGUI .tsx/.jsx files. You do no
 ## Afterword
 
 It might seem like a lot to take in, but if we remain consistent, it will save us a lot of headache in the long run, once we start having to resolve conflicts manually.
-Thanks to a bit more scrupulous documentation, it will be immediately obvious what changes were done and where and by which features, things will be a lot less ambiguous and messy.
+Thanks to a bit more scrupulous documentation, it will be immediately obvious what changes were done, where and by which commit, things will be a lot less ambiguous and messy.
 
 Best of luck in your coding. Remember that the community is there for you, if you ever need help.
 ### And a shoutout to Novasector who has the file I have based this one on
