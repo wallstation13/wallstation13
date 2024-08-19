@@ -2716,7 +2716,8 @@
 "ld" = (
 /obj/structure/alien/weeds,
 /mob/living/basic/alien/drone{
-	pressure_resistance = 100
+	pressure_resistance = 100;
+	maximum_survivable_temperature = 400
 	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
@@ -6522,7 +6523,8 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "Af" = (
 /mob/living/basic/alien/drone{
-	pressure_resistance = 100
+	pressure_resistance = 100;
+	maximum_survivable_temperature = 400
 	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
@@ -6872,7 +6874,8 @@
 "Fy" = (
 /obj/structure/alien/weeds,
 /mob/living/basic/alien/sentinel{
-	pressure_resistance = 100
+	pressure_resistance = 100;
+	maximum_survivable_temperature = 400
 	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
@@ -6951,7 +6954,8 @@
 /area/awaymission/undergroundoutpost45/caves)
 "GM" = (
 /mob/living/basic/alien{
-	pressure_resistance = 100
+	pressure_resistance = 100;
+	maximum_survivable_temperature = 400
 	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
@@ -7128,10 +7132,6 @@
 	dir = 1
 	},
 /area/awaymission/undergroundoutpost45/research)
-"Ko" = (
-/obj/structure/closet/supplypod,
-/turf/open/misc/asteroid/plasma,
-/area/awaymission/undergroundoutpost45/caves)
 "KE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -7863,7 +7863,8 @@
 "WX" = (
 /obj/structure/alien/weeds,
 /mob/living/basic/alien/queen{
-	pressure_resistance = 100
+	pressure_resistance = 100;
+	maximum_survivable_temperature = 400
 	},
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
@@ -38742,7 +38743,7 @@ Lz
 Lz
 Lz
 Lz
-Ko
+Lz
 ad
 ad
 Lz
@@ -38996,7 +38997,7 @@ Lz
 Lz
 Lb
 Lz
-Ko
+Lz
 Lz
 FF
 Lz
@@ -39768,7 +39769,7 @@ Lz
 Lb
 Lz
 Lz
-Ko
+Lz
 ad
 ad
 Lz
