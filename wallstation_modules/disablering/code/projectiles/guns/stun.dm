@@ -2,6 +2,19 @@
 /obj/item/gun/energy/disabler
 	icon = 'wallstation_modules/disablering/icons/energy.dmi'
 
+/obj/item/gun/energy/disabler/Initialize(mapload)
+	. = ..()
+	// Only actual disablers can be converted
+	if(type != /obj/item/gun/energy/disabler)
+		return
+	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/disabler_rifle, /datum/crafting_recipe/disabler_smg)
+
+	AddElement(
+		/datum/element/slapcrafting,\
+		slapcraft_recipes = slapcraft_recipe_list,\
+	)
+
+
 // New SMG with undebarrel grenade launcher
 /obj/item/gun/energy/disabler/smg
 	desc_controls = "Right-click to use underbarrel grenade launcher."
