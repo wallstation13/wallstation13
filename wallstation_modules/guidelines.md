@@ -93,7 +93,7 @@ Such modules **need** to have a `readme.md` in their folder, containing the foll
 
 ## Modular Overrides
 
-Note, that it is possible to append code in front, or behind a core proc, in a modular fashion, without editing the original proc, through referring the parent proc, using `. = ..()` or `..()`. And likewise, it is possible to add a new var to an existing datum or obj, without editing the core files.
+Note, that it is possible to append code in front, or behind a core proc, in a modular fashion, without editing the original proc, through referring to the parent proc, using `. = ..()` or `..()`. And likewise, it is possible to add a new var to an existing atom, without editing the core files.
 
 **Note about proc overrides: Just because you can, doesn't mean you should!!**
 
