@@ -54,9 +54,8 @@
 /obj/item/stack/sheet/runed_metal{
 	amount = 25
 	},
-/obj/item/veilrender/honkrender,
-/obj/item/clothing/mask/gas/clown_hat,
 /obj/item/organ/internal/heart/demon,
+/obj/item/mod/control/pre_equipped/responsory/inquisitory/chaplain,
 /turf/open/floor/engine/cult{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -429,9 +428,11 @@
 /turf/open/floor/iron,
 /area/awaymission/caves/research)
 "cw" = (
-/obj/item/stack/rods,
-/turf/open/floor/plating,
-/area/awaymission/caves/research)
+/obj/item/tank/internals/emergency_oxygen/double,
+/turf/open/misc/asteroid/basalt{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
+/area/awaymission/caves/bmp_asteroid/level_two)
 "cx" = (
 /turf/open/floor/iron/dark{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
@@ -589,9 +590,6 @@
 /area/awaymission/caves/bmp_asteroid/level_two)
 "ds" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/item/pickaxe/rusted{
-	pixel_x = 5
-	},
 /turf/open/floor/iron,
 /area/awaymission/caves/bmp_asteroid/level_two)
 "dt" = (
@@ -714,7 +712,6 @@
 /area/awaymission/caves/northblock)
 "ed" = (
 /obj/structure/bed,
-/obj/effect/landmark/awaystart/caves,
 /turf/open/floor/wood,
 /area/awaymission/caves/northblock)
 "ee" = (
@@ -757,7 +754,9 @@
 /area/awaymission/caves/northblock)
 "eo" = (
 /obj/item/stack/rods,
-/turf/open/floor/wood,
+/turf/open/floor/wood{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
 /area/awaymission/caves/northblock)
 "ep" = (
 /turf/open/floor/plating{
@@ -853,15 +852,11 @@
 /turf/open/floor/iron,
 /area/awaymission/caves/listeningpost)
 "eP" = (
-/obj/structure/table,
-/obj/item/pickaxe/rusted{
-	pixel_x = 5
+/obj/item/clothing/head/helmet/space/syndicate/blue,
+/turf/open/misc/asteroid/basalt{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
-/obj/item/pickaxe/rusted{
-	pixel_x = 5
-	},
-/turf/open/floor/iron,
-/area/awaymission/caves/listeningpost)
+/area/awaymission/caves/bmp_asteroid/level_two)
 "eR" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/iron,
@@ -1118,13 +1113,17 @@
 /area/awaymission/caves/bmp_asteroid)
 "gG" = (
 /obj/structure/mecha_wreckage/durand,
-/turf/open/floor/iron/recharge_floor,
+/turf/open/floor/iron/recharge_floor{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
 /area/awaymission/caves/bmp_asteroid)
 "gH" = (
 /obj/structure/table,
 /obj/item/mecha_parts/mecha_equipment/drill/diamonddrill,
 /obj/item/paper/fluff/awaymissions/caves/mech_notice,
-/turf/open/floor/plating,
+/turf/open/floor/plating{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
 /area/awaymission/caves/bmp_asteroid)
 "gI" = (
 /obj/structure/chair/stool/directional/west,
@@ -1138,16 +1137,22 @@
 	},
 /area/awaymission/caves/bmp_asteroid)
 "gK" = (
-/obj/structure/girder,
-/turf/open/floor/plating,
-/area/awaymission/caves/bmp_asteroid)
+/obj/item/rcd_ammo/large,
+/turf/open/misc/asteroid/basalt{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
+/area/awaymission/caves/bmp_asteroid/level_two)
 "gL" = (
-/obj/item/stack/rods,
-/turf/open/floor/plating,
-/area/awaymission/caves/bmp_asteroid)
+/obj/item/construction/rcd/ce,
+/turf/open/misc/asteroid/basalt{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
+/area/awaymission/caves/bmp_asteroid/level_two)
 "gM" = (
 /obj/structure/mecha_wreckage/ripley,
-/turf/open/floor/iron/recharge_floor,
+/turf/open/floor/iron/recharge_floor{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
 /area/awaymission/caves/bmp_asteroid)
 "gN" = (
 /obj/structure/hoop,
@@ -1253,8 +1258,8 @@
 /obj/structure/closet/crate/preopen,
 /obj/item/paper/fluff/awaymissions/caves/shipment_receipt,
 /obj/item/organ/internal/eyes/robotic/thermals,
-/obj/item/gun/energy/laser/captain/scattershot,
 /obj/item/slimepotion/fireproof,
+/obj/item/gun/energy/laser/musket/prime,
 /turf/open/misc/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -1376,7 +1381,9 @@
 /area/awaymission/caves/bmp_asteroid/level_four)
 "rF" = (
 /obj/machinery/light/small/directional/east,
-/turf/open/floor/plating,
+/turf/open/floor/plating{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
 /area/awaymission/caves/bmp_asteroid)
 "sl" = (
 /obj/structure/spawner/mining/hivelord,
@@ -1493,8 +1500,6 @@
 "yS" = (
 /obj/structure/closet/crate,
 /obj/item/paper/fluff/awaymissions/caves/shipment_receipt,
-/obj/item/gun/energy/laser/captain/scattershot,
-/obj/item/gun/energy/laser/captain/scattershot,
 /obj/item/gun/energy/laser,
 /obj/item/grenade/syndieminibomb/concussion,
 /obj/item/grenade/syndieminibomb/concussion,
@@ -1502,6 +1507,7 @@
 /obj/item/slimepotion/fireproof,
 /obj/item/slimepotion/fireproof,
 /obj/item/clothing/glasses/thermal,
+/obj/item/gun/energy/e_gun/stun,
 /turf/open/misc/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -1619,15 +1625,11 @@
 	},
 /area/awaymission/caves/bmp_asteroid/level_two)
 "Cc" = (
-/obj/item/gun/energy/laser/captain/scattershot,
-/turf/open/misc/asteroid/basalt{
-	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
-	},
-/area/awaymission/caves/bmp_asteroid/level_two)
+/obj/structure/closet/crate/eva,
+/turf/open/floor/wood,
+/area/awaymission/caves/northblock)
 "Ds" = (
-/obj/item/pickaxe/rusted{
-	pixel_x = 5
-	},
+/obj/item/pickaxe/rusted,
 /turf/open/misc/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -1649,9 +1651,6 @@
 /obj/structure/closet/crate/miningcar{
 	name = "Mining cart"
 	},
-/obj/item/pickaxe/rusted{
-	pixel_x = 5
-	},
 /turf/open/misc/asteroid/basalt{
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
@@ -1667,6 +1666,7 @@
 /area/awaymission/caves/bmp_asteroid/level_two)
 "FI" = (
 /obj/machinery/light/directional/south,
+/obj/item/mod/control/pre_equipped/security,
 /turf/open/floor/iron,
 /area/awaymission/caves/research)
 "FS" = (
@@ -1752,6 +1752,12 @@
 /obj/effect/decal/cleanable/xenoblood,
 /turf/open/floor/plating,
 /area/awaymission/caves/research)
+"Kf" = (
+/obj/item/clothing/suit/space/syndicate/blue,
+/turf/open/misc/asteroid/basalt{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
+/area/awaymission/caves/bmp_asteroid/level_two)
 "Kq" = (
 /obj/structure/sign/departments/exam_room/directional/north,
 /turf/open/floor/iron,
@@ -1766,9 +1772,6 @@
 "Ly" = (
 /obj/structure/closet/crate/miningcar{
 	name = "Mining cart"
-	},
-/obj/item/pickaxe/rusted{
-	pixel_x = 5
 	},
 /obj/item/stack/sheet/mineral/adamantine{
 	amount = 15
@@ -1833,6 +1836,12 @@
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
 /area/awaymission/caves/bmp_asteroid/level_two)
+"Ow" = (
+/obj/machinery/door/airlock/external/ruin,
+/turf/open/floor/plating{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
+/area/awaymission/caves/bmp_asteroid)
 "OA" = (
 /obj/item/gun/ballistic/automatic/pistol/deagle/gold,
 /turf/open/misc/asteroid/basalt/lava{
@@ -1942,7 +1951,9 @@
 /area/awaymission/caves/bmp_asteroid)
 "WH" = (
 /obj/vehicle/sealed/mecha/ripley/mining,
-/turf/open/floor/iron/recharge_floor,
+/turf/open/floor/iron/recharge_floor{
+	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
+	},
 /area/awaymission/caves/bmp_asteroid)
 "Xa" = (
 /mob/living/basic/bat/away_caves,
@@ -1963,6 +1974,10 @@
 	initial_gas_mix = "n2=23;o2=14;TEMP=2.7"
 	},
 /area/awaymission/caves/bmp_asteroid/level_three)
+"XK" = (
+/obj/machinery/suit_storage_unit/mining/eva,
+/turf/open/floor/wood,
+/area/awaymission/caves/northblock)
 "XN" = (
 /obj/item/grenade/syndieminibomb/concussion,
 /turf/open/misc/asteroid/basalt{
@@ -6562,7 +6577,7 @@ dP
 dM
 dR
 ea
-dy
+XK
 dt
 bL
 bL
@@ -7583,7 +7598,7 @@ bL
 bL
 bL
 dt
-dy
+Cc
 dy
 dt
 dQ
@@ -10195,13 +10210,13 @@ bL
 bL
 bL
 cx
-ej
+fy
 BK
 bM
 bM
 BK
 BK
-ej
+fy
 bM
 bM
 bM
@@ -10453,7 +10468,7 @@ bL
 bL
 cx
 cx
-ej
+fy
 BK
 bM
 BK
@@ -10710,7 +10725,7 @@ bL
 dW
 gN
 cx
-ej
+fy
 BK
 bM
 bM
@@ -10913,7 +10928,7 @@ bL
 bL
 ch
 cg
-cw
+cg
 cg
 cP
 cP
@@ -10968,11 +10983,11 @@ bL
 cx
 gP
 cx
-ej
+fy
 BK
 BK
 BK
-ej
+fy
 cx
 cx
 bL
@@ -12992,7 +13007,7 @@ eG
 eF
 eF
 eK
-eP
+eY
 eV
 eF
 eJ
@@ -17391,8 +17406,8 @@ bL
 BK
 BK
 fH
-ej
-ej
+fy
+fy
 fH
 bM
 bM
@@ -17645,11 +17660,11 @@ bL
 bL
 bL
 dW
-gK
+fW
 dW
 dX
 fN
-fN
+Ow
 dX
 bM
 bM
@@ -17902,11 +17917,11 @@ BK
 dW
 dX
 dW
-gL
-ej
-ej
+gc
+fy
+fy
 BK
-ej
+fy
 dX
 bM
 bM
@@ -18159,8 +18174,8 @@ BK
 fy
 gF
 gH
-ej
-ej
+fy
+fy
 BK
 BK
 BK
@@ -19192,7 +19207,7 @@ fy
 bM
 BK
 BL
-ej
+fy
 BK
 BK
 bL
@@ -19448,7 +19463,7 @@ gM
 gJ
 gO
 dX
-gK
+fW
 dW
 BK
 BK
@@ -53870,9 +53885,9 @@ oI
 oI
 oI
 oI
-Ds
-Bs
 oI
+Bs
+cw
 Tj
 oI
 oI
@@ -54127,10 +54142,10 @@ oI
 oI
 oI
 oI
+gK
+gL
 oI
-oI
-oI
-oI
+Kf
 oI
 oI
 oI
@@ -54381,12 +54396,12 @@ bK
 bK
 bK
 bK
+gK
 oI
+gK
 oI
-oI
-oI
-oI
-oI
+cw
+eP
 oI
 oI
 oI
@@ -54643,7 +54658,7 @@ oI
 oI
 oI
 oI
-oI
+gK
 oI
 oI
 oI
@@ -54897,8 +54912,8 @@ bK
 bK
 bK
 bK
-oI
-oI
+Ds
+gK
 oI
 oI
 oI
@@ -55145,16 +55160,16 @@ bK
 bK
 bK
 bK
-bK
-bK
 cm
 cm
 cm
+cm
+cm
 bK
 bK
 bK
 bK
-bK
+cm
 bK
 bK
 bK
@@ -55407,7 +55422,7 @@ bK
 cm
 cm
 cm
-bK
+cm
 cm
 cm
 cm
@@ -56438,7 +56453,7 @@ bK
 bK
 bN
 bN
-bK
+cm
 bO
 bO
 bO
@@ -57208,7 +57223,7 @@ bK
 bN
 bN
 bN
-bK
+cm
 cm
 cm
 cm
@@ -57533,7 +57548,7 @@ ao
 ao
 rv
 rv
-rv
+BH
 rv
 rv
 rv
@@ -57973,11 +57988,11 @@ cm
 cm
 cm
 cm
-bK
-bK
 cm
 cm
-bK
+cm
+cm
+cm
 bN
 bN
 bK
@@ -58557,7 +58572,7 @@ ad
 ad
 ad
 rv
-rv
+BH
 rv
 rv
 rv
@@ -60516,7 +60531,7 @@ bK
 bK
 bR
 oI
-Ds
+oI
 oI
 oI
 bR
@@ -64400,7 +64415,7 @@ oI
 bK
 bK
 bK
-Cc
+oI
 oI
 oI
 hT
