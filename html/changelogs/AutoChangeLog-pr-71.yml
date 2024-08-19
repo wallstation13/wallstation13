@@ -1,0 +1,4 @@
+author: "grungussusss"
+delete-after: True
+changes:
+  - balance: "Atmospheric and Captain gas mask have no FOV"
