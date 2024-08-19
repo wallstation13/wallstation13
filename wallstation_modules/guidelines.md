@@ -146,29 +146,29 @@ In those cases, we've decided to apply the following convention, with examples:
 - **Addition:**
 
   ```
-  //WALLSTATION EDIT ADDITION BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
+  //WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
   var/adminEmergencyNoRecall = FALSE
   var/lastMode = SHUTTLE_IDLE
   var/lastCallTime = 6000
-  //WALLSTATION EDIT ADDITION END
+  //WALLSTATION EDIT END
   ```
 
 - **Removal:**
 
   ```byond
-  //WALLSTATION EDIT REMOVAL BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
+  //WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
   /*
   for(var/obj/docking_port/stationary/S in stationary)
     if(S.id = id)
       return S
   */
-  //WALLSTATION EDIT REMOVAL END
+  //WALLSTATION EDIT END
     ```
 
   And for any removals that are moved to different files:
 
   ```
-  //WALLSTATION EDIT REMOVAL BEGIN - SHUTTLE_TOGGLE - (Moved to wallstation_modular/shuttle_toggle/randomverbs.dm)
+  //WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Moved to wallstation_modular/shuttle_toggle/randomverbs.dm)
   /*
   /client/proc/admin_call_shuttle()
   set category = "Admin - Events"
@@ -190,16 +190,16 @@ In those cases, we've decided to apply the following convention, with examples:
   message_admins(span_adminnotice("[key_name_admin(usr)] admin-called the emergency shuttle."))
   return
   */
-  //WALLSTATION EDIT REMOVAL END
+  //WALLSTATION EDIT END
   ```
 
 - **Change:**
 
   ```byond
-  //WALLSTATION EDIT CHANGE BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
+  //WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
   //if(SHUTTLE_STRANDED, SHUTTLE_ESCAPE) - WALLSTATION EDIT - ORIGINAL
   if(SHUTTLE_STRANDED, SHUTTLE_ESCAPE, SHUTTLE_DISABLED)
-  //WALLSTATION EDIT CHANGE END
+  //WALLSTATION EDIT END
       return 1
   ```
 
