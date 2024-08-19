@@ -60,7 +60,7 @@
 	shaded_charge = 1
 	recoil = 1
 	fire_sound_volume = 80
-	pb_knockback = 1 // It beam is powerful enough to knockdown for a second, so it makes sense to knock you back a tile Point Blank
+	pb_knockback = 1 // Its beam is powerful enough to knockdown for a second, so it makes sense to knock you back a tile Point Blank
 
 	SET_BASE_PIXEL(-8, 0)
 
