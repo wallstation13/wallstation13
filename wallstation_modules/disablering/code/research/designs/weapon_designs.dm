@@ -14,7 +14,7 @@
 
 /datum/design/disabler_smg
 	name = "Disabler SMG Part Kit (Nonlethal)"
-	desc = "The kit for an fully automatic disabler SMG."
+	desc = "The kit for a fully automatic disabler SMG."
 	id = "disabler_smg"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 3, /datum/material/glass = SHEET_MATERIAL_AMOUNT)
