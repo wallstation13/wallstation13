@@ -28,7 +28,7 @@ This works well until the upstream repository changes the same lines
 Then we will get a conflict, where we have to decide which of the two edits we want to use.
 
 ## How we solve it
-This is something we do not want to do manually, and something that we do not trust an automated system to do well. But thankfully there is a simple solution, modularization.
+This is something we do not want to do manually, and something that we do not trust an automated system to do well. But thankfully, there is a simple solution, modularization.
 
 How does it work? All it means is that the vast majority of our changes are on ``wallstation_modular/`` folder, which /tg/ does not touch, and any changes that cannot be put into that folder are **CLEARLY LABELED** to when they start, the end, and what feature they are a part of.
 
