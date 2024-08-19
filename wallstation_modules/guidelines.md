@@ -64,7 +64,7 @@ All assets added by your changes should be placed into the same modular folder a
 
 ### The `master_files` Folder
 
-You should always put any modular overrides of icons, sound, code, etc. inside this folder, and it **must** follow the core code folder layout.
+Always put any modular overrides of icons, sound, code, etc. inside this folder, it **must** follow the core code folder layout.
 
 Example: `code/modules/mob/living/living.dm` -> `wallstation_modules/master_files/code/modules/mob/living/living.dm`
 
