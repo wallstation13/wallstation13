@@ -18,8 +18,8 @@
 /turf/closed/wall/mineral/titanium,
 /area/awaymission/undergroundoutpost45/central)
 "ah" = (
-/obj/structure/alien/weeds,
-/turf/open/space/basic,
+/obj/structure/fans/tiny/invisible,
+/turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "ai" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6759,6 +6759,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 6
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "DL" = (
@@ -7367,6 +7368,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "OF" = (
 /obj/effect/turf_decal/stripes/asteroid/line,
+/obj/structure/fans/tiny/invisible,
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "OL" = (
@@ -7709,6 +7711,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 10
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/misc/asteroid/plasma,
 /area/awaymission/undergroundoutpost45/caves)
 "UU" = (
@@ -29005,7 +29008,7 @@ ad
 ad
 ad
 zO
-ah
+Gn
 Gn
 Gn
 Gn
@@ -47202,9 +47205,9 @@ Lz
 Lz
 Lz
 Lz
-Lz
-Lz
-Lz
+ah
+ah
+ah
 ni
 ni
 Qm
@@ -47459,7 +47462,7 @@ ad
 ad
 ad
 Lz
-Lz
+ah
 Lz
 Lz
 ni
