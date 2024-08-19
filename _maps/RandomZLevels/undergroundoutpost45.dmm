@@ -17,6 +17,10 @@
 "ag" = (
 /turf/closed/wall/mineral/titanium,
 /area/awaymission/undergroundoutpost45/central)
+"ah" = (
+/obj/structure/alien/weeds,
+/turf/open/space/basic,
+/area/awaymission/undergroundoutpost45/caves)
 "ai" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -7032,6 +7036,10 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/awaymission/undergroundoutpost45/central)
+"IT" = (
+/obj/structure/alien/weeds,
+/turf/closed/indestructible/resin,
+/area/awaymission/undergroundoutpost45/caves)
 "IV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -28997,7 +29005,7 @@ ad
 ad
 ad
 zO
-Gn
+ah
 Gn
 Gn
 Gn
@@ -30804,7 +30812,7 @@ ad
 ad
 Lz
 ad
-XQ
+IT
 ad
 ad
 ad
@@ -31060,9 +31068,9 @@ Lz
 ad
 ad
 Gn
-XQ
+IT
 TD
-XQ
+IT
 ad
 ad
 ad
@@ -31320,7 +31328,7 @@ HW
 Gn
 HW
 Gn
-XQ
+IT
 ad
 ad
 ad
@@ -31572,13 +31580,13 @@ ad
 Lz
 ad
 ad
-XQ
+IT
 Gn
 Gn
 ld
 GL
 Fy
-XQ
+IT
 ad
 ad
 ad
@@ -31829,13 +31837,13 @@ Lz
 Lz
 ad
 ad
-XQ
+IT
 Gn
 HW
 Gn
 Gn
 HW
-XQ
+IT
 ad
 ad
 ad
@@ -32086,13 +32094,13 @@ Lz
 ad
 ad
 ad
-XQ
+IT
 ld
 HQ
 Gn
 HW
 Gn
-XQ
+IT
 ad
 ad
 ad
@@ -32343,12 +32351,12 @@ ad
 ad
 ad
 ad
-XQ
+IT
 Gn
 Gn
 HW
 WX
-XQ
+IT
 ad
 ad
 ad
@@ -32600,12 +32608,12 @@ ad
 ad
 ad
 ad
-XQ
+IT
 eE
 ld
 Gn
 nI
-XQ
+IT
 ad
 ad
 ad
@@ -32857,11 +32865,11 @@ ad
 ad
 ad
 ad
-XQ
+IT
 MO
 Gn
 Gn
-XQ
+IT
 ad
 ad
 ad
@@ -33115,9 +33123,9 @@ ad
 ad
 ad
 ad
-XQ
-XQ
-XQ
+IT
+IT
+IT
 ad
 ad
 ad
