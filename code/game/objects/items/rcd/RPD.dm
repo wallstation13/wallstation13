@@ -142,6 +142,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 /datum/pipe_info/meter
 	icon_state = "meter"
 	dirtype = PIPE_ONEDIR
+	all_layers = TRUE
 
 /datum/pipe_info/meter/New(label)
 	name = label
@@ -360,7 +361,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	data["init_directions"] = init_directions
 	return data
 
-/obj/item/pipe_dispenser/ui_act(action, params)
+/obj/item/pipe_dispenser/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
 	. = ..()
 	playsound(src, SFX_TOOL_SWITCH, 20, TRUE)
 	if(.)

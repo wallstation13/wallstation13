@@ -1,0 +1,6 @@
+author: "Bisar"
+delete-after: True
+changes:
+  - rscadd: "Engineer skillchips know the wires for most things by default. They don't know the wires for syndicate devices, though... but Syndicate-aligned antagonists do."
+  - qol: "Added a helper for seeing if a given player mob's mind is affiliated with the Syndicate."
+  - code_imp: "Cleaned up the code for knowing wires to be more modular."

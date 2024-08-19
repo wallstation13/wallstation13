@@ -1286,6 +1286,15 @@
 		/obj/item/stack/sheet/glass = 1)
 	needs_anchored = FALSE
 
+/obj/item/circuitboard/machine/hydroponics/fullupgrade
+	build_path = /obj/machinery/hydroponics/constructable/fullupgrade
+	specific_parts = TRUE
+	req_components = list(
+		/datum/stock_part/matter_bin/tier4 = 2,
+		/datum/stock_part/servo/tier4 = 1,
+		/obj/item/stack/sheet/glass = 1
+	)
+
 /obj/item/circuitboard/machine/microwave
 	name = "Microwave"
 	greyscale_colors = CIRCUIT_COLOR_SERVICE
@@ -1685,3 +1694,12 @@
 	req_components = list(
 		/obj/item/pipe/trinary/flippable/filter = 1,
 	)
+
+/obj/item/circuitboard/machine/portagrav
+	name = "Portable Gravity Unit"
+	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	build_path = /obj/machinery/power/portagrav
+	req_components = list(
+		/datum/stock_part/capacitor = 2,
+		/datum/stock_part/micro_laser = 2,
+		/obj/item/stack/sheet/glass = 1)
