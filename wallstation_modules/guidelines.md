@@ -20,7 +20,7 @@ We decide to change the force of this object in the core code
 	force = 50 
   //END OF WALLSTATION EDIT
 ```
-That works well until we the upstream repo decides to change the same variable
+This works well until the upstream repository changes the same lines
 ```
 /obj/item/melee/weapon
 	force = 10
