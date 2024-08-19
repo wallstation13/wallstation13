@@ -5,4 +5,4 @@
 
 /obj/item/weaponcrafting/gunkit/disabler_smg
 	name = "disabler smg parts kit (nonlethal)"
-	desc = "A suitcase containing the necessary gun parts to tranform a normal disabler into a fully automatic disabler SMG."
+	desc = "A suitcase containing the necessary gun parts to transform a normal disabler into a fully automatic disabler SMG."
