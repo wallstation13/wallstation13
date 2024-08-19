@@ -68,7 +68,7 @@ Always put any modular overrides of icons, sound, code, etc. inside this folder,
 
 Example: `code/modules/mob/living/living.dm` -> `wallstation_modules/master_files/code/modules/mob/living/living.dm`
 
-This is to make it easier to figure out what changed about a base file without having to search through proc definitions.
+This will make it easier to figure out what changed about a base file without having to search through proc definitions.
 
 It also helps prevent modules needlessly overriding the same proc multiple times. More information on these types of edits come later.
 
