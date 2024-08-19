@@ -302,7 +302,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/camera/xray, 0)
 	if(!camera_enabled)
 		return
 	. = ..()
-	if(.)
+	if(. && proximity_monitor)
 		triggerCameraAlarm()
 		toggle_cam(null, 0)
 
