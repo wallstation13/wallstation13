@@ -28,7 +28,7 @@
 	. = ..()
 	. += span_notice("Its underbarrel grenade launcher has [underbarrel.grenades.len] / [underbarrel.max_grenades] grenades loaded.")
 
-/obj/item/gun/energy/disabler/add_seclight_point()
+/obj/item/gun/energy/disabler/smg/add_seclight_point()
 	return // Underbarrel grenade launcher takes the space of seclight, and it would be too wacky to put on top of barrel
 
 // Mercilessly ripped from M90 code
