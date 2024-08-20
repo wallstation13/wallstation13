@@ -81,21 +81,21 @@
 
 	infusing_into = infusing_from.get_infusion_entry()
 	var/fail_title = ""
-	var/fail_explanation = ""
+	var/fail_reason = ""
 	if(istype(infusing_into, /datum/infuser_entry/fly))
 		fail_title = "Unknown DNA"
-		fail_explanation = "Unknown DNA. Consult the \"DNA infusion book\"."
+		fail_reason = "Unknown DNA. Consult the \"DNA infusion book\"."
 	if(infusing_into.tier > max_tier_allowed)
 		infusing_into = GLOB.infuser_entries[/datum/infuser_entry/fly]
 		fail_title = "Overcomplexity"
-		fail_explanation = "DNA too complicated to infuse. The machine needs to infuse simpler DNA first."
+		fail_reason = "DNA too complicated to infuse. The machine needs to infuse simpler DNA first."
 	playsound(src, 'sound/machines/blender.ogg', 50, vary = TRUE)
 	to_chat(human_occupant, span_danger("Little needles repeatedly prick you!"))
 	human_occupant.take_overall_damage(10)
 	human_occupant.add_mob_memory(/datum/memory/dna_infusion, protagonist = human_occupant, deuteragonist = infusing_from, mutantlike = infusing_into.infusion_desc)
 	Shake(duration = INFUSING_TIME)
 	addtimer(CALLBACK(human_occupant, TYPE_PROC_REF(/mob, emote), "scream"), INFUSING_TIME - 1 SECONDS)
-	addtimer(CALLBACK(src, PROC_REF(end_infuse), fail_explanation, fail_title), INFUSING_TIME)
+	addtimer(CALLBACK(src, PROC_REF(end_infuse), fail_reason, fail_title), INFUSING_TIME)
 	update_appearance()
 
 /obj/machinery/dna_infuser/proc/end_infuse(fail_reason, fail_title)
@@ -105,12 +105,12 @@
 	infusing_into = null
 	QDEL_NULL(infusing_from)
 	playsound(src, 'sound/machines/microwave/microwave-end.ogg', 100, vary = FALSE)
-	if(fail_explanation)
+	if(fail_reason)
 		playsound(src, 'sound/machines/printer.ogg', 100, TRUE)
 		visible_message(span_notice("[src] prints an error report."))
 		var/obj/item/paper/printed_paper = new /obj/item/paper(loc)
 		printed_paper.name = "error report - '[fail_title]'"
-		printed_paper.add_raw_text(fail_explanation)
+		printed_paper.add_raw_text(fail_reason)
 		printed_paper.update_appearance()
 	toggle_open()
 	update_appearance()

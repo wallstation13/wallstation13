@@ -182,7 +182,7 @@
 	if(!.)
 		return
 	var/obj/item/organ/external/snout/bunny/bunny_snout = new
-	bunny_snout.transfer_to_limb(src, new_head_owner)
+	bunny_snout.on_bodypart_insert(src, new_head_owner)
 
 	sniffing_power = new(src)
 	sniffing_power.background_icon_state = "bg_tech_blue"
