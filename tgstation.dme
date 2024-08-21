@@ -6380,4 +6380,5 @@
 #include "wallstation_modules\extra_loadout\code\pocket.dm"
 #include "wallstation_modules\flavor_text_module\examine_tgui.dm"
 #include "wallstation_modules\flavor_text_module\preferences_savefile.dm"
+#include "wallstation_modules\station_traits\code\pun_pun.dm"
 // END_INCLUDE
