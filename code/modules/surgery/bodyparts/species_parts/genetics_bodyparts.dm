@@ -114,6 +114,14 @@
 		jumping_power.panel = "Genetic"
 		jumping_power.Grant(new_head_owner)
 	new_head_owner.AddElement(/datum/element/waddling, WADDLE_HOP)
+	var/datum/species/rec_species = new_head_owner.dna.species
+	rec_species.update_no_equip_flags(new_head_owner, rec_species.no_equip_flags | ITEM_SLOT_FEET)
+
+/obj/item/bodypart/leg/left/digitigrade/bunny/update_limb(dropping_limb = FALSE, is_creating = FALSE)
+	. = ..()
+	var/mob/living/carbon/bunny = owner
+	var/obj/item/clothing/shoes/worn_shoes = bunny.get_item_by_slot(ITEM_SLOT_FEET)
+	owner.dropItemToGround(worn_shoes)
 
 /obj/item/bodypart/leg/left/digitigrade/bunny/on_removal()
 	var/mob/living/carbon/human/bunny = owner
@@ -153,6 +161,14 @@
 		jumping_power.panel = "Genetic"
 		jumping_power.Grant(new_head_owner)
 	new_head_owner.AddElement(/datum/element/waddling, WADDLE_HOP)
+	var/datum/species/rec_species = new_head_owner.dna.species
+	rec_species.update_no_equip_flags(new_head_owner, rec_species.no_equip_flags | ITEM_SLOT_FEET)
+
+/obj/item/bodypart/leg/right/digitigrade/bunny/update_limb(dropping_limb = FALSE, is_creating = FALSE)
+	. = ..()
+	var/mob/living/carbon/bunny = owner
+	var/obj/item/clothing/shoes/worn_shoes = bunny.get_item_by_slot(ITEM_SLOT_FEET)
+	owner.dropItemToGround(worn_shoes)
 
 /obj/item/bodypart/leg/right/digitigrade/bunny/on_removal()
 	var/mob/living/carbon/human/bunny = owner
