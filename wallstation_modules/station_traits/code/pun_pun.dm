@@ -170,5 +170,5 @@
 	icon_state = "monkey"
 
 #undef SECHUD_BUSSER
-#define JOB_PUN_PUN
-#define JOB_DISPLAY_ORDER_PUN_PUN
+#undef JOB_PUN_PUN
+#undef JOB_DISPLAY_ORDER_PUN_PUN
