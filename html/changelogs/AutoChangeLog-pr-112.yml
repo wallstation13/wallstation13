@@ -1,0 +1,4 @@
+author: "Hates-The-walls"
+delete-after: True
+changes:
+  - bugfix: "Fixed active turfs on crashsite ruin"
