@@ -610,7 +610,6 @@
 
 /obj/machinery/door/morgue
 	icon = 'icons/obj/doors/doormorgue.dmi'
-	icon_state = "closed"
 
 /obj/machinery/door/morgue/Initialize(mapload)
 	. = ..()
