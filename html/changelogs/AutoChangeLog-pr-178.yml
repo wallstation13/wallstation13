@@ -1,0 +1,4 @@
+author: "Hates-The-walls"
+delete-after: True
+changes:
+  - bugfix: "custom pies and cakes are craftable again"
