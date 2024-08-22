@@ -288,14 +288,6 @@
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/iron,
 /area/station/service/bar)
-"afy" = (
-/obj/structure/railing/corner/end/flip{
-	dir = 8
-	},
-/obj/machinery/status_display/ai/directional/north,
-/obj/structure/closet/secure_closet/cytology,
-/turf/open/floor/iron/smooth_large,
-/area/station/science/cytology)
 "afz" = (
 /obj/effect/spawner/random/structure/crate,
 /turf/open/floor/plating,
@@ -8435,6 +8427,14 @@
 /obj/effect/turf_decal/siding/thinplating_new,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
+"cul" = (
+/obj/structure/railing/corner/end/flip{
+	dir = 8
+	},
+/obj/machinery/status_display/ai/directional/north,
+/obj/structure/closet/secure_closet/cytology,
+/turf/open/floor/iron/smooth_large,
+/area/station/science/cytology)
 "cum" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/middle{
 	dir = 1
@@ -26243,6 +26243,11 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
+"hQV" = (
+/obj/structure/railing,
+/obj/machinery/vending/cytopro,
+/turf/open/floor/iron/smooth_large,
+/area/station/science/cytology)
 "hRe" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
@@ -66731,12 +66736,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/maintenance/aft/lesser)
-"tNN" = (
-/obj/structure/flora/tree/pine/style_random,
-/obj/structure/marker_beacon/cerulean,
-/obj/effect/mapping_helpers/no_atoms_ontop,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "tNY" = (
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron,
@@ -69340,9 +69339,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/security/processing)
-"uFg" = (
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "uFh" = (
 /turf/open/floor/plating,
 /area/station/construction)
@@ -69814,11 +69810,6 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
-"uNH" = (
-/obj/structure/railing,
-/obj/machinery/vending/cytopro,
-/turf/open/floor/iron/smooth_large,
-/area/station/science/cytology)
 "uNV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/siding/wideplating/dark{
@@ -194050,7 +194041,7 @@ lvt
 mRp
 qbz
 wnp
-uNH
+hQV
 kXR
 jVi
 xij
@@ -194307,7 +194298,7 @@ nNV
 ege
 iPK
 wnp
-afy
+cul
 sqB
 eSQ
 xjs
@@ -267414,8 +267405,8 @@ wNO
 wNO
 wNO
 wNO
-wNO
-tNN
+bln
+lgH
 kDs
 kDs
 kDs
@@ -267671,8 +267662,8 @@ wNO
 wNO
 wNO
 wNO
-wNO
-wNO
+bln
+bln
 kDs
 kDs
 kDs
@@ -267928,8 +267919,8 @@ wNO
 wNO
 wNO
 wNO
-wNO
-wNO
+bln
+bln
 bln
 hHG
 hHG
@@ -268958,7 +268949,7 @@ wNO
 tkU
 tkU
 tkU
-uFg
+bln
 hHG
 hHG
 hHG
