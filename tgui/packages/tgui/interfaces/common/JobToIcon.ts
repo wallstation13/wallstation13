@@ -55,4 +55,7 @@ export const JOB2ICON = {
   'Syndicate Operative': 'dragon',
   'Veteran Security Advisor': 'ribbon',
   Warden: 'handcuffs',
+  // START OF WALLSTATION EDIT - Pun Pun Job Trait
+  'Pun Pun': 'paw',
+  // END OF WALLSTATION EDIT
 } as const;
