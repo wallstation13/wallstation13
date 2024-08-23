@@ -401,3 +401,75 @@
       for the first time
   tmyqlfpir:
   - balance: Reduced pathfinding circuit component cooldown from 30 seconds to 5 seconds
+2024-08-17:
+  Absolucy:
+  - bugfix: Empty blood brother teams will now be cleaned up, instead of clogging
+      up the roundend report.
+  Ben10Omintrix:
+  - bugfix: fixes pickup animation not matching player offset
+  Bisar:
+  - bugfix: Potted plants no longer permanently mark you as one of their own.
+  DATA-xPUNGED:
+  - qol: Paraplegics can now opt into appearing on the shift without their legs.
+  Ghommie:
+  - rscadd: Crabs and lobstrosities (as well as the lobster foam helmet and the fishing
+      hat) now pack a boatload of fish puns.
+  - image: Resprited more types of fillets, and moonfish eggs
+  Hates-The-walls:
+  - bugfix: You can no longer hear radio sounds if you're deaf.
+  - bugfix: Trying to repair someone's undamaged limb with a welder or wires no longer
+      has you smacking them
+  - qol: The Voidwalker wisp void now loops you
+  - rscadd: Added a treasure chest you can rarely fish from the ocean/beach, with
+      loot being a mix of fishing and piratey stuff.
+  - rscadd: You can revive fish with strange reagent now.
+  - rscadd: You can sell items on the blackmarket with the LTSRBT now.
+  - bugfix: Added some checks to prevent the swapper device and bluespace anomalies
+      from theorically being able to send things and people to nullspace.
+  - bugfix: Added a light switch to the science hallway in Metastation
+  - qol: Dumping things into microwave en-masse is done via RMB (drag'n'drop support
+      coming soon!)
+  - bugfix: RPEDs can now upgrade microwaves
+  - bugfix: Spies can finally steal microwaves (Use RMB!)
+  - rscadd: Drunken fist fighting now has bonuses and penalties based on how intoxicated
+      you are. Controlled liquor intake could make you a better brawler. Though you
+      might vomit if you go too hard.
+  - rscadd: Bartenders are now Drunken Brawlers. If they're drunk at all (no matter
+      how drunk), they're stronger at fist fighting.
+  - rscadd: Reintroduces the deterministic stagger combo. The effects of the combo
+      are more varied, and based on attacker unarmed effectiveness and the defender's
+      armor. Read the PR for more details. It's complicated.
+  - qol: Unarmed effects that would utilize stamina values now use a split of half
+      brute, half burn to determine outcomes or for meeting thresholds. This affects;
+      punch accuracy, stagger combo thresholds and grab vulnerability thresholds.
+  - admin: Subsystem Overview now has the ability to track a rolling average of tick
+      by tick subsystem cpu usage.
+  - bugfix: Mechs' directional armor now actually works
+  - bugfix: Fixed random lipstick texture, fake syndie lipstick no longer can randomly
+      spawn
+  - image: Resprited mech drills, plasma cutter, pka and cargo clamp.
+  - bugfix: Alien beds no longer pretend they can be deconstructed with a wrench
+  Jacquerel:
+  - bugfix: corrects offset of cobweb fluff object
+  Melbert:
+  - rscadd: Auto-generated digitigrade clothing sprites for most jumpsuits
+  Metekillot:
+  - bugfix: Raptors properly respect their own factions now.
+  Sadboysuss:
+  - qol: atmos meters can now be attached to layer 1 and 5
+  - sound: generic ship ambience volume has been reduced
+  SmArtKar:
+  - balance: Deja Vu perk now teleports you to where you were before the last teleport,
+      instead of where you arrived on the station
+  - bugfix: Deja Vu can no longer be used to return to the wizard ship
+  - bugfix: Fixed improvised shield crafting recipe being overriden by moonflowers
+  - bugfix: Blade heretic ascension now gives you floating blades once again
+  - image: Mirrors have been successfully wallened
+  grungussuss:
+  - sound: added new sounds for RCD, RPD and Plumbing Constructor.
+  - sound: some sheets that shouldn't be making metal sounds no longer make those
+      sounds
+  sylvia-from-fulp-station:
+  - balance: many melee hits to the head will dismember it.
+  tralezab:
+  - bugfix: bedsheets are laid on beds properly now

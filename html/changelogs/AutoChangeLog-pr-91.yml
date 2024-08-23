@@ -1,0 +1,5 @@
+author: "DrDiasyl"
+delete-after: True
+changes:
+  - rscadd: "Disabler Rifle: A powerful long-range weapon designed for non-lethal takedowns"
+  - rscadd: "Disabler SMGs now got a underbarrel grenade launcher, not 40mm grenade launchers"
