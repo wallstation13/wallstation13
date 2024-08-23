@@ -6373,6 +6373,8 @@
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
 #include "wallstation_modules\rat-reagent.dm"
+#include "wallstation_modules\deathmatch_fix\code\deathmatch_maps.dm"
+#include "wallstation_modules\deathmatch_fix\code\misc_walls.dm"
 #include "wallstation_modules\disablering\code\crafting\guncrafting.dm"
 #include "wallstation_modules\disablering\code\crafting\ranged_weapon.dm"
 #include "wallstation_modules\disablering\code\projectiles\ammunition\stun.dm"
