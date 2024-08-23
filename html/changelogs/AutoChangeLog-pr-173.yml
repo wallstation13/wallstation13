@@ -1,0 +1,4 @@
+author: "Ghommie"
+delete-after: True
+changes:
+  - rscadd: "A new station job trait, which allows you to play as Pun Pun."
