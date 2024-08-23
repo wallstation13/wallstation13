@@ -677,11 +677,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 ///This mob is currently blocking a projectile.
 #define TRAIT_BLOCKING_PROJECTILES "blocking_projectiles"
-<<<<<<< HEAD
-=======
-/// This turf contains something using split visibility
-#define TRAIT_CONTAINS_SPLITVIS "contains_splitvis"
->>>>>>> e1bf793264a (Spelling and Grammar Fixes (#86022))
 
 ///Lava will be safe to cross while it has this trait.
 #define TRAIT_LAVA_STOPPED "lava_stopped"
