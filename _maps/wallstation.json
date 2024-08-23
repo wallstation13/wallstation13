@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"map_name": "Wallstation13",
+	"map_path": "map_files/wallstation",
+	"map_file": "wallstation.dmm",
+	"shuttles": {
+		"cargo": "cargo_box",
+		"ferry": "ferry_fancy",
+		"whiteship": "whiteship_meta",
+		"emergency": "emergency_meta"
+	},
+	"job_changes": {
+		"Cook": {
+			"additional_cqc_areas": ["/area/station/service/bar", "/area/station/commons/lounge"]
+		}
+	}
+}
