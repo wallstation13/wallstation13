@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><base href="../"><link rel="stylesheet" href="dmdoc.css"><title>wallstation_modules/guidelines.md - /tg/ Station 13</title></head><body><header><a href="index.html">/tg/ Station 13</a> - <a href="index.html#modules">Modules</a> - <a href="index.html#types">Types</a></header><main><h1>wallstation_modules/guidelines.md <a href="https://github.com/wallstation13/wallstation13/blob/39f2f33e8a67fc8a98295436dcefa6aa9cf9191a/wallstation_modules/guidelines.md0"><img src="git.png" width="16" height="16" title="wallstation_modules/guidelines.md0"></a></h1><table class="summary" cellspacing="0"><tr><td colspan="2"><p>﻿# Modularization handbook: Wallstation edition
+<Written by vect0r and heavily inspired by novasector and sections shamelessly stolen from it></p>
+<h2 id="not-following-this-guide-will-result-in-your-pull-request-being-closed">Not following this guide <em>will</em> result in your Pull Request being closed</h2><h2 id="what-are-core-files">What are &quot;core files&quot;?</h2>
+<p>Very simply, core files are the code that we have from /tg/ and is not our own code.</p>
+<h2 id="why-we-do-this">Why we do this</h2>
+<p>Having a separate codebase is a lot of work. It's very easy to fall behind with outdated code. A way to solve this issue is by getting updates from a codebase that is more active. In this case, we choose /tg/station.
+In isolation, updating from /tg/ is simple process, but adding new &amp; unique features to Wallstation, if done improperly, will exponentially increase the amount of work it takes to mirror PRs from tgstation.</p>
+<h2 id="how-does-a-conflict-happen">How does a conflict happen?</h2>
+<p>Here is a relatively simple merge conflict that can happen if we are not careful.</p>
+<pre><code>/obj/item/melee/weapon
+	force = 30
+</code></pre>
+<p>We decide to change the force of this object in the core code</p>
+<pre><code>/obj/item/melee/weapon
+  //START OF WALLSTATION EDIT
+	force = 50 
+  //END OF WALLSTATION EDIT
+</code></pre>
+<p>This works well until the upstream repository changes the same lines</p>
+<pre><code>/obj/item/melee/weapon
+	force = 10
+</code></pre>
+<p>Then we will get a merge conflict, where we have to decide which of the two edits we want to use. Merge conflicts occur when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file. For more information, see &quot;<a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts">About merge conflicts</a>.</p>
+<h2 id="how-we-solve-it">How we solve it</h2>
+<p>This is something we do not want to do manually, and something that we do not trust an automated system to do well. But thankfully, there is a simple solution, modularization.</p>
+<p>How does it work? All that means is that the vast majority of our changes are in the <code>wallstation_modules</code> folder, which is exclusive to our repository and can't conflict with upstream changes as it does not exist upstream. Any changes that cannot be put into this folder must be <strong>CLEARLY LABELED</strong> where they start and where they end.</p>
+<h2 id="how-modularization-works">How modularization works</h2>
+<p>Think about what you want you want to do with your PR, and then pick an ID for your module. E.g. <code>DISABLER_SNIPER</code> or <code>XENOARCHEAOLOGY</code> - We will use this in future documentation. It is essentially your module ID. It must be uniform throughout the entire module. All references MUST be exactly the same. This is to allow for easy searching.</p>
+<p>Then establish your core folder from where you'll be applying your changes, which is normally your module ID. E.g. <code>wallstation_modular/modules/disabler_sniper</code></p>
+<h2 id="assets-images-sounds-icons-and-binaries">Assets: images, sounds, icons and binaries</h2>
+<p>Git doesn't handle conflicts of binary files (sounds, images, icons etc) well at all, therefore changes to core binary files are absolutely forbidden, unless you have a really <em>really</em> <em><strong>really</strong></em> good reason to do otherwise.</p>
+<p>All assets added by your changes should be placed into the same modular folder as your code. This means everything is kept inside your module folder, sounds, icons and code files.</p>
+<ul>
+<li>
+<p><em><strong>Example:</strong></em> You're adding a new lavaland mob.</p>
+<p>First, create your module folder. E.g. <code>wallstation_modules/modules/lavalandmob</code></p>
+</li>
+</ul>
+<p>Next,  create sub-folders for each component. E.g. <code>/code</code> for code,  <code>/sounds</code> for sound files and <code>/icons</code> for any icon files.</p>
+<p>After doing this, set your references within the code.</p>
+<pre><code>  /mob/lavaland/newmob
+    icon = 'wallstation_modules/modules/lavalandmob/icons/mob.dmi'
+    icon_state = &quot;dead_1&quot;
+    sound = 'wallstation_modules/modules/lavalandmob/sounds/boom.ogg'
+</code></pre>
+<p>This ensures your code is fully modular and will make it easier to ammend and review.</p>
+<ul>
+<li>Other assets, binaries and tools, should usually be handled likewise, depending on the case-by-case context. When in doubt, ask a maintainer or other contributors for tips and suggestions.</li>
+</ul>
+<h3 id="the-folder">The <code>master_files</code> Folder</h3>
+<p>Always put any modular overrides of icons, sound, code, etc. inside this folder, it <strong>must</strong> follow the core code folder layout.</p>
+<p>Example: <code>code/modules/mob/living/living.dm</code> -&gt; <code>wallstation_modules/master_files/code/modules/mob/living/living.dm</code></p>
+<p>This will make it easier to figure out what changed about a base file without having to search through proc definitions.</p>
+<p>It also helps prevent modules needlessly overriding the same proc multiple times. More information on these types of edits come later.</p>
+<h3 id="fully-modular-portions-of-your-code">Fully modular portions of your code</h3>
+<p>This section will be fairly straightforward, however, we will try to go over the basics and give simple examples, as the guide is aimed at new contributors likewise.</p>
+<p>The most important thing to remember is unless it is absolutely vital <strong>do not touch core codebase files</strong>.</p>
+<p>In short, most of the modular code will be placed in the subfolders of your main module folder <strong><code>wallstation_modules/modules/yourmodule/code/</code></strong>, with similar rules as with the assets. Do not mirror core code folder structures inside your modular folder.</p>
+<p>For example, <code>wallstation_modules/modules/xenoarcheaology/code</code> containing all the code, tools, items and machinery related to it.</p>
+<p>Such modules <strong>need</strong> to have a <code>readme.md</code> in their folder, containing the following:</p>
+<ul>
+<li>links to the PRs that implemented this module or made any significant changes to it</li>
+<li>short description of the module</li>
+<li>list of files changed in the core code, with a short description of the change, and a list of changes in other modular files that are not part of the same module, that were necessary for this module to function properly</li>
+<li>(optionally) a bit more elaborative documentation for future-proofing the code,  that will be useful further development and maintenance</li>
+<li>credits</li>
+</ul>
+<h2 id="modular-overrides">Modular Overrides</h2>
+<p>Note, that it is possible to append code in front, or behind a core proc, in a modular fashion, without editing the original proc, through referring to the parent proc, using <code>. = ..()</code> or <code>..()</code>. And likewise, it is possible to add a new var to an existing atom, without editing the core files.</p>
+<p><strong>Note about proc overrides: Just because you can, doesn't mean you should!!</strong></p>
+<p>In general they are a good idea and encouraged whenever it is possible to do so. However this is not a hard rule, and sometimes Wallstation edits are preferable. Just try to use your common sense about it.</p>
+<p>For example: do not copy paste an entire TG proc into a modular override, make one small change, and then bill it as 'fully modular'. These procs are an absolute nightmare to maintain because once something changes upstream you have to update the overridden proc.</p>
+<p>Sometimes you aren't even aware the override exists if it compiles fine and doesn't cause any bugs. This often causes features that were added upstream to be missing here. So yeah. Avoid that. It's okay if something isn't fully modular. Sometimes it's the better choice.</p>
+<p>The best candidates for modular proc overrides are ones where you can just tack something on after calling the parent, or weave a parent call cleverly in the middle somewhere to achieve your desired effect.</p>
+<p>Performance should also be considered when you are overriding a hot proc (like Life() for example), as each additional call adds overhead. wallstation edits are much more performant in those cases. For most procs this won't be something you have to think about, though.</p>
+<h3 id="these-modular-overrides-should-be-kept-in-and-you-should-avoid-putting-them-inside-modules-as-much-as-possible">These modular overrides should be kept in <code>master_files</code>, and you should avoid putting them inside modules as much as possible.</h3>
+<p>To keep it simple, let's assume you wanted to make guns spark when shot, for simulating muzzle flash or whatever other reasons, and you potentially want to use it with all kinds of guns.</p>
+<p>You could start, in a modular file, by adding a var.</p>
+<pre><code>/obj/item/gun
+    var/muzzle_flash = TRUE
+</code></pre>
+<p>And it will work just fine. Afterwards, let's say you want to check that var and spawn your sparks after firing a shot.
+Knowing the original proc being called by shooting is</p>
+<pre><code>/obj/item/gun/proc/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
+</code></pre>
+<p>you can define a child proc for it, that will get inserted into the inheritance chain of the related procs (big words, but in simple cases like this, you don't need to worry)</p>
+<pre><code>/obj/item/gun/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
+    . = ..() //. is the default return value, we assign what the parent proc returns to it, as we call it before ours
+    if(muzzle_flash)
+        spawn_sparks(src) //For simplicity, I assume you've already made a proc for this
+</code></pre>
+<h3 id="non-modular-changes-to-the-core-code-important">Non-modular changes to the core code - IMPORTANT</h3>
+<p>Every once in a while, there comes a time, where editing the core files becomes inevitable.</p>
+<p>Please be sure to log these in the module readme.md. <strong>Any</strong> file changes.</p>
+<p>In those cases, we've decided to apply the following convention, with examples:</p>
+<ul>
+<li>
+<p><strong>Addition:</strong></p>
+<pre><code>//WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
+var/adminEmergencyNoRecall = FALSE
+var/lastMode = SHUTTLE_IDLE
+var/lastCallTime = 6000
+//WALLSTATION EDIT END
+</code></pre>
+</li>
+<li>
+<p><strong>Removal:</strong></p>
+<pre><code class="language-byond">//WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
+/*
+for(var/obj/docking_port/stationary/S in stationary)
+  if(S.id = id)
+    return S
+*/
+//WALLSTATION EDIT END
+</code></pre>
+<p>And for any removals that are moved to different files:</p>
+<pre><code>//WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Moved to wallstation_modular/shuttle_toggle/randomverbs.dm)
+/*
+/client/proc/admin_call_shuttle()
+set category = &quot;Admin - Events&quot;
+set name = &quot;Call Shuttle&quot;
+
+if(EMERGENCY_AT_LEAST_DOCKED)
+  return
+
+if(!check_rights(R_ADMIN))
+  return
+
+var/confirm = alert(src, &quot;You sure?&quot;, &quot;Confirm&quot;, &quot;Yes&quot;, &quot;No&quot;)
+if(confirm != &quot;Yes&quot;)
+  return
+
+SSshuttle.emergency.request()
+SSblackbox.record_feedback(&quot;tally&quot;, &quot;admin_verb&quot;, 1, &quot;Call Shuttle&quot;) //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+log_admin(&quot;[key_name(usr)] admin-called the emergency shuttle.&quot;)
+message_admins(span_adminnotice(&quot;[key_name_admin(usr)] admin-called the emergency shuttle.&quot;))
+return
+*/
+//WALLSTATION EDIT END
+</code></pre>
+</li>
+<li>
+<p><strong>Change:</strong></p>
+<pre><code class="language-byond">//WALLSTATION EDIT BEGIN - SHUTTLE_TOGGLE - (Optional Reason/comment)
+//if(SHUTTLE_STRANDED, SHUTTLE_ESCAPE) - WALLSTATION EDIT - ORIGINAL
+if(SHUTTLE_STRANDED, SHUTTLE_ESCAPE, SHUTTLE_DISABLED)
+//WALLSTATION EDIT END
+    return 1
+</code></pre>
+</li>
+</ul>
+<h3 id="defines">Defines</h3>
+<p>Due to the way byond loads files, it is necessary to make a different folder for handling our modular defines.
+That folder is <strong><code>code/__DEFINES/~wallstation_defines</code></strong>, in which you can add them to the existing files, or create those files as necessary.</p>
+<p>If you have a define that's used in more than one file, it <strong>must</strong> be declared here.</p>
+<p>If you have a define that's used in one file, and won't be used anywhere else, declare it at the top, and <code>#undef MY_DEFINE</code> at the bottom of the file. This is to keep context menus clean, and to prevent confusion by those using IDEs with autocomplete.</p>
+<h3 id="module-folder-layout">Module folder layout</h3>
+<p>To keep ensure most modules are easy to navigate and to keep control of the amount of files and folders being made in the repository, you are required to follow this layout.</p>
+<p>Ensure the folder names are exactly as stated.</p>
+<p>Top most folder: module_id</p>
+<p><strong>DO NOT COPY THE CORE CODE FILE STRUCTURE IN YOUR MODULE!!</strong></p>
+<p><strong>Code</strong>: Any .DM files must go in here.</p>
+<ul>
+<li>Good: /wallstation_modular/modules/example_module/code/badguy.dm</li>
+<li>Bad: /wallstation_modular/modules/example_module/code/modules/antagonists/traitors/badguy.dm</li>
+</ul>
+<p><strong>Icons</strong>: Any .DMI files must go in here.</p>
+<ul>
+<li>Good: /wallstation_modular/modules/example_module/icons/mining_righthand.dmi</li>
+<li>Bad: /wallstation_modular/modules/example_module/icons/mob/inhands/equipment/mining_righthand.dmi</li>
+</ul>
+<p><strong>Sound</strong>: Any SOUND files must go in here.</p>
+<ul>
+<li>Good: See above.</li>
+<li>Bad: See above.</li>
+</ul>
+<p>The readme should go into the parent folder, module_id.</p>
+<p><strong>DO NOT MIX AND MATCH FILE TYPES IN FOLDERS! THE CODE FOLDER IS FOR CODE, SAME WITH SOUND AND ICONS</strong></p>
+<h2 id="modular-tgui">Modular TGUI</h2>
+<p>TGUI is another exceptional case, since it uses javascript and isn't able to be modular in the same way that DM code is.
+ALL of the tgui files are located in <code>/tgui/packages/tgui/interfaces</code> and its subdirectories; there is no specific folder for Wallstation Sector UIs.</p>
+<h3 id="modifying-upstream-files">Modifying upstream files</h3>
+<p>When modifying upstream TGUI files the same rules apply as modifying upstream DM code, however the grammar for comments may be slightly different.</p>
+<p>You can do both <code>// WALLSTATION EDIT</code> and <code>/* WALLSTATION EDIT */</code>, though in some cases you may have to use one over the other.</p>
+<p>In general try to keep your edit comments on the same line as the change. Preferably inside the JSX tag. e.g:</p>
+<pre><code class="language-js">&lt;Button
+	onClick={() =&gt; act('spin', { high_quality: true })}
+	icon=&quot;rat&quot; // WALLSTATION EDIT ADDITION
+&lt;/Button&gt;
+</code></pre>
+<pre><code class="language-js">&lt;Button
+	onClick={() =&gt; act('spin', { high_quality: true })}
+	// WALLSTATION EDIT ADDITION START - another example, multiline changes
+	icon=&quot;rat&quot;
+	tooltip=&quot;spin the rat.&quot;
+	// WALLSTATION EDIT ADDITION END
+&lt;/Button&gt;
+</code></pre>
+<pre><code class="language-js">&lt;SomeThing someProp=&quot;whatever&quot; /* it also works in self-closing tags */ /&gt;
+</code></pre>
+<p>If that is not possible, you can wrap your edit in curly brackets e.g.</p>
+<pre><code class="language-js">{/* WALLSTATION EDIT ADDITION START */}
+&lt;SomeThing&gt;
+	someProp=&quot;whatever&quot;
+&lt;/SomeThing&gt;
+{/* WALLSTATION EDIT ADDITION END */}
+</code></pre>
+<h3 id="creating-new-tgui-files">Creating new TGUI files</h3>
+<p><strong>IMPORTANT! When creating a new TGUI file from scratch, please add the following at the very top of the file (line 1):</strong></p>
+<pre><code class="language-js">// THIS IS A WALLSTATION UI FILE
+</code></pre>
+<p>This way they are easily identifiable as modular TGUI .tsx/.jsx files. You do not have to do anything further, and there will never be any need for a Wallstation edit comment in a modular TGUI file.</p>
+<h2 id="afterword">Afterword</h2>
+<p>It might seem like a lot to take in, but if we remain consistent, it will save us a lot of headache in the long run, once we start having to resolve conflicts manually.
+Thanks to a bit more scrupulous documentation, it will be immediately obvious what changes were done, where and by which commit, things will be a lot less ambiguous and messy.</p>
+<p>Best of luck in your coding. Remember that the community is there for you, if you ever need help.</p>
+<h3 id="and-a-shoutout-to-novasector-who-has-the-file-i-have-based-this-one-on">And a shoutout to Novasector who has the file I have based this one on</h3></td></tr></table></main><footer>tgstation.dme <a href="https://github.com/wallstation13/wallstation13/tree/39f2f33e8a67fc8a98295436dcefa6aa9cf9191a">39f2f33</a> (main) — <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.9.0</a></footer></body></html>
